@@ -90,6 +90,8 @@ div {
 
     #media #media_object {
         margin-bottom: 0px;
+        padding-bottom: 0px;
+        background-color: black;
     }
 
     #media #media_thumbs {
@@ -157,6 +159,7 @@ div {
 }
 
 img {
+    display: block;
     width: 100%;
     height: auto;
     margin: 0px;

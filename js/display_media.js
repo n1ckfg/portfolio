@@ -19,6 +19,7 @@ function displayMedia(index) {
     if (isNaN(index)) index = 0;
     el = document.getElementById('media_object');
     el.innerHTML = media[index];
+    el.setAttribute('onClick', 'javascript:displayMedia(' + ((index + 1) % media.length) + '); return false;'); 
     if (media.length > 1) {
         var el = document.getElementById('media_thumbs');
         for (c in el.childNodes) {

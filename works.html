@@ -6,7 +6,7 @@
 {% for work in structure %}
     <div id="work" {% if loop.index % 2 == 0 %}class="right"{% else %}class="left"{% endif %}>
         <a href="/works/{{ work }}/">
-            <img src="/works/{{ work }}/{{ work }}.png" alt="Brian House - {{ work | unslugify }}" />
+            <img src="/works/{{ work }}/{{ work }}.jpg" alt="Brian House - {{ work | unslugify }}" />
             {{ work | unslugify }}
         </a>
     </div>

@@ -24,7 +24,9 @@ var media = [
 {% if video and aspect %}"<div class=\"embed-container\"><iframe src=\"https://player.vimeo.com/video/{{ video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>",{% endif %}
 {% if youtube and aspect %}"<div class=\"embed-container\"><iframe src=\"https://www.youtube.com/embed/ueeQ7T0thwc\" frameborder=\"0\" allowfullscreen></iframe></div>",{% endif %}
 {% for image in images %}
-    "<img src=\"{{ image }}\" />",
+    {% if not loop.first %}
+        "<img src=\"{{ image[0] }}\" style=\"width: {{ image[1] }}px; height: {{ image[2] }}px;\" />",
+    {% endif %}
 {% endfor %}
 ];
 </script>

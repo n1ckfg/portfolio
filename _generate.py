@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os, sys, yaml, markdown, shutil, jinja2, re
+from PIL import Image
 
 images = [image for image in os.listdir("images") if image[-3:] == "png" or image[-3:] == "jpg"]
 
@@ -25,8 +26,10 @@ def build(structure, root):
             work_images = []
             for image in images:
                 if page in image:
-                    shutil.copy(os.path.join("images", image), path)
-                    work_images.append(image)
+                    source_path = os.path.join("images", image)
+                    width, height = Image.open(source_path).size
+                    shutil.copy(source_path, path)                    
+                    work_images.append((image, width, height))
             data.update({'images': work_images})
             if os.path.isfile(template):
                 html = render(template, data, structure=(structure[page] if type(structure) is dict else None))
