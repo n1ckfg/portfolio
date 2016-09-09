@@ -1,0 +1,39 @@
+<!doctype html> 
+<html> 
+<head>
+    <title>Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Brian House" /> 
+    <meta name="copyright" content="Brian House" /> 
+    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is a media artist whose work traverses alternative geographies, experimental music, and a critical data practice.{% endif %}" />
+    <meta name="google-site-verification" content="A4sQWaqqAP0xPQeB5rwLlUoHnVxHP2EEOZgO_LofGm8" />  
+    <meta property="og:image" content="{% if title %}{{ page }}{% else %}/about/about{% endif %}.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vollkorn:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+{% block head %}
+{% endblock head %}     
+</head>
+<body>
+<div id="content">
+
+<div id="header">
+    <div id="name"><a href="/">Brian House</a></div>
+    <div id="menu">
+        <a href="/works/">Works</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="/words/">Words</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a href="#">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/about/">About</a>
+    </div>
+</div>
+<div class="clear"></div>
+
+{% block content %}
+<a href="/works"><img src="www.jpg" /></a>
+{% endblock content %}
+
+</div>
+</body>
+</html>
