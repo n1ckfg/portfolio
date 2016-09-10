@@ -1,5 +1,12 @@
 {% extends "www.html" %}
 
+{% set num_media = (images|length - 1) %}
+{%- set first_image = 0 -%}
+{%- if (video and aspect) or (youtube and aspect) -%}
+    {%- set num_media = num_media + 1 -%}
+    {%- set first_image = 1 -%}
+{%- endif -%}
+
 {% block head %}
 <style type="text/css">
     .embed-container {
@@ -20,24 +27,26 @@
     }
 </style>
 <script type="text/javascript">
-var media = [
-{% if video and aspect %}"<div class=\"embed-container\"><iframe src=\"https://player.vimeo.com/video/{{ video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>",{% endif %}
-{% if youtube and aspect %}"<div class=\"embed-container\"><iframe src=\"https://www.youtube.com/embed/ueeQ7T0thwc\" frameborder=\"0\" allowfullscreen></iframe></div>",{% endif %}
-{% for image in images %}
-    {% if not loop.first %}
-        // "<img src=\"{{ image[0] }}\" style=\"width: {{ image[1] }}px; height: {{ image[2] }}px;\" />",
-        "<img src=\"{{ image[0] }}\" />",
-    {% endif %}
-{% endfor %}
-];
+var num_media = {{ num_media }};
 </script>
 <script type="text/javascript" src="/display_media.js"></script> 
 {% endblock head %}
 
 {% block content %}
-
 <div id="media">
-    <div id="media_object"></div>
+    <div id="media_object">
+        {% if video and aspect %}
+            <div id="media_0" class="embed-container"><iframe src="https://player.vimeo.com/video/{{ video }}?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        {% endif %}
+        {% if youtube and aspect %}
+            <div id="media_0" class="embed-container"><iframe src="https://www.youtube.com/embed/ueeQ7T0thwc" frameborder="0" allowfullscreen></iframe></div>
+        {% endif %}
+        {% for image in images %}
+            {% if not loop.first %}
+                <img id="media_{{ loop.index0 - 1 + first_image }}" src="{{ image[0] }}" onClick="displayMedia('{{ (loop.index0 - 1 + first_image + 1) % num_media }}'); return false;" />
+            {% endif %}
+        {% endfor %}
+    </div>
     <div id="media_thumbs"> 
     </div>
 </div>
