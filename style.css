@@ -62,23 +62,27 @@ div {
     clear: both;
 }
 
-#grid #work {
-    width: 100%;
-    text-transform: uppercase;
-}
+    #grid .work {
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    #grid .work .grid_title {
+        line-height: 30px;
+    }
 
 @media screen and (min-width: 840px) {
 
-    #grid #work {
+    #grid .work {
         width: 380px;
     }
 
-    #grid #work.left {
+    #grid .work.left {
         float: left;
         margin-right: 40px;
     }
 
-    #grid #work.right {
+    #grid .work.right {
         float: right;
     }
 

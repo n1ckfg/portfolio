@@ -25,7 +25,8 @@ var media = [
 {% if youtube and aspect %}"<div class=\"embed-container\"><iframe src=\"https://www.youtube.com/embed/ueeQ7T0thwc\" frameborder=\"0\" allowfullscreen></iframe></div>",{% endif %}
 {% for image in images %}
     {% if not loop.first %}
-        "<img src=\"{{ image[0] }}\" style=\"width: {{ image[1] }}px; height: {{ image[2] }}px;\" />",
+        // "<img src=\"{{ image[0] }}\" style=\"width: {{ image[1] }}px; height: {{ image[2] }}px;\" />",
+        "<img src=\"{{ image[0] }}\" />",
     {% endif %}
 {% endfor %}
 ];

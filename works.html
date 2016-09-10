@@ -4,10 +4,10 @@
 
 <div id="grid">
 {% for work in structure %}
-    <div id="work" {% if loop.index % 2 == 0 %}class="right"{% else %}class="left"{% endif %}>
+    <div class="work {% if loop.index % 2 == 0 %}right{% else %}left{% endif %}">
         <a href="/works/{{ work }}/">
             <img src="/works/{{ work }}/{{ work }}.jpg" alt="Brian House - {{ work | unslugify }}" />
-            {{ work | unslugify }}
+            <span class="grid_title">{{ work | unslugify }}</span>
         </a>
     </div>
 {% endfor %}
