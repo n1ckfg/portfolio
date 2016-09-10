@@ -4,7 +4,7 @@ var setup = function() {
     if (num_media > 1) {
         for (var m=0; m<num_media; m++) {
             var sq = document.createElement('a');
-            sq.innerHTML = "&nbsp;&#9675;&nbsp;";
+            sq.innerHTML = "&#9675;";
             sq.setAttribute('onClick', 'javascript:displayMedia(' + m + '); return false;'); 
             el.appendChild(sq);
         }
@@ -32,9 +32,9 @@ var displayMedia = function(index) {
         var el = document.getElementById('media_thumbs');
         for (c in el.childNodes) {
             if (c == index + 1) {
-                el.childNodes[c].innerHTML = "<span class='on'>&nbsp;&#9679;&nbsp;</span>";
+                el.childNodes[c].innerHTML = "&#9679;";
             } else {
-                el.childNodes[c].innerHTML = "&nbsp;&#9675;&nbsp;";
+                el.childNodes[c].innerHTML = "&#9675;";
             }
         }
     }
