@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;    
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 }
@@ -33,19 +34,7 @@ div {
     #header #name {
         float: left;
         min-width: 95px;
-        font-weight: bold;
-        height: 20px;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
-
-    @media screen and (min-width: 500px) {
-        #header #name {
-            margin-top: -2px;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 20px;
-        }
+        font-weight: 700;
     }
 
     #header #menu {
@@ -160,17 +149,18 @@ div {
 
 .text {
     font-family: 'Vollkorn', serif;
+    font-weight: 400;
     color: #333;
 }
 
 .title {
-    text-rendering: optimizeLegibility;
+/*    text-rendering: optimizeLegibility;
     font-size: 22px;
-    font-weight: bold;
+*/    font-weight: 700;
     text-transform: uppercase;
-    display: block;
+/*    display: block;
     margin-bottom: 10px;
-}
+*/}
 
 img {
     display: block;
@@ -212,6 +202,7 @@ li {
     padding: 0px;    
     margin-top: 5px;       
     font-family: 'Vollkorn', serif;
+    font-weight: 400;
     text-indent: -60px;
     padding-left: 60px;     
 }
@@ -221,6 +212,7 @@ li span {
     padding-right: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    font-weight: 400;
 }
 
 li span.show {

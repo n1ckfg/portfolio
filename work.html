@@ -47,13 +47,13 @@ var num_media = {{ num_media }};
             {% endif %}
         {% endfor %}
     </div>
-    <div id="media_thumbs"> 
+    <div id="media_thumbs">        
     </div>
 </div>
 <div class="clear"></div>
 
 <div id="info">
-    <span class="title">{{ title }}</span>
+    <span class="title">{{ title }}</span><br />
     {% if collaborators %}w/ {{ collaborators }}<br />{% endif %}
     {% if location %}{{ location }}<br />{% endif %}
     {% if date %}{{ date }}, {% endif %}{{ year }}    
