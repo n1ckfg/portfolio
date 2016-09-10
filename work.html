@@ -43,7 +43,7 @@ var num_media = {{ num_media }};
         {% endif %}
         {% for image in images %}
             {% if not loop.first %}
-                <img id="media_{{ loop.index0 - 1 + first_image }}" src="{{ image[0] }}" onClick="displayMedia('{{ (loop.index0 - 1 + first_image + 1) % num_media }}'); return false;" />
+                <img id="media_{{ loop.index0 - 1 + first_image }}" src="{{ image[0] }}" alt="Brian House - {{ title }}" onClick="displayMedia('{{ (loop.index0 - 1 + first_image + 1) % num_media }}'); return false;" />
             {% endif %}
         {% endfor %}
     </div>
