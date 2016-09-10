@@ -54,9 +54,9 @@ var num_media = {{ num_media }};
 
 <div id="info">
     <span class="title">{{ title }}</span>
-    {% if collaborators %}<br />w/ {{ collaborators }}{% endif %}
-    {% if location %}<br />{{ location }}{% endif %}
-    <br />{% if date %}{{ date }}, {% endif %}{{ year }}    
+    {% if collaborators %}w/ {{ collaborators }}<br />{% endif %}
+    {% if location %}{{ location }}<br />{% endif %}
+    {% if date %}{{ date }}, {% endif %}{{ year }}    
 </div>
 
 <div id="text" class="text">
