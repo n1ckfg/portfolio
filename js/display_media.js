@@ -8,8 +8,6 @@ var setup = function() {
             sq.setAttribute('onClick', 'javascript:displayMedia(' + m + '); return false;'); 
             el.appendChild(sq);
         }
-    } else {
-        el.parentNode.removeChild(el);  // this causes a brief hiccup
     }
     displayMedia(0);
 }

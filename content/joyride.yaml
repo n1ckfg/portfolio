@@ -1,0 +1,17 @@
+title: Joyride
+collaborators:
+year: 2011
+date:
+location:
+video: 26600798
+aspect: 0.5
+credits:
+  - Data performance: [Unknown thief]
+  - Getaway vehicle: [Google]
+  - Thanks: [Jer Thorp, The New York Times Company Research and Development Lab]
+text: |
+  _Joyride_ presents the path of a stolen iPhone, over five days, reconstructed with images from Google Street View. 
+
+  The personal device and the data it gathers are entwined with our contemporary sense of identity. After Sue lost her phone, it continued to log its location with OpenPaths, and we watched as her estranged data life continue to unfold (revealing, among other things, the home of the perpetrator).
+
+  I determined the likely path between each latitude/longitude breadcrumb via the Google Directions API. I then scraped all the Street View tiles along the way, and stitched them together. The result, a kind of franken-data, is a reenactment of the thief's journey. It retains some relationship to the truth of the human interaction behind it, yet it remains a data fiction woven by our media platforms.

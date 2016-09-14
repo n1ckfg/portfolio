@@ -1,7 +1,8 @@
-test for compliance in everything
+- stats
 
 ### bugs
 
+- landscape about page in iphone is wack
 - lost a question mark
 
 
