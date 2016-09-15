@@ -1,8 +1,8 @@
+- max 10 images + video
 - stats
 
 ### bugs
 
-- landscape about page in iphone is wack
 - lost a question mark
 
 

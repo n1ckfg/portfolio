@@ -117,24 +117,27 @@ div {
         }      
 
 #about {
-    left: 240px;
-    width: 100%;
+    margin-left: 240px;
 }
 
 #portrait {
     width: 200px;
-    height: 500px;
     float: left;
-    margin-right: 40px;
     text-align: right;
 }
 
 @media screen and (max-width: 500px) {
+
+    #about {
+        margin-left: 0px;
+    }
+
     #portrait {
         width: 100%;
         height: auto;
         float: none;
     }
+    
 }
 
 #portrait img {
