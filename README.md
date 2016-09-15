@@ -2,7 +2,7 @@
 
 Static site generator / personal portfolio site
 
-    ./_generate.py
+    ./generate.py
     cd www
     python3 -m http.server &
     open http://localhost:8000

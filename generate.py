@@ -83,7 +83,7 @@ def copy_static():
             shutil.copy(os.path.join("js", filename), "www/")
 
 
-with open("_structure.yaml") as f:
+with open("structure.yaml") as f:
     structure = yaml.load(f)
 build(structure, ".")
 copy_static()
