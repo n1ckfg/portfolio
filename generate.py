@@ -14,9 +14,9 @@ def build(structure, root):
                 os.mkdir(path)
             content = "content/%s.yaml" % page                
             if type(structure) is dict:
-                template = "%s.html" % page
+                template = "templates/%s.html" % page
             else:
-                template = "%s.html" % root.split("/")[-1][:-1]
+                template = "templates/%s.html" % root.split("/")[-1][:-1]
             data = {'page': page, 'path': path}
             if os.path.isfile(content):
                 with open(content) as f:
@@ -78,11 +78,12 @@ def copy_static():
     for filename in os.listdir("."):
         if filename[-3:] == "css":
             shutil.copy(filename, "www/")
-        if filename[-3:] == "png":
-            shutil.copy(filename, "www/")
     for filename in os.listdir("js"):
         if filename[-2:] == "js":
             shutil.copy(os.path.join("js", filename), "www/")
+    for filename in os.listdir("img"):
+        if filename[-3:] == "png":
+            shutil.copy(os.path.join("img", filename), "www/")
 
 if __name__ == "__main__":
     with open("structure.yaml") as f:
