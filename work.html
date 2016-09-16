@@ -63,7 +63,7 @@ var num_media = {{ num_media }};
 {% endif %}
 
 
-<div id="info">
+<div class="info">
     <span class="title">{{ title }}</span><br />
     {% if collaborators %}w/ {{ collaborators }}<br />{% endif %}
     {% if location %}{{ location }}<br />{% endif %}
@@ -75,7 +75,7 @@ var num_media = {{ num_media }};
 </div>
 
 {% if credits %}
-<div id="credits">
+<div class="credits">
 {% for credit in credits %}
     {% for key, value in credit.items() %}
         {{ key }}:

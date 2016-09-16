@@ -41,15 +41,6 @@ div {
         text-align: right;
     }
 
-#info {
-    text-transform: uppercase;
-}
-
-#credits {
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
 #grid {
     clear: both;
 }
@@ -116,11 +107,11 @@ div {
             cursor: pointer;
         }      
 
-#about {
+.about {
     margin-left: 240px;
 }
 
-#portrait {
+.portrait {
     width: 200px;
     float: left;
     text-align: right;
@@ -128,11 +119,11 @@ div {
 
 @media screen and (max-width: 500px) {
 
-    #about {
+    .about {
         margin-left: 0px;
     }
 
-    #portrait {
+    .portrait {
         width: 100%;
         height: auto;
         float: none;
@@ -140,13 +131,22 @@ div {
     
 }
 
-#portrait img {
+.portrait img {
     margin-bottom: 30px;
 }
 
 .clear {
     clear: both;
     margin-bottom: 0px;
+}
+
+.info {
+    text-transform: uppercase;
+}
+
+.credits {
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .text {
@@ -160,13 +160,19 @@ div {
     }
 
 .title {
-/*    text-rendering: optimizeLegibility;
-    font-size: 22px;
-*/    font-weight: 700;
+    font-weight: 700;
     text-transform: uppercase;
-/*    display: block;
-    margin-bottom: 10px;
-*/}
+}
+
+.post {
+    margin-bottom: 100px;
+}
+
+    .post b {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
 img {
     display: block;

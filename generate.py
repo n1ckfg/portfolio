@@ -78,13 +78,15 @@ def copy_static():
     for filename in os.listdir("."):
         if filename[-3:] == "css":
             shutil.copy(filename, "www/")
+        if filename[-3:] == "png":
+            shutil.copy(filename, "www/")
     for filename in os.listdir("js"):
         if filename[-2:] == "js":
             shutil.copy(os.path.join("js", filename), "www/")
 
-
-with open("structure.yaml") as f:
-    structure = yaml.load(f)
-build(structure, ".")
-copy_static()
+if __name__ == "__main__":
+    with open("structure.yaml") as f:
+        structure = yaml.load(f)
+    build(structure, ".")
+    copy_static()
 

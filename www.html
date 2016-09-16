@@ -9,10 +9,10 @@
     <meta name="copyright" content="Brian House" /> 
     <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose performances and installations address the material articulation of time in data-driven culture.{% endif %}" />
     <meta name="google-site-verification" content="A4sQWaqqAP0xPQeB5rwLlUoHnVxHP2EEOZgO_LofGm8" />  
-    <meta property="og:image" content="{% if title %}{{ page }}{% else %}/about/about{% endif %}.png" />
-    <link rel="icon" href="/favicon.png" /> 
+    <meta property="og:image" content="{{ absolute }}{% if title %}{{ page }}{% else %}/about/about{% endif %}.png" />
+    <link rel="icon" href="{{ absolute }}/favicon.png" /> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CVollkorn:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ absolute }}/style.css" />
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,12 +28,12 @@
 <div id="content">
 
 <div id="header">
-    <div id="name"><a href="/">Brian House</a></div>
+    <div id="name"><a href="{{ absolute }}/">Brian House</a></div>
     <div id="menu">
-        <a href="/works/">Works</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <!-- <a href="/words/">Words</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <a href="#">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/about/">About</a>
+        <a href="{{ absolute }}/works/">Works</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <a href="{{ absolute }}/words/">Words</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a href="http://blog.brianhouse.net/">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{{ absolute }}/about/">About</a>
     </div>
 </div>
 <div class="clear"></div>
