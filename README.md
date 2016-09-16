@@ -7,6 +7,10 @@ Static site generator / personal portfolio site
     python3 -m http.server &
     open http://localhost:8000
 
+...might want to do this first (it helps opengraph too):
+
+    cd images
+    for i in *.jpg; do echo "Processing $i"; exiftool -all= "$i"; done
 
 ### Copyright/License
 

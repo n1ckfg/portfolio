@@ -1,8 +1,8 @@
 <!doctype html> 
-<html> 
+<html prefix="og: http://ogp.me/ns#" lang="en"> 
 <head>
     <title>Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}</title> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta charset="utf-8"/>
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Brian House" /> 
@@ -11,7 +11,6 @@
     <meta name="google-site-verification" content="A4sQWaqqAP0xPQeB5rwLlUoHnVxHP2EEOZgO_LofGm8" />  
     <meta property="og:title" content="Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://brianhouse.net{% if title %}/works/{{ page }}{% endif %}" />
     <meta property="og:image" content="http://brianhouse.net{% if title %}/works/{{ page }}/{{ page }}{% else %}/about/about{% endif %}.jpg" />
     <link rel="icon" href="{{ absolute }}/favicon.png" /> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CVollkorn:400,700" rel="stylesheet">
