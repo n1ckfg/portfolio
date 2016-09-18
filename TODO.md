@@ -12,6 +12,7 @@ To be generalizeable beyond me, needs configuration for:
 - site title / name
 - social media sites
 - cv should be yamlized
+- homepage
 
 
 ### notes

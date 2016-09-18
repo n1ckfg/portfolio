@@ -90,4 +90,5 @@ if __name__ == "__main__":
         structure = yaml.load(f)
     build(structure, ".")
     copy_static()
+    shutil.copy("www/works/index.html", "www/index.html")
 
