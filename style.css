@@ -69,6 +69,11 @@ div {
         float: right;
     }
 
+    #grid .work img {
+        width: 380px;
+        height: 214px;
+    }
+
 }
 
 #media {

@@ -6,10 +6,11 @@ www:
     cv:
     words:
     works:
+        - oh_dear_me
         - quotidian_record
-        - fight_logic
-        - arrangement_for_building
         - a_question_of_style
+        - arrangement_for_building
+        - fight_logic
         - conversnitch
         - what_does_the_internet_sound_like
         - open_capture
@@ -20,6 +21,7 @@ www:
         - hundekopf
         - tanglr
         - eternal_portraits
+        - youll_just_have_to_take_my_word_for_it
         - change_ringing
         - the_weather_or_your_memories
         - openpaths
