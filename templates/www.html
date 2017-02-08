@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Brian House" /> 
     <meta name="copyright" content="Brian House" /> 
-    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose performances, installations, and interventions address the material articulation of time in digital culture.{% endif %}" />
+    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose performances, installations, and interventions address the rhythms of the body in contact with computation.{% endif %}" />
     <meta name="google-site-verification" content="A4sQWaqqAP0xPQeB5rwLlUoHnVxHP2EEOZgO_LofGm8" />  
     <meta property="og:title" content="Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}" />
     <meta property="og:type" content="website" />
@@ -33,7 +33,6 @@
     <div id="name"><a href="{{ absolute }}/">Brian House</a></div>
     <div id="menu">
         <a href="{{ absolute }}/works/">Works</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <!-- <a href="{{ absolute }}/words/">Words</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
         <a href="http://blog.brianhouse.net/">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="{{ absolute }}/about/">About</a>
     </div>
