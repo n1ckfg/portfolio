@@ -108,55 +108,24 @@
 
         TV and Radio
         <ul>
-            <li><span class="show">2015</span> <b>SWR2</b> (Germany), Radio feature on <i>What Does the Internet Sound Like?</i>, August 24</li>
-            <li><span class="show">2014</span> <b>Fox News</b>, TV segment on <i>Conversnitch</i>, April 23</li>
-            <li><span class="show">2009</span> <b>WNYC</b>, Radio feature on <i>Make History</i>, September 10</li>
-            <li><span>2009</span> <b>KMEX / Univision 34</b>, TV segment on <i>Trying the Hand of God</i>, April 2</li> 
-            <li><span class="show">2005</span> <b>WNBC</b>, TV segment on <i>Yellow Arrow</i>, July</li> 
-            <li><span>2005</span> <b>Weekend America</b>, Radio feature on <i>Yellow Arrow</i>, June</li> 
-            <li><span class="show">2004</span> <b>Rocketboom</b>, interview, December</li>             
-            <li><span>2004</span> <b>NY1</b>, TV segment on <i>Yellow Arrow</i>, October</li> 
+            {% for year in press['tv'] %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.channel }}</b>, segment on <i>{{ item.project }}</i></li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul> 
 
         Online
-        <ul>
-            <li><span class="show">2016</span> <b>Continent.</b>, "Acoustic Infrastructure," Summer</li>
-            <li><span class="show">2015</span> <b>Frontier</b>, "What Does Data Sound Like?," May</li>
-            <li><span class="show">2014</span> <b>Huffington Post UK</b>, "Conversnitch Surveillance Art Project Is Spying On You Via Lamps," May 25</li>        
-            <li><span>2014</span> <b>The Guardian</b>, "Conversnitch turns covert surveillance into an art form," May 16</li>        
-            <li><span>2014</span> <b>WIRED</b>, "An Eavesdropping Lamp That Livetweets Private Conversations," April 23</li>
-            <li><span>2014</span> <b>Motherboard</b>, "That Lamp Over There? It's Spying On You," April 23</li>
-            <li><span>2014</span> <b>Slate</b>, "This Light Bulb Is Listening," April 23</li>
-            <li><span>2014</span> <b>BuzzFeedNews</b>, "This Is What Facebook Sees When It Scans Your Face," April 21</li>
-            <li><span class="show">2013</span> <b>The Ascender</b>, "Digital Delta," November 13</li>
-            <li><span>2013</span> <b>Huffington Post</b>, "Quotidian Record: Artist Brian House Turns Tracking Data Into A Vinyl Music Experience," July 26</li>
-            <li><span>2013</span> <b>WIRED</b>, "Artist Turns a Year’s Worth of Tracking Data Into a Haunting Record," July 22<li>
-            <li><span>2013</span> <b>Creative Applications</b>, "Sonification and the (re-)performance of data – an interview with Brian House," July 12</li>
-            <li><span>2013</span> <b>Fast Company Design</b>, "Soundtrack Of Your Life: Get Into The Groove Of Tracking Your Every Move In Vinyl," July 8</li>
-            <li><span class="show">2012</span> <b>The Atlantic Cities</b>, "How One Man's Bicycle Commute Inspired a Strange Song," September 25</li>
-            <li><span>2012</span> <b>Creative Applications</b>, "Commute as Composition &mdash; Brian House's Forty-eight to Sixteen," September 24</li>            
-            <li><span>2012</span> <b>Create Digital Music</b>, "In Percussive Harmonies, A Record of a Year of Travel," August 8</li>
-            <li><span>2012</span> <b>The Verge</b>, "The Quotidian Record inscribes a year of location data onto a vinyl EP," July 5</li>
-            <li><span>2012</span> <b>Capital New York</b>, "Art and tech, aesthetics and hacking meet at Eyebeam's open studios," July 7</li>
-            <li><span>2012</span> <b>New-Aesthetic</b>, "Data Reenactment: Street View Video from a Stolen Phone," March 1</li>
-            <li><span>2012</span> <b>Flowing Data</b>, "Own and securely store your location with OpenPaths," January 26</li> 
-            <li><span class="show">2011</span> <b>Infoaesthetics</b>, "NYTLabs Magic Mirror Reveals News and Health Statistics," November 28</li>
-            <li><span>2011</span> <b>Engadget</b>, "New York Times' magic mirror helps you get dressed, puts the 'wall' in 'paywall'," September 5</li>
-            <li><span>2011</span> <b>Popular Science</b>, "NY Times' Kinect-Assisted Mirror Delivers News, Coupons and Fashion Tips As You Brush Your Teeth," September 2</li>
-            <li><span>2011</span> <b>Slashdot</b>, "NYT Working On 'Magic Mirror' For Bathroom Surfing," September 2</li>
-            <li><span>2011</span> <b>Nieman Journalism Lab</b>, "Mirror, mirror: The New York Times wants to serve you info as you're brushing your teeth," August 31</li>
-            <li><span>2011</span> <b>Flowing Data</b>, "Data Reenactment via Stolen iPhone," July 21</li>
-            <li><span>2011</span> <b>Gizmodo</b>, "Following a Stolen iPhone's Path in Google's Getaway Car," July 19</li>           
-            <li><span>2011</span> <b>Engadget</b>, "OpenPaths lets you visualize your iPhone location data, donate it to science," May 11</li>
-            <li><span class="show">2010</span> <b>Rhizome.org</b>, Post on <i>Trying the Hand of God</i>, July 2</li>             
-            <li><span>2010</span> <b>Locally Toned</b>, Interview and post on <i>Pull My Ears</i>, June 18</li>                          
-            <li><span>2010</span> <b>The Huffington Post</b>, "How Art Museums Are Striving to Stay Relevant for a New Generation," March 28</li>
-            <li><span class="show">2009</span> <b>Information Aesthetics</b>, "Make History: Aggregating Experiences," September 15</li>
-            <li><span>2009</span> <b>Core77</b>, "Make History Gathers Stories Over Streetviews," September 11</li>
-            <li><span>2009</span> <b>NBC Los Angeles</b>, "MOCA Becomes a Mini Golf Course. Plus: Donuts," March 5</li> 
-            <li><span>2009</span> <b>Los Angeles Times</b>, "Art Meets Sport at MOCA," February 23</li> 
-            <li><span class="show">2006</span> <b>We-Make-Money-Not-Art</b>, Post on <i>5 'til 12</i>, January 16</li>            
-            <li><span class="show">2005</span> <b>We-Make-Money-Not-Art</b>, Post on <i>Placing Voices</i>, April 5</li>                      
+        <ul> 
+            {% for year in press['online'] %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}"{{ item.title }},"{% endif %} {{ item.issue }} </li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 

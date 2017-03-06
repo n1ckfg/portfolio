@@ -579,3 +579,208 @@ press:
       - publication: G&ouml;teborgs-Posten
         title: Art and Technology Go Hand in Hand
         issue: December 19
+
+  tv:
+    - 2015:
+      - channel: SWR2 (DE)
+        project: What Does the Internet Sound Like?
+        date: August 24
+    
+    - 2014:
+      - channel: Fox News
+        project: Conversnitch
+        date: April 23
+
+    - 2013:
+      - channel: WGXC
+        project: Change Ringing
+        date: August
+
+    - 2009:
+      - channel: WNYC
+        project: Make History
+        date: September 10
+
+      - channel: KMEX / Univision 34
+        project: Trying the Hand of God
+        date: April 2
+
+    - 2005:
+      - channel: WNBC
+        project: Yellow Arrow
+        date: July
+
+      - channel: Weekend America
+        project: Yellow Arrow
+        date: June
+
+    - 2004:
+      - channel: Rocketboom
+        project: Knifeandfork
+        date: December
+
+      - channel: NY1
+        project: Yellow Arrow
+        date: October
+
+  online:
+
+    - 2016:
+      - publication: Continent.
+        title: Acoustic Infrastructure
+        issue: Summer 
+
+    - 2015:
+      - publication: Frontier
+        title: What Does Data Sound Like?
+        issue: May 
+
+    - 2014:
+      - publication: Huffington Post UK
+        title: Conversnitch Surveillance Art Project Is Spying On You Via Lamps
+        issue: May 25         
+
+      - publication: The Guardian
+        title: Conversnitch turns covert surveillance into an art form
+        issue: May 16         
+
+      - publication: WIRED
+        title: An Eavesdropping Lamp That Livetweets Private Conversations
+        issue: April 23 
+
+      - publication: Motherboard
+        title: That Lamp Over There? It's Spying On You
+        issue: April 23 
+
+      - publication: Slate
+        title: This Light Bulb Is Listening
+        issue: April 23 
+
+      - publication: BuzzFeedNews
+        title: This Is What Facebook Sees When It Scans Your Face
+        issue: April 21 
+
+    - 2013:
+      - publication: The Ascender
+        title: Digital Delta
+        issue: November 13 
+
+      - publication: Huffington Post
+        title: "Quotidian Record: Artist Brian House Turns Tracking Data Into A Vinyl Music Experience"
+        issue: July 26 
+
+      - publication: WIRED
+        title: Artist Turns a Year’s Worth of Tracking Data Into a Haunting Record
+        issue: July 22 
+
+      - publication: Creative Applications
+        title: Sonification and the (re-)performance of data – an interview with Brian House
+        issue: July 12 
+
+      - publication: Fast Company Design
+        title: "Soundtrack Of Your Life: Get Into The Groove Of Tracking Your Every Move In Vinyl"
+        issue: July 8 
+
+    - 2012:
+      - publication: The Atlantic Cities
+        title: How One Man's Bicycle Commute Inspired a Strange Song
+        issue: September 25 
+
+      - publication: Creative Applications
+        title: Commute as Composition &mdash; Brian House's Forty-eight to Sixteen
+        issue: September 24             
+
+      - publication: Create Digital Music
+        title: In Percussive Harmonies, A Record of a Year of Travel
+        issue: August 8 
+
+      - publication: The Verge
+        title: The Quotidian Record inscribes a year of location data onto a vinyl EP
+        issue: July 5 
+
+      - publication: Capital New York
+        title: Art and tech, aesthetics and hacking meet at Eyebeam's open studios
+        issue: July 7 
+
+      - publication: New-Aesthetic
+        title: "Data Reenactment: Street View Video from a Stolen Phone"
+        issue: March 1 
+
+      - publication: Flowing Data
+        title: Own and securely store your location with OpenPaths
+        issue: January 26  
+
+    - 2011:
+      - publication: Infoaesthetics
+        title: NYTLabs Magic Mirror Reveals News and Health Statistics
+        issue: November 28 
+
+      - publication: Engadget
+        title: New York Times' magic mirror helps you get dressed, puts the 'wall' in 'paywall'
+        issue: September 5 
+
+      - publication: Popular Science
+        title: NY Times' Kinect-Assisted Mirror Delivers News, Coupons and Fashion Tips As You Brush Your Teeth
+        issue: September 2 
+
+      - publication: Slashdot
+        title: NYT Working On 'Magic Mirror' For Bathroom Surfing
+        issue: September 2 
+
+      - publication: Nieman Journalism Lab
+        title: "Mirror, mirror: The New York Times wants to serve you info as you're brushing your teeth"
+        issue: August 31 
+
+      - publication: Flowing Data
+        title: Data Reenactment via Stolen iPhone
+        issue: July 21 
+
+      - publication: Gizmodo
+        title: Following a Stolen iPhone's Path in Google's Getaway Car
+        issue: July 19            
+
+      - publication: Engadget
+        title: OpenPaths lets you visualize your iPhone location data, donate it to science
+        issue: May 11 
+
+    - 2010:
+      - publication: Rhizome.org
+        title: Trying the Hand of God
+        issue: July 2
+
+      - publication: Locally Toned
+        title: Pull My Ears
+        issue: June 18                           
+
+      - publication: The Huffington Post
+        title: How Art Museums Are Striving to Stay Relevant for a New Generation
+        issue: March 28 
+
+    - 2009:
+      - publication: Information Aesthetics
+        title: "Make History: Aggregating Experiences"
+        issue: September 15 
+
+      - publication: Core77
+        title: Make History Gathers Stories Over Streetviews
+        issue: September 11 
+
+      - publication: NBC Los Angeles
+        title: "MOCA Becomes a Mini Golf Course. Plus: Donuts"
+        issue: March 5  
+
+      - publication: Los Angeles Times
+        title: Art Meets Sport at MOCA
+        issue: February 23  
+
+    - 2006:
+      - publication: We-Make-Money-Not-Art
+        title: 5 'til 12
+        issue: January 16             
+
+    - 2005:
+      - publication: We-Make-Money-Not-Art
+        title: Placing Voices
+        issue: April 5             
+
+
