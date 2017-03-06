@@ -1,0 +1,581 @@
+education:
+  
+  - year: 2018
+    degree: PhD, Computer Music and Multimedia
+    institution: Brown University
+    addendum: "advisors: Wendy Chun and Todd Winkler"
+  
+  - year: 2016
+    degree: MA, Modern Culture and Media
+    institution: Brown University
+    addendum: "advisor: Wendy Chun"
+  
+  - year: 2006
+    degree: MSc, Art &amp; Technology
+    institution: Chalmers University of Technology
+    addendum: "advisor: Mats Nordahl"
+  
+  - year: 2002
+    degree: BA, Computer Science
+    institution: Columbia University
+    addendum: "advisor: John Kender"
+
+
+solo:
+
+  - 2012:
+    - title: <i>Forty-eight to Sixteen</i>
+      venue: Eyebeam
+      city: New York
+
+    - title: <i>Quotidian Record / Stranger Visions</i> (w/ Heather Dewey-Hagborg)
+      venue: Eyebeam
+      city: New York
+
+  - 2009:
+    - title: <i>MOCA Grand Prix</i> (w/ Sue Huang)
+      venue: MOCA
+      city: Los Angeles
+
+    - title: <i>Trying the Hand of God</i> (w/ Sue Huang)
+      venue: MOCA
+      city: Los Angeles
+
+    - title: <i>Golf and Donuts</i> (w/ Sue Huang)
+      venue: MOCA
+      city: Los Angeles
+
+  - 2006:
+    - title: <i>5 'til 12</i> (w/ Sue Huang)
+      venue: Beall Center for Art and Technology
+      city: Irvine
+
+  - 2004:
+    - title: <i>The Case at Kulturhuset</i> (w/ Sue Huang)
+      venue: Stockholms Kulturhuset
+      city: Stockholm
+
+
+group:
+  - 2017:
+    - title: Storm Warning
+      venue: Vicki Myhren Gallery / University of Denver
+      city: Denver
+
+    - title: re|ACT Arts & Environment Symposium
+      venue: Granoff Center
+      city: Providence
+
+    - title: Ever Elusive
+      venue: Transmediale
+      city: Berlin
+
+  - 2016:
+    - title: The Spaces We're In
+      venue: NEoN Digital Arts
+      city: Dundee, Scotland
+
+    - title: Reality Under Surveillance
+      venue: Speculum Artium
+      city: Trbovlje, Slovenia
+
+    - title: Acoustic Infrastructures
+      venue: Eyebeam
+      city: New York
+
+    - title: Atmospheres
+      venue: Granoff Center
+      city: Providence
+
+  - 2015:
+    - title: Take Karaoke / Fight Logic
+      venue: Cohen Gallery
+      city: Providence
+
+    - title: Infosphere
+      venue: ZKM | Museum of Contemporary Art
+      city: Karlsruhe
+
+    - title: Eyebeam in Objects
+      venue: Upfor Gallery
+      city: Portland
+
+    - title: Captive Portal
+      venue: Center for Contemporary Art
+      city: Tel Aviv
+
+    - title: New Aesthetic?
+      venue: Queensland University of Technology
+      city: Brisbane
+
+    - title: Lifelogging
+      venue: Science Gallery
+      city: Dublin
+
+    - title: Ampersand
+      venue: WMBR / MIT List Visual Arts Center
+      city: Cambridge
+
+    - title: From Field Recording to Data Sonification in Late Capitalism
+      venue: Labor Neunzehn
+      city: Berlin
+
+    - title: Wetland
+      venue: Schuylkill Center
+      city: Philadelphia
+
+  - 2014:
+    - title: Data &amp; Society
+      venue: Rubin Museum
+      city: New York
+
+    - title: Pale Firework
+      venue: Gelman Gallery, RISD Museum
+      city: Providence
+
+    - title:   
+      venue: NIME
+      city: London
+
+    - title: Imprint of the City
+      venue: Issue Project Room
+      city: New York
+
+    - title: Print Screen
+      venue: Mediatheque
+      city: Holon, Israel
+
+    - title: "Buildering: Misbehaving The City"
+      venue: Contemporary Arts Center
+      city: Cincinnati
+
+    - title: Biennial Symposium
+      venue: Ammerman Center for Arts and Technology
+      city: New London
+        
+  - 2013:
+    - title: Total Recall
+      venue: Ars Electronica Festival
+      city: Linz
+     
+    - title: "Neuromast: Certain Uncertainty and Contemporary Art"
+      venue: Franklin Street Works
+      city: Stamford
+
+    - title: Under the Influence
+      venue: Gelman Gallery, RISD Museum
+      city: Providence
+
+    - title: PRISM Breakup
+      venue: Eyebeam
+      city: New York
+
+    - title: Where are We Now?
+      venue: The Collection Lincoln &amp; Usher Gallery
+      city: Lincolnshire
+
+    - title: iNTERFACES
+      venue: Black &amp; White Festival
+      city: Porto
+
+    - title:   
+      venue: Megapolis Audio Art Festival
+      city: New York
+          
+    - title: Quiet City Presents
+      venue: Secret Theatre
+      city: New York
+                
+    - title:
+      venue: New York City Electroacoustic Music Festival
+      city: New York
+
+    - title: "Gallery Nosco: Binary"
+      venue: Largo Das Artes
+      city: Rio de Janeiro
+
+    - title: Habits of Living
+      venue: Granoff Center for the Creative Arts
+      city: Providence
+                
+    - title: Annual Showcase
+      venue: Eyebeam
+      city: New York
+
+  - 2012:
+    - title: Infinitely Poignant Future Pastness
+      venue: Brown University
+      city: Providence
+
+    - title:   
+      venue: Conflux Festival
+      city: New York
+
+    - title: "DataVis: Information as Art"
+      venue: Beall Center for Art and Technology
+      city: Irvine
+
+    - title:   
+      venue: urbanoFILM
+      city: Stuttgart
+
+  - 2011:
+    - title: Klein Kunst Party
+      venue: Platoon Kunsthalle
+      city: Seoul
+
+    - title: Poetic Urbanisms
+      venue: Arts @ 29 Garden
+      city: Cambridge
+
+  - 2010:
+    - title: <i>Relay Drawing</i> (w/ Sue Huang)
+      venue: Los Angeles Contemporary Exhibitions
+      city: Los Angeles
+        
+    - title: <i>Live Footage</i> (w/ Topu Lyo and Mike Thies)
+      venue: Monkeytown
+      city: New York
+
+    - title:   
+      venue: Megapolis Audio Art Festival
+      city: Baltimore
+ 
+  - 2008:
+    - title: Rhizome Commissions
+      venue: New Museum of Contemporary Art
+      city: New York
+ 
+    - title: Conflux Festival
+      venue: Center for Architecture
+      city: New York
+
+    - title: FILMOBILE
+      venue: London Gallery West
+      city: London
+     
+    - title: Design and the Elastic Mind
+      venue: MoMA
+      city: New York
+ 
+  - 2007:
+    - title: Arte.Mov
+      venue: Pal&aacute;cio das Artes
+      city: Belo Horizonte
+   
+    - title: Conflux Festival
+      venue: UnionDocs
+      city: Brooklyn
+
+  - 2006:
+    - title:   
+      venue: S&oacute;nar
+      city: Barcelona
+
+    - title: Zero One Festival
+      venue: ISEA
+      city: San Jose
+
+    - title: Conflux Festival
+      venue: McCaig-Welles Gallery
+      city: Brooklyn
+
+  - 2005:
+    - title: Glowlab Open Lab
+      venue: Art Interactive
+      city: Cambridge
+     
+    - title: Loving Berlin Festival
+      venue: Deutsches Architektur Zentrum
+      city: Berlin
+
+    - title: Certain Movement
+      venue: The Tank
+      city: New York
+ 
+  - 2004:
+    - title: Conflux Festival
+      venue: Participant Inc
+      city: New York
+ 
+    - title: Art and Technology
+      venue: Stadsbiblioteket
+      city: G&ouml;teborg
+ 
+
+awards:
+
+  - 2016:
+    - kind: Commission
+      venue: NEoN Digital Arts
+      location: Dundee, Scotland
+
+    - kind: Residency
+      venue: Rocky Mountain Biological Laboratory
+      location: Colorado
+
+    - kind: Residency
+      venue: MASS MoCA
+      location: Western Massachusetts
+    
+    - kind: Commission
+      venue: Eyebeam
+      location: New York
+
+  - 2015:
+    - kind: Fellowship
+      venue: Tow Center for Digital Journalism
+      location: Columbia University
+
+  - 2014:
+    - kind: Commission
+      venue: Contemporary Art Center
+      location: Cincinnati
+
+  - 2013:
+    - kind: Grant
+      venue: Creative Arts Council
+      location: Brown University
+
+    - kind: Fellowship
+      venue: Open Graduate Education
+      location: Brown University
+
+    - kind: Residency
+      venue: Free103point9 Wave Farm
+      location: New York State
+
+  - 2012:
+    - kind: Fellowship
+      venue: Howard and Jan Swearer Foundation
+      location: Brown University
+
+    - kind: Residency
+      venue: Eyebeam, 
+      location: New York
+
+  - 2009:
+    - kind: Residency and Commission
+      venue: MOCA, 
+      location: Los Angeles
+
+  - 2007:
+    - kind: Commission, 
+      venue: Rhizome at the New Museum
+      location: New York
+
+  - 2006:
+    - kind: Commission, 
+      venue: Beall Center for Art and Technology
+      location: Irvine
+
+  - 2004:
+    - kind: Commission
+      venue: Stockholms Kulturhuset
+      location: Stockholm
+
+  - 2003:
+    - kind: Residency
+      venue: Studio for Electro-Instrumental Music (STEIM)
+      location: Amsterdam
+
+
+critical:
+
+  - 2016:
+    - author: Gemma Arg&uuml;ello Manressa and Sondra Bacharach
+      article: Digital Street Art
+      book: Collaborative Art in the Twenty-First Century
+      editors: Sondra Bacharach, Siv B. Fjærestad, Jeremy Neil Booth
+      volume:
+      publisher: Routledge
+
+    - author: Eve Kalyva
+      article: Where are my keys? The now of critique in a plurality of voices
+      book: Notebook for Art, Theory, and Related Zones
+      volume: volume 21
+      publisher:
+
+    - author: Johanna Linsley
+      article: Possible Public and Private Narratives
+      book: Contemporary Theatre Review
+      volume: intervention for volume 26
+      publisher:
+
+    - author: Dan Ehrenfeld
+      article: The Cloud and the Mine
+      book: "Kairos: A Journal of Rhetoric, Technology, and Pedagogy"
+      volume: volume 21
+      publisher:
+
+  - 2015:
+    - author: Ulrik Ekman, Jay David Bolter, Lily Diaz, Maria Engberg, Morten Søndergaard
+      book: Ubiquitous Computing, Complexity, and Culture
+      volume: 
+      publisher: Routledge
+
+    - author: Nassim JafariNaimi
+      article: MRx as a participatory platform
+      book: Digital Creativity
+      volume: volume 26
+      publisher:
+
+  - 2014:
+    - author: Cathy Cox
+      article: "Interactive Technologies in Music Composition: Towards a Theory of Interactivity"
+      book: "Music Research: New Directions for a New Century"
+      publisher: Cambridge Scholars Publishing
+
+  - 2013:
+    - author: Malcolm McCullough
+      book: "Ambient Commons: Attention in the Age of Embodied Information"
+      publisher: MIT Press
+
+  - 2012:
+    - author: Grant Kester
+      article: "Galatea's Gaze: Ethics, Spectacle, and Participation"
+      book: "Engagement Party: Social Practice at MOCA 2008-2012"
+      editor: Aandrea Stang
+      publisher: The Museum of Contemporary Art
+
+    - author:  Zachary Kaplan
+      article: Knifeandfork
+      book: "Engagement Party: Social Practice at MOCA 2008-2012"
+      editor: Aandrea Stang
+      publisher: The Museum of Contemporary Art
+
+  - 2011:
+    - author: Mark Shepard
+      article: Toward the Sentient City
+      book: "Sentient City: Ubiquitous Computing, Architecture, and the Future of Urban Space"
+      editor: Mark Shepard
+      publisher: The MIT Press
+
+    - author: Eric Gordon, Adriana de Souza e Silva
+      book: "Net Locality: Why Location Matters in a Networked World"
+      publisher: Wiley
+
+  - 2010:
+    - author: Mattia Casalegno
+      article: "The Research of Knifeandfork: In Between Technology and Participation" 
+      book: "Digicult: Digimag"
+      volume: issue 52
+
+    - author: Rita Raley
+      article: "Walk This Way: Mobile Narrative as Composed Experience" 
+      book: Beyond the Screen
+      editors: Jörgen Schäfer, Peter Gendolla
+      publisher: Transcript Verlag
+
+    - author: Britta Timm Knudsen
+      book: "Re-investing Authenticity: Tourism, Place and Emotions"
+      publisher: Channel View
+
+  - 2009:
+    - author: Graham Coulter-Smith
+      book: Deconstructing Installation Art
+      publisher: Brumaria
+
+  - 2008:
+    - author: Christine Nippe
+      article: City Representations in Net Art
+      book: The Electronic City
+      editors: Ulrike Bucher, Maros Finka
+      publisher: Berliner Wissenschafts-Verlag
+
+    - author: Paola Antonelli
+      book: Design and the Elastic Mind
+      publisher: The Museum of Modern Art      
+
+
+press:
+
+  print:
+
+    - 2015:
+      - publication: ARCADE
+        title: Data as Mirror
+        issue: Spring
+
+    - 2013:
+      - publication: Neural.it
+        title: Quotidian Record
+        issue: issue 46, Autumn
+
+      - publication: Chuan Art Studio
+        title: 
+        issue: Sense of Hearing
+
+    - 2011:
+      - publication: TIME Magazine
+        title: The 50 Best Inventions of the Year
+        issue: November 28
+
+      - publication: Harvard Gazette
+        title: Poetic Urbanisms
+        issue: February 15
+
+    - 2010:
+      - publication: The New York Times
+        title: In Your Palm, Memories of Horror and Valor
+        issue: September 12
+
+    - 2008:
+      - publication: PRAXIS
+        title: MAAP-making
+        issue: "10: Urban Matters"
+
+    - 2006:        
+      - publication: SPIN
+        title: Yellow Arrow &mdash; Capitol of Punk
+        issue: May
+
+      - publication: Taiwan Daily News
+        title: Yellow Arrow
+        issue: April
+
+      - publication: The New York Times
+        title: Making Connections, Here and Now
+        issue: January 25
+
+    - 2005:
+      - publication: NY Arts Magazine
+        title: "What the Situationists left behind: Psychogeography" 
+        issue: October
+
+      - publication: The Washington Post
+        title: Targeting the 'Art' Around Every Corner
+        issue: July 2
+
+      - publication: Berliner Zeitung
+        title: Make a Connection
+        issue: June
+
+      - publication: The Boston Globe
+        title: The Art of Mobile Technology
+        issue: April 18
+
+      - publication: Newsweek
+        title: "PUBLIC ART: House Haiku? Just dial"
+        issue: March 14
+
+      - publication: Metropolis
+        title: Sticker Talk
+        issue: February
+
+    - 2004:
+      - publication: WIRED Magazine
+        title: Text in the City
+        issue: September
+
+      - publication: Dagens Nyheter
+        title: Visitors solve 'The Case at Kulturhust'
+        issue: April 27
+
+      - publication: Svenska Dagbladet
+        title: The Case at Kulturhuset
+        issue: April 15
+
+      - publication: G&ouml;teborgs-Posten
+        title: Art and Technology Go Hand in Hand
+        issue: December 19

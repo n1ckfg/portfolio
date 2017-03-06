@@ -1,10 +1,9 @@
-- max 10 images + video
-- stats
+- max 10 images + video + description + credits
 
 ### bugs
 
 - lost a question mark
-
+- fix little Cv
 
 ### features
 
