@@ -112,6 +112,16 @@ div {
             cursor: pointer;
         }      
 
+#audio {
+    background-color: #eee; 
+    padding: 5px; 
+    padding-bottom: 0px;
+}
+
+    #audio iframe {
+        height: 20px;
+    }
+
 .about {
     margin-left: 240px;
 }
