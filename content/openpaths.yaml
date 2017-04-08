@@ -4,7 +4,7 @@ year: 2011
 date:
 location:
 video:
-aspect:
+aspect: 0.5625
 credits:
   - Concept: [Brian House, Jer Thorp, Jake Porway, Matt Boggie]
   - Mobile development: [Peter Ng, Sagar Hatekar]

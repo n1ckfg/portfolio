@@ -2,7 +2,7 @@
 
 {% set num_media = (images|length - 1) %}
 {%- set first_image = 0 -%}
-{%- if aspect -%}
+{%- if video or youtube -%}
     {%- set num_media = num_media + 1 -%}
     {%- set first_image = 1 -%}
 {%- endif -%}
@@ -17,6 +17,7 @@
         overflow: hidden; 
         max-width: 100%;
         margin: 0;
+        background-color: white;
     }
     .embed-container iframe, .embed-container object, .embed-container embed { 
         position: absolute; 
@@ -45,7 +46,13 @@ var num_media = {{ num_media }};
         {% endif %}
         {% for image in images %}
             {% if not loop.first %}
+                {% if not video and not youtube and loop.index0 == 1 %}
+                <div class="embed-container" id="media_{{ loop.index0 - 1 + first_image }}">
+                    <img style="display: block;" src="{{ image[0] }}" alt="Brian House - {{ title }}" onClick="displayMedia('{{ (loop.index0 - 1 + first_image + 1) % num_media }}'); return false;" />
+                </div>
+                {% else %}
                 <img id="media_{{ loop.index0 - 1 + first_image }}" src="{{ image[0] }}" alt="Brian House - {{ title }}" onClick="displayMedia('{{ (loop.index0 - 1 + first_image + 1) % num_media }}'); return false;" />
+                {% endif %}
             {% endif %}
         {% endfor %}
     </div>

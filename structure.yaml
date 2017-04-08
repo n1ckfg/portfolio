@@ -8,8 +8,9 @@ www:
     words:
     works:
         - oh_dear_me
-        - quotidian_record
+        - animas
         - a_question_of_style
+        - quotidian_record
         - arrangement_for_building
         - fight_logic
         - conversnitch
@@ -24,6 +25,6 @@ www:
         - eternal_portraits
         - youll_just_have_to_take_my_word_for_it
         - change_ringing
-        - the_weather_or_your_memories
+        # - the_weather_or_your_memories
         - openpaths
         - yellow_arrow
