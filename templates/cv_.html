@@ -83,7 +83,7 @@
             {% for year in critical %}
                 {% for year, items in year.items() %}
                     {% for item in items %}
-                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}"{{ item.article }}," in {% endif %}<i><b>{{ item.book }}</b></i>, {% if item.editors %}eds. {{ item.editors }}, {% endif %}{% if item.editor %}ed. {{ item.editor }}, {% endif %}{% if item.volume %}{{ item.volume }}{% if item.publisher %}, {% endif %}{% endif %}{% if item.publisher %}{{ item.publisher }}{% endif %}</li>
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>, {% if item.editors %}eds. {{ item.editors }}, {% endif %}{% if item.editor %}ed. {{ item.editor }}, {% endif %}{% if item.volume %}{{ item.volume }}{% if item.publisher %}, {% endif %}{% endif %}{% if item.publisher %}{{ item.publisher }}{% endif %}</li>
                     {% endfor %}
                 {% endfor %}
             {% endfor %}                                    
@@ -100,7 +100,7 @@
             {% for year in press['print'] %}
                 {% for year, items in year.items() %}
                     {% for item in items %}
-                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}"{{ item.title }},"{% endif %} {{ item.issue }} </li>
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} {{ item.issue }} </li>
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
@@ -122,7 +122,7 @@
             {% for year in press['online'] %}
                 {% for year, items in year.items() %}
                     {% for item in items %}
-                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}"{{ item.title }},"{% endif %} {{ item.issue }} </li>
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} {{ item.issue }} </li>
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
@@ -133,52 +133,13 @@
         INVITED TALKS + CRITIQUES
         <hr />
         <ul>
-            <li><span class="show">2016</span> <b>Washington University</b>, workshop and artist talk</li>
-            <li><span>2016</span> <b>Youngstown State University</b>, workshop and artist talk</li>
-            <li><span class="show">2015</span> <b>UnionDocs</b>, "Eavesdroppers, Ventriloquists and Ghosts," artist talk</li>
-            <li><span>2015</span> <b>AV Synth Workshop</b> (Dartmouth), artist talk with Lucia Monge: "Shake Hands like Leaves"</li>
-            <li><span>2015</span> <b>RISD</b>, tool() Symposium, panel</li>
-            <li><span>2015</span> <b>Oberlin College</b>, Playfest, artist talk</li>
-            <li><span>2015</span> <b>Brown University</b>, INTERRUPT 3 conference, artist talk</li>
-            <li><span>2015</span> <b>BRIC Arts</b>, artist talk: "Google Maps and artistic practice"</li>
-            <li><span class="show">2014</span> <b>Smith</b>, visiting critic</li>
-            <li><span>2014</span> <b>Leaders in Software Art</b>, NYU Poly, artist talk, 2014</li>
-            <li><span>2014</span> <b>UnionDocs</b>, "Brian House &amp; Nick Felton: Automatic Data, Personal Documentary," artist talk</li>
-            <li><span>2014</span> <b>Better World by Design</b>, Brown University/RISD, artist talk: "Making Design Weird"</li>
-            <li><span>2014</span> <b>Eyeo Festival</b>, Walker Museum of Art, artist talk: "Quotidian Rhythms and Political Frictions"</li>
-            <li><span class="show">2013</span> <b>PRISM Breakup Exhibition, Eyebeam</b>, talk: "OpenPaths: Location, encryption, and participatory sensing"<li>
-            <li><span>2013</span> <b>School for Poetic Computation</b>, artist talk<li>
-            <li><span>2013</span> <b>NYU ITP</b>, artist talk<li>
-            <li><span>2013</span> <b>SUNY Purchase</b>, artist talk: "Knifeandfork and Collective Practice"<li>
-            <li><span>2013</span> <b>Eyebeam</b>, "Poetics of Computer Language," panel<li>
-            <li><span class="show">2012</span> <b>Internet of Things Meetup</b>, "OpenPaths: A new approach to aggregating personal geographic data"</li>
-            <li><span>2012</span> <b>Harvard GSD</b>, guest critic
-            <li><span>2012</span> <b>Columbia GSAPP</b>, guest critic
-            <li><span class="show">2011</span> <b>Tribeca Cinemas</b>, Video Art and Experimental Film Festival, panel</li>
-            <li><span>2011</span> <b>Google</b>, talk: "OpenPaths: A new approach to aggregating personal geographic data"</li>
-            <li><span>2011</span> <b>Conflux Festival</b>, artist talk: "From Psychogeography to Rhythmanalysis"</li>
-            <li><span>2011</span> <b>OpenPlans</b>, lecture on behavior mining</li>
-            <li><span>2011</span> <b>Harvard GSD</b>, artist talk: "Poetic Urbanisms"</li> 
-            <li><span>2011</span> <b>Hunter College</b>, artist talk: "From Psychogeography to Rhythmanalysis"</li>            
-            <li><span class="show">2010</span> <b>UCSB</b>, round-table talk on digital humanities</li> 
-            <li><span>2010</span> <b>Parsons D+T</b>, guest critic</li>
-            <li><span class="show">2008</span> <b>RISD</b>, guest critic and lecture: "Subversive Mobile Storytelling"</li> 
-            <li><span>2008</span> <b>MIT</b>, participant: "Writing Cities" conference with Richard Sennett</li> 
-            <li><span>2008</span> <b>Dorkbot NYC</b>, presented <i>TXTML</i></li>             
-            <li><span>2008</span> <b>University of Westminster (UK)</b>, artist talk: "Subversive Mobile Storytelling"</li> 
-            <li><span>2008</span> <b>SUNY Buffalo</b>, artist talk: "Nonlinear Narrative in Urban Space"</li> 
-            <li><span class="show">2007</span> <b>University of Southern Denmark</b>, invited keynote: "The Mixed-Reality City: Narrative, Play &amp; Learning in Multimodal Environments"</li> 
-            <li><span>2007</span> <b>Arte.Mov (Brazil)</b>, artist talk: "Subversive Mobile Storytelling"</li>
-            <li><span>2007</span> <b>NYU ITP</b>, guest critic</li>
-            <li><span class="show">2006</span> <b>MICA</b>, artist talk: "Interactivity and Nonlinear Narrative"</li> 
-            <li><span>2006</span> <b>Yahoo!</b>, guest artist for Time Capsule project</li> 
-            <li><span>2006</span> <b>UC Irvine</b>, artist talk: "Interactivity and Nonlinear Narrative"</li> 
-            <li><span>2006</span> <b>UCLA Design | Media Arts</b>, guest lecture: "Mobile Social Software"</li> 
-            <li><span class="show">2005</span> <b>Harvard GSD</b>, artist talk: "Borders/Edges/Divides," 2005</li> 
-            <li><span>2005</span> <b>IT University of Copenhagen</b>, Living Lab Conference panelist, 2005</li> 
-            <li><span>2005</span> <b>Dorkbot NYC</b>, presented <i>Yellow Arrow</i></li>                
-            <li><span>2005</span> <b>NYU ITP</b>, guest critic</li>                
-            <li><span class="show">2004</span> <b>MIT Department of Urban Studies and Planning</b>, presented <i>Yellow Arrow</i></li> 
+            {% for year in talks %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}        
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.location }}</b>, {{ item.title }}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul> 
     </div> 
 

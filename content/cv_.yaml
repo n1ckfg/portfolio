@@ -492,6 +492,11 @@ press:
 
   print:
 
+    - 2017:
+      - publication: The Denver Post
+        title: At DU, a climate change exhibit that's thoughtful, shocking and sometimes even humorous
+        issue: March 16
+
     - 2015:
       - publication: ARCADE
         title: Data as Mirror
@@ -783,4 +788,153 @@ press:
         title: Placing Voices
         issue: April 5             
 
+
+talks:
+
+  - 2016:
+    - location: Youngstown State University
+      title: workshop and artist talk
+
+  - 2015:
+    - location: UnionDocs
+      title: "&ldquo;Eavesdroppers, Ventriloquists and Ghosts,&rdquo; artist talk"
+
+    - location: AV Synth Workshop (Dartmouth)
+      title: "&ldquo;Shake Hands like Leaves,&rdquo; artist talk with Lucia Monge"
+
+    - location: RISD
+      title: tool() Symposium, panel
+
+    - location: Oberlin College
+      title: Playfest, artist talk
+
+    - location: Brown University
+      title: INTERRUPT 3 conference, artist talk
+
+    - location: BRIC Arts
+      title: "&ldquo;Google Maps and artistic practice,&rdquo; artist talk"
+
+  - 2014:
+    - location: Smith
+      title: visiting critic
+
+    - location: Leaders in Software Art
+      title: NYU Poly, artist talk, 2014
+
+    - location: UnionDocs
+      title: "&ldquo;Brian House &amp; Nick Felton: Automatic Data, Personal Documentary,&rdquo; artist talk"
+
+    - location: Better World by Design
+      title: "&ldquo;Making Design Weird&rdquo;"
+
+    - location: Eyeo Festival, Walker Museum of Art
+      title: "&ldquo;Quotidian Rhythms and Political Frictions&rdquo;"
+
+  - 2013:
+    - location: PRISM Breakup Exhibition, Eyebeam
+      title: "&ldquo;OpenPaths: Location, encryption, and participatory sensing&rdquo;"
+
+    - location: School for Poetic Computation
+      title: artist talk
+
+    - location: NYU ITP
+      title: artist talk
+
+    - location: SUNY Purchase
+      title: "&ldquo;Knifeandfork and Collective Practice&rdquo;"
+
+    - location: Eyebeam
+      title: "&ldquo;Poetics of Computer Language,&rdquo; panel"
+
+  - 2012:
+    - location: Internet of Things Meetup
+      title: "&ldquo;OpenPaths: A new approach to aggregating personal geographic data&rdquo;"
+
+    - location: Harvard GSD
+      title: guest critic
+
+    - location: Columbia GSAPP
+      title: guest critic
+
+  - 2011:
+    - location: Tribeca Cinemas
+      title: Video Art and Experimental Film Festival, panel
+
+    - location: Google
+      title: "&ldquo;OpenPaths: A new approach to aggregating personal geographic data&rdquo;"
+
+    - location: Conflux Festival
+      title: "&ldquo;From Psychogeography to Rhythmanalysis,&rdquo; artist talk"
+
+    - location: OpenPlans
+      title: lecture on behavior mining
+
+    - location: Harvard GSD
+      title: "&ldquo;Poetic Urbanisms,&rdquo; artist talk"
+
+    - location: Hunter College
+      title: "&ldquo;From Psychogeography to Rhythmanalysis,&rdquo; artist talk"
+
+  - 2010:
+    - location: UCSB
+      title: round-table talk on digital humanities
+
+    - location: Parsons D+T
+      title: guest critic
+
+  - 2008:
+      - location: RISD
+        title: "&ldquo;Subversive Mobile Storytelling,&rdquo; workshop"
+
+      - location: MIT
+        title: "&ldquo;Writing Cities&rdquo; conference with Richard Sennett"
+
+      - location: Dorkbot NYC
+        title: presented <i>TXTML</i>
+
+      - location: University of Westminster (UK)
+        title: "&ldquo;Subversive Mobile Storytelling,&rdquo; artist talk"
+
+      - location: SUNY Buffalo
+        title: "&ldquo;Nonlinear Narrative in Urban Space,&rdquo; artist talk"
+
+  - 2007:
+      - location: University of Southern Denmark
+        title: "&ldquo;The Mixed-Reality City: Narrative, Play &amp; Learning in Multimodal Environments,&rdquo; keynote"
+
+      - location: Arte.Mov (Brazil)
+        title: "&ldquo;Subversive Mobile Storytelling,&rdquo; artist talk"
+
+      - location: NYU ITP
+        title: guest critic
+
+  - 2006:
+      - location: MICA
+        title: "&ldquo;Interactivity and Nonlinear Narrative,&rdquo; artist talk"
+
+      - location: Yahoo!
+        title: guest artist for Time Capsule project
+
+      - location: UC Irvine
+        title: "&ldquo;Interactivity and Nonlinear Narrative,&rdquo; artist talk"
+
+      - location: UCLA Design | Media Arts
+        title: "&ldquo;Mobile Social Software,&rdquo; lecture"
+
+  - 2005:
+      - location: Harvard GSD
+        title: "&ldquo;Borders/Edges/Divides,&rdquo; artist talk"
+
+      - location: IT University of Copenhagen
+        title: Living Lab Conference panelist
+
+      - location: Dorkbot NYC
+        title: presented <i>Yellow Arrow</i>
+
+      - location: NYU ITP
+        title: guest critic
+
+  - 2004:
+      - location: MIT Department of Urban Studies and Planning
+        title: presented <i>Yellow Arrow</i>
 
