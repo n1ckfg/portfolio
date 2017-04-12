@@ -493,8 +493,12 @@ press:
   print:
 
     - 2017:
+      - publication: Westword
+        title: Myhren Gallery's Storm Warning Heats Up the Debate Over Climate Change
+        issue: April 11
+
       - publication: The Denver Post
-        title: At DU, a climate change exhibit that's thoughtful, shocking and sometimes even humorous
+        title: Climate change art exhibit a real community service
         issue: March 16
 
     - 2015:
