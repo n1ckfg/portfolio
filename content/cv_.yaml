@@ -794,8 +794,14 @@ press:
 
 
 talks:
+  - 2017:
+    - location: University of Denver
+      title: artist talk
 
   - 2016:
+    - location: Washington University
+      title: workshop and artist talk
+
     - location: Youngstown State University
       title: workshop and artist talk
 
@@ -942,3 +948,36 @@ talks:
       - location: MIT Department of Urban Studies and Planning
         title: presented <i>Yellow Arrow</i>
 
+articles:
+
+  - 2014:
+    - author: Brian House
+      article: Subversive Mobile Storytelling
+      book: Mobile Media Making in an Age of Smartphones
+      editors: Marsha Berry and Max Schleser
+      volume:
+      publisher: Palgrave Pilot
+
+    - author: Brian House
+      article: Mary Mattingly, WetLand
+      book: Title magazine
+      editors: Jacob Feige
+
+  - 2013:
+    - author: Brian House
+      article: "OpenPaths: empowering personal geographic data"
+      book: Proceedings of the 19th International Symposium of Electronic Art
+  
+  - 2009:
+    - author: Brian House and Jesse Shapins
+      article: Designers and Citizens as Critical Media Artists
+      book: Urban Omnibus
+
+  - 2007:
+    - author: Brian House and Sue Huang
+      article: Hundekopf
+      book: Vague Terrain
+      volume: issue 6
+
+
+# commas, eds
