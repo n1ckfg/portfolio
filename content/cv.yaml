@@ -590,6 +590,11 @@ press:
         issue: December 19
 
   tv:
+    - 2017:
+      - channel: Colorado Public Radio
+        project: Animas
+        date: March 31
+
     - 2015:
       - channel: SWR2 (DE)
         project: What Does the Internet Sound Like?
@@ -634,10 +639,19 @@ press:
 
   online:
 
+    - 2017:
+      - publication: Transmediale
+        title: Machine Research
+        issue: Ever Elusive
+
     - 2016:
       - publication: Continent.
         title: Acoustic Infrastructure
         issue: Summer 
+
+      - publication: Transart Triennale Blog
+        title: I'd Swipe Right on Yr Metadata
+        issue: June 6
 
     - 2015:
       - publication: Frontier
@@ -795,6 +809,9 @@ press:
 
 talks:
   - 2017:
+    - location: Connecticut College
+      title: artist talk
+
     - location: University of Denver
       title: artist talk
 
@@ -949,6 +966,14 @@ talks:
         title: presented <i>Yellow Arrow</i>
 
 articles:
+
+  - 2017:
+    - author: Brian House
+      article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
+      book: Executing Practices
+      editors: H. Pritchard, E. Snodgrass, & M. Tyźlik-Carver
+      volume: DATA browser; No. 06
+      publisher: Autonomedia.
 
   - 2014:
     - author: Brian House

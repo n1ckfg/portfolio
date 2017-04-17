@@ -22,228 +22,41 @@
         EDUCATION
         <hr />
         <ul> 
-            <li><span class="show">2018</span> PhD, Computer Music and Multimedia, <b>Brown University</b>, advisors: Wendy Chun and Todd Winkler</li>
-            <li><span class="show">2016</span> MA, Modern Culture and Media, <b>Brown University</b>, advisor: Wendy Chun</li>
-            <li>
-                <span class="show">2006</span> MSc, Art &amp; Technology, <b>Chalmers University of Technology</b>, advisor: Mats Nordahl<br />
-                <!-- Thesis: <i>Mixed-Reality Narrative with Mobile Phone Text-Messaging</i> -->
-            </li>
-            <li>
-                <span class="show">2002</span> BA, Computer Science, <b>Columbia University</b>, advisor: John Kender<br />
-                <!-- Thesis: <i>Realtime Neural-Network Classification of Musical Gestures</i> -->
-            </li>
+            {% for item in education %}
+            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.addendum }}</li>
+            {% endfor %}
         </ul>
-<!--         <ul>
-            <li>2015 Leuphana Universit&auml;t, Summer School for Digital Cultures
-        </ul>
- -->  </div>
+    </div>
 
     <div> 
         SOLO AND TWO-PERSON EXHIBITIONS
         <hr />
         <ul>
-            <li>
-                <span class="show">2012</span> <i>Forty-eight to Sixteen</i>, <b>Eyebeam</b>, New York
-            </li>
-            <li>
-                <span>2012</span> <i>Quotidian Record / Stranger Visions</i> (w/ Heather Dewey-Hagborg), <b>Eyebeam</b>, New York
-            </li>
-            <li> 
-                <span class="show">2009</span> <i>MOCA Grand Prix</i> (w/ Sue Huang), <b>MOCA</b>, Los Angeles
-            </li> 
-            <li> 
-                <span>2009</span> <i>Trying the Hand of God</i> (w/ Sue Huang), <b>MOCA</b>, Los Angeles
-            </li> 
-            <li> 
-                <span>2009</span> <i>Golf and Donuts</i> (w/ Sue Huang), <b>MOCA</b>, Los Angeles
-            </li>   
-            <li> 
-                <span class="show">2006</span> <i>5 'til 12</i>, (w/ Sue Huang) <b>Beall Center for Art and Technology</b>, Irvine
-            </li> 
-            <li> 
-                <span class="show">2004</span> <i>The Case at Kulturhuset</i> (w/ Sue Huang), <b>Stockholms Kulturhuset</b>, Stockholm
-            </li> 
+            {% for year in solo %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li>
+                        <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.title }}, <b>{{ item.venue }}</b>, {{ item.city }}
+                    </li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>
-
     
     <div> 
         GROUP EXHIBITIONS
         <hr />
         <ul>
-            <li>
-                <span class="show">2017</span> Ever Elusive, <b>Transmediale</b>, Berlin
-            </li>
-            <li>
-                <span>2017</span> Storm Warning, <b>Vicki Meyhren Gallery</b>, Denver
-            </li>
-            <li>
-                <span>2017</span> re|ACT Arts &amp; Environment Symposium, <b>Granoff Center</b>, Providence
-            </li>            
-            <li>
-                <span class="show">2016</span> The Spaces We're In, <b>NEoN Digital Arts</b>, Dundee, Scotland
-            </li>
-            <li>
-                <span>2016</span> Reality Under Surveillance, <b>Speculum Artium</b>, Trbovlje, Slovenia
-            </li>
-            <li>
-                <span>2016</span> Acoustic Infrastructures, <b>Eyebeam</b>, New York
-            </li>
-            <li>
-                <span>2016</span> Atmospheres, <b>Granoff Center</b>, Providence
-            </li>
-            <li>
-                <span class="show">2015</span> Take Karaoke / Fight Logic, <b>Cohen Gallery</b>, Providence
-            </li>
-            <li>
-                <span>2015</span> Infosphere, <b>ZKM | Museum of Contemporary Art</b>, Karlsruhe
-            </li>
-            <li>
-                <span>2015</span> Eyebeam in Objects, <b>Upfor Gallery</b>, Portland
-            </li>
-            <li>
-                <span>2015</span> Captive Portal, <b>Center for Contemporary Art</b>, Tel Aviv
-            </li>
-            <li>
-                <span>2015</span> New Aesthetic?, <b>Queensland University of Technology</b>, Brisbane
-            </li>
-            <li>
-                <span>2015</span> Lifelogging, <b>Science Gallery</b>, Dublin
-            </li>
-            <li>
-                <span>2015</span> Ampersand, <b>WMBR / MIT List Visual Arts Center</b>, Cambridge
-            </li>
-            <li>
-                <span>2015</span> From Field Recording to Data Sonification in Late Capitalism, <b>Labor Neunzehn</b>, Berlin
-            </li>
-            <li>
-                <span>2015</span> Wetland, <b>Schuylkill Center</b>, Philadelphia
-            </li>
-            <li>
-                <span class="show">2014</span> Data &amp; Society, <b>Rubin Museum</b>, New York
-            </li>
-            <li>
-                <span>2014</span> Pale Firework, <b>Gelman Gallery, RISD Museum</b>, Providence
-            </li>
-            <li>
-                <span>2014</span> <b>NIME</b>, London
-            </li>
-            <li>
-                <span>2014</span> Imprint of the City, <b>Issue Project Room</b>, New York
-            </li>
-            <li>
-                <span>2014</span> Print Screen, <b>Mediatheque</b>, Holon, Israel
-            </li>
-            <li>
-                <span>2014</span> Buildering: Misbehaving The City, <b>Contemporary Arts Center</b>, Cincinnati
-            </li>
-            <li>
-                <span>2014</span> Biennial Symposium, <b>Ammerman Center for Arts and Technology</b>, New London
-            </li>            
-            <li>
-                <span class="show">2013</span> Total Recall, <b>Ars Electronica Festival</b>, Linz
-            </li>  
-            <li>
-                <span>2013</span> Neuromast: Certain Uncertainty and Contemporary Art, <b>Franklin Street Works</b>, Stamford
-            </li>
-            <li>
-                <span>2013</span> Under the Influence, <b>Gelman Gallery, RISD Museum</b>, Providence
-            </li> 
-            <li>
-                <span>2013</span> PRISM Breakup, <b>Eyebeam</b>, New York
-            </li>
-            <li>
-                <span>2013</span> Where are We Now?, <b>The Collection Lincoln &amp; Usher Gallery</b>, Lincolnshire
-            </li>
-            <li>
-                <span>2013</span> iNTERFACES, <b>Black &amp; White Festival</b>, Porto
-            </li>
-            <li>
-                <span>2013</span> <b>Megapolis Audio Art Festival</b>, New York
-            </li>            
-            <li>
-                <span>2013</span> Quiet City Presents, <b>Secret Theatre</b>, New York
-            </li>                        
-            <li>
-                <span>2013</span> <b>New York City Electroacoustic Music Festival</b>, New York
-            </li>            
-            <li>
-                <span>2013</span> Gallery Nosco: Binary, <b>Largo Das Artes</b>, Rio de Janeiro
-            </li>
-            <li>
-                <span>2013</span> Habits of Living, <b>Granoff Center for the Creative Arts</b>, Providence
-            </li>                        
-            <li>
-                <span>2013</span> Annual Showcase, <b>Eyebeam</b>, New York
-            </li>
-            <li>
-                <span class="show">2012</span> Infinitely Poignant Future Pastness, <b>Brown University</b>, Providence
-            <li>
-                <span>2012</span> <b>Conflux Festival</b>, New York
-            </li>
-            <li>
-                <span>2012</span> DataVis: Information as Art, <b>Beall Center for Art and Technology</b>, Irvine
-            </li>
-            <li>
-                <span>2012</span> <b>urbanoFILM</b>, Stuttgart
-            </li>
-            <li>
-                <span class="show">2011</span> Klein Kunst Party, <b>Platoon Kunsthalle</b>, Seoul
-            </li>
-            <li>
-                <span>2011</span> Poetic Urbanisms, <b>Arts @ 29 Garden</b>, Cambridge
-            </li>
-            <li>
-                <span class="show">2010</span> <i>Relay Drawing</i> (w/ Sue Huang), <b>Los Angeles Contemporary Exhibitions</b>, Los Angeles
-            </li>           
-            <li>
-                <span>2010</span> <i>Live Footage</i> (w/ Topu Lyo and Mike Thies), <b>Monkeytown</b>, New York
-            </li>           
-            <li> 
-                <span>2010</span> <b>Megapolis Audio Art Festival</b>, Baltimore
-            </li> 
-            <li> 
-                <span class="show">2008</span> Rhizome Commissions, <b>New Museum of Contemporary Art</b>, New York
-            </li> 
-            <li> 
-                <span>2008</span> Conflux Festival, <b>Center for Architecture</b>, New York
-            </li> 
-            <li> 
-                <span>2008</span> FILMOBILE, <b>London Gallery West</b>, London
-            </li> 
-            <li> 
-                <span>2008</span> Design and the Elastic Mind, <b>MoMA</b>, New York
-            </li>
-            <li> 
-                <span>2007</span> Arte.Mov, <b>Pal&aacute;cio das Artes</b>, Belo Horizonte
-            </li> 
-            <li> 
-                <span>2007</span> Conflux Festival, <b>UnionDocs</b>, Brooklyn
-            </li>
-            <li> 
-                <span class="show">2006</span> <b>S&oacute;nar</b>, Barcelona
-            </li> 
-            <li> 
-                <span>2006</span> Zero One Festival, <b>ISEA</b>, San Jose
-            </li> 
-            <li> 
-                <span>2006</span> Conflux Festival, <b>McCaig-Welles Gallery</b>, Brooklyn
-            </li>
-            <li> 
-                <span class="show">2005</span> Glowlab Open Lab, <b>Art Interactive</b>, Cambridge
-            </li> 
-            <li> 
-                <span>2005</span> Loving Berlin Festival, <b>Deutsches Architektur Zentrum</b>, Berlin
-            </li> 
-            <li> 
-                <span>2005</span> Certain Movement, <b>The Tank</b>, New York
-            </li> 
-            <li> 
-                <span class="show">2004</span> Conflux Festival, <b>Participant Inc</b>, New York
-            </li> 
-            <li> 
-                <span>2004</span> Art and Technology, <b>Stadsbiblioteket</b>, G&ouml;teborg
-            </li> 
+            {% for year in group %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li>
+                        <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.title %}{{ item.title }}, {% endif %}<b>{{ item.venue }}</b>, {{ item.city }}
+                    </li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div> 
     
@@ -251,22 +64,15 @@
         RESIDENCIES, COMMISSIONS, + FELLOWSHIPS
         <hr />
         <ul>
-            <li><span class="show">2016</span> Commission, <b>NEoN Digital Arts</b>, Dundee, Scotland</li>
-            <li><span>2016</span> Residency, <b>Rocky Mountain Biological Laboratory</b>, Colorado</li>
-            <li><span>2016</span> Residency, <b>MASS MoCA</b>, Western Massachusetts</li>
-            <li><span>2016</span> Commission, <b>Eyebeam</b>, New York</li>
-            <li><span class="show">2015</span> Fellowship, <b>Tow Center for Digital Journalism</b>, Columbia University</li>
-            <li><span class="show">2014</span> Commission, <b>Contemporary Art Center</b>, Cincinnati</li>
-            <li><span class="show">2013</span> Grant, <b>Creative Arts Council</b>, Brown University</li>
-            <li><span>2013</span> Fellowship, <b>Open Graduate Education</b>, Brown University</li>
-            <li><span class="show">2013</span> Residency, <b>Free103point9 Wave Farm</b>, New York State</li>
-            <li><span class="show">2012</span> Fellowship, <b>Howard and Jan Swearer Foundation</b>, Brown University</li>            
-            <li><span>2012</span> Residency, <b>Eyebeam</b>, New York</li>
-            <li><span class="show">2009</span> Residency and Commission, <b>MOCA</b>, Los Angeles</li> 
-            <li><span class="show">2007</span> Commission, <b>Rhizome at the New Museum</b>, New York</li> 
-            <li><span class="show">2006</span> Commission, <b>Beall Center for Art and Technology</b>, Irvine</li> 
-            <li><span class="show">2004</span> Commission, <b>Stockholms Kulturhuset</b>, Stockholm</li> 
-            <li><span class="show">2003</span> Residency, <b>Studio for Electro-Instrumental Music (STEIM)</b>, Amsterdam</li>          
+            {% for year in awards %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li>
+                        <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.kind }}, <b>{{ item.venue }}</b>, {{ item.location }}
+                    </li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}        
         </ul> 
     </div>
 
@@ -274,25 +80,13 @@
         APPEARANCES IN CRITICAL WRITING
         <hr />
         <ul> 
-            <li><span class="show">2016</span> Gemma Arg&uuml;ello Manressa and Sondra Bacharach, "Digital Street Art," in <i><b>Collaborative Art in the Twenty-First Century</b></i>, eds. Sondra Bacharach, Siv B. Fjærestad, Jeremy Neil Booth, Routledge</li>
-            <li><span>2016</span> Eve Kalyva, "Where are my keys? The now of critique in a plurality of voices," in <i><b>Notebook for Art, Theory, and Related Zones</b></i>, volume 21</li>
-            <li><span>2016</span> Johanna Linsley, "Possible Public and Private Narratives," in <i><b>Contemporary Theatre Review</b></i>, intervention for volume 26</li>
-            <li><span>2016</span> Dan Ehrenfeld, "The Cloud and the Mine," in <i><b>Kairos: A Journal of Rhetoric, Technology, and Pedagogy</b></i>, volume 21</li>
-            <li><span class="show">2015</span> Ulrik Ekman, Jay David Bolter, Lily Diaz, Maria Engberg, Morten Søndergaard, eds, <b><i>Ubiquitous Computing, Complexity, and Culture</i></b>, Routledge</li>
-            <li><span>2015</span> Nassim JafariNaimi, "MRx as a participatory platform," in <b><i>Digital Creativity</i></b>, volume 26</li>
-            <li><span class="show">2014</span> Cathy Cox, "Interactive Technologies in Music Composition: Towards a Theory of Interactivity," in <b><i>Music Research: New Directions for a New Century</i></b>, Cambridge Scholars Publishing</li>
-            <li><span class="show">2013</span> Malcolm McCullough, <b><i>Ambient Commons: Attention in the Age of Embodied Information</i></b>, MIT Press</li>
-            <li><span class="show">2012</span> Grant Kester, "Galatea's Gaze: Ethics, Spectacle, and Participation," in <b><i>Engagement Party: Social Practice at MOCA 2008-2012</i></b>, ed. Aandrea Stang, The Museum of Contemporary Art</li>                
-            <li><span>2012</span> Zachary Kaplan, "Knifeandfork," in <b><i>Engagement Party: Social Practice at MOCA 2008-2012</i></b>, ed. Aandrea Stang, The Museum of Contemporary Art</li>
-            <li><span class="show">2011</span> Mark Shepard, "Toward the Sentient City," in <b><i>Sentient City: Ubiquitous Computing, Architecture, and the Future of Urban Space</i></b>, ed. Mark Shepard, The MIT Press</li>
-            <li><span>2011</span> Eric Gordon, Adriana de Souza e Silva, <b><i>Net Locality: Why Location Matters in a Networked World</i></b>, Wiley</li>        
-            <li><span class="show">2010</span> Mattia Casalegno, "The Research of Knifeandfork: In Between Technology and Participation," in <b>Digicult: Digimag</b>, issue 52</li>                                    
-            <li><span>2010</span> Rita Raley, "Walk This Way: Mobile Narrative as Composed Experience," in <b><i>Beyond the Screen</i></b>, eds. J&ouml;rgen Sch&auml;fer, Peter Gendolla, Transcript Verlag</li>
-            <li><span>2010</span>  Britta Timm Knudsen, <b><i>Re-investing Authenticity: Tourism, Place and Emotions</i></b>, Channel View</li>          
-            <li><span class="show">2009</span> Graham Coulter-Smith, <b><i>Deconstructing Installation Art</i></b>, Brumaria</li> 
-            <li><span class="show">2008</span> Christine Nippe, "City Representations in Net Art," in <b><i>The Electronic City</i></b>, eds. Ulrike Bucher, Maros Finka, Berliner Wissenschafts-Verlag</li>         
-            <li><span>2008</span> Paola Antonelli, <b><i>Design and the Elastic Mind</i></b>, The Museum of Modern Art
-            <!-- <li>Casey Reas, Ben Fry, <b><i>Processing</i></b>. The MIT Press, 2007</li>          -->
+            {% for year in critical %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>, {% if item.editors %}eds. {{ item.editors }}, {% endif %}{% if item.editor %}ed. {{ item.editor }}, {% endif %}{% if item.volume %}{{ item.volume }}{% if item.publisher %}, {% endif %}{% endif %}{% if item.publisher %}{{ item.publisher }}{% endif %}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}                                    
         </ul>   
     </div>
 
@@ -303,79 +97,35 @@
 
         Print
         <ul> 
-            <li><span class="show">2015</span> <b>ARCADE</b>, "Data as Mirror," Spring</li>
-            <li><span class="show">2013</span> <b>Neural.it</b>, review of <i>Quotidian Record</i>, issue 46, Autumn</li>
-            <li><span>2013</span> <b>Sense of Hearing</b>, I-Hua Lee, ed., Chuan Art Studio</li>
-            <li><span class="show">2011</span> <b>TIME Magazine</b>, "The 50 Best Inventions of the Year," November 28</li>
-            <li><span>2011</span> <b>Harvard Gazette</b>, "Poetic Urbanisms," February 15</li>           
-            <li><span class="show">2010</span> <b>The New York Times</b>, "In Your Palm, Memories of Horror and Valor," September 12</li>
-            <li><span class="show">2008</span> <b>PRAXIS 10: Urban Matters</b>, "MAAP-making"</li>
-            <li><span class="show">2006</span> <b>SPIN</b>, "Yellow Arrow &mdash; Capitol of Punk," May</li> 
-            <li><span>2006</span> <b>Taiwan Daily News</b>, Article about <i>Yellow Arrow</i>, April</li> 
-            <li><span>2009</span> <b>The New York Times</b>, "Making Connections, Here and Now," January 25</li> 
-            <li><span class="show">2005</span> <b>NY Arts Magazine</b>, "What the Situationists left behind: Psychogeography," October</li> 
-            <li><span>2005</span> <b>The Washington Post</b>, "Targeting the 'Art' Around Every Corner," July 2</li> 
-            <li><span>2005</span> <b>Berliner Zeitung</b>, "Make a Connection," June</li> 
-            <li><span>2005</span> <b>The Boston Globe</b>, "The Art of Mobile Technology," April 18</li> 
-            <li><span>2005</span> <b>Newsweek</b>, "PUBLIC ART: House Haiku? Just dial," March 14</li>                   
-            <li><span>2005</span> <b>Metropolis</b>, "Sticker Talk," February</li> 
-            <li><span class="show">2004</span> <b>WIRED Magazine</b>, "Text in the City," September</li> 
-            <li><span>2004</span> <b>Dagens Nyheter</b> (Swedish), "Visitors solve 'The Case at Kulturhust'," April 27</li> 
-            <li><span>2004</span> <b>Svenska Dagbladet</b> (Swedish), "The Case at Kulturhuset," April 15</li> 
-            <li><span>2004</span> <b>G&ouml;teborgs-Posten</b> (Swedish) "Art and Technology Go Hand in Hand," December 19</li> 
+            {% for year in press['print'] %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} {{ item.issue }} </li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
 
         TV and Radio
         <ul>
-            <li><span class="show">2015</span> <b>SWR2</b> (Germany), Radio feature on <i>What Does the Internet Sound Like?</i>, August 24</li>
-            <li><span class="show">2014</span> <b>Fox News</b>, TV segment on <i>Conversnitch</i>, April 23</li>
-            <li><span class="show">2009</span> <b>WNYC</b>, Radio feature on <i>Make History</i>, September 10</li>
-            <li><span>2009</span> <b>KMEX / Univision 34</b>, TV segment on <i>Trying the Hand of God</i>, April 2</li> 
-            <li><span class="show">2005</span> <b>WNBC</b>, TV segment on <i>Yellow Arrow</i>, July</li> 
-            <li><span>2005</span> <b>Weekend America</b>, Radio feature on <i>Yellow Arrow</i>, June</li> 
-            <li><span class="show">2004</span> <b>Rocketboom</b>, interview, December</li>             
-            <li><span>2004</span> <b>NY1</b>, TV segment on <i>Yellow Arrow</i>, October</li> 
+            {% for year in press['tv'] %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.channel }}</b>, segment on <i>{{ item.project }}</i></li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul> 
 
         Online
-        <ul>
-            <li><span class="show">2016</span> <b>Continent.</b>, "Acoustic Infrastructure," Summer</li>
-            <li><span class="show">2015</span> <b>Frontier</b>, "What Does Data Sound Like?," May</li>
-            <li><span class="show">2014</span> <b>Huffington Post UK</b>, "Conversnitch Surveillance Art Project Is Spying On You Via Lamps," May 25</li>        
-            <li><span>2014</span> <b>The Guardian</b>, "Conversnitch turns covert surveillance into an art form," May 16</li>        
-            <li><span>2014</span> <b>WIRED</b>, "An Eavesdropping Lamp That Livetweets Private Conversations," April 23</li>
-            <li><span>2014</span> <b>Motherboard</b>, "That Lamp Over There? It's Spying On You," April 23</li>
-            <li><span>2014</span> <b>Slate</b>, "This Light Bulb Is Listening," April 23</li>
-            <li><span>2014</span> <b>BuzzFeedNews</b>, "This Is What Facebook Sees When It Scans Your Face," April 21</li>
-            <li><span class="show">2013</span> <b>The Ascender</b>, "Digital Delta," November 13</li>
-            <li><span>2013</span> <b>Huffington Post</b>, "Quotidian Record: Artist Brian House Turns Tracking Data Into A Vinyl Music Experience," July 26</li>
-            <li><span>2013</span> <b>WIRED</b>, "Artist Turns a Year’s Worth of Tracking Data Into a Haunting Record," July 22<li>
-            <li><span>2013</span> <b>Creative Applications</b>, "Sonification and the (re-)performance of data – an interview with Brian House," July 12</li>
-            <li><span>2013</span> <b>Fast Company Design</b>, "Soundtrack Of Your Life: Get Into The Groove Of Tracking Your Every Move In Vinyl," July 8</li>
-            <li><span class="show">2012</span> <b>The Atlantic Cities</b>, "How One Man's Bicycle Commute Inspired a Strange Song," September 25</li>
-            <li><span>2012</span> <b>Creative Applications</b>, "Commute as Composition &mdash; Brian House's Forty-eight to Sixteen," September 24</li>            
-            <li><span>2012</span> <b>Create Digital Music</b>, "In Percussive Harmonies, A Record of a Year of Travel," August 8</li>
-            <li><span>2012</span> <b>The Verge</b>, "The Quotidian Record inscribes a year of location data onto a vinyl EP," July 5</li>
-            <li><span>2012</span> <b>Capital New York</b>, "Art and tech, aesthetics and hacking meet at Eyebeam's open studios," July 7</li>
-            <li><span>2012</span> <b>New-Aesthetic</b>, "Data Reenactment: Street View Video from a Stolen Phone," March 1</li>
-            <li><span>2012</span> <b>Flowing Data</b>, "Own and securely store your location with OpenPaths," January 26</li> 
-            <li><span class="show">2011</span> <b>Infoaesthetics</b>, "NYTLabs Magic Mirror Reveals News and Health Statistics," November 28</li>
-            <li><span>2011</span> <b>Engadget</b>, "New York Times' magic mirror helps you get dressed, puts the 'wall' in 'paywall'," September 5</li>
-            <li><span>2011</span> <b>Popular Science</b>, "NY Times' Kinect-Assisted Mirror Delivers News, Coupons and Fashion Tips As You Brush Your Teeth," September 2</li>
-            <li><span>2011</span> <b>Slashdot</b>, "NYT Working On 'Magic Mirror' For Bathroom Surfing," September 2</li>
-            <li><span>2011</span> <b>Nieman Journalism Lab</b>, "Mirror, mirror: The New York Times wants to serve you info as you're brushing your teeth," August 31</li>
-            <li><span>2011</span> <b>Flowing Data</b>, "Data Reenactment via Stolen iPhone," July 21</li>
-            <li><span>2011</span> <b>Gizmodo</b>, "Following a Stolen iPhone's Path in Google's Getaway Car," July 19</li>           
-            <li><span>2011</span> <b>Engadget</b>, "OpenPaths lets you visualize your iPhone location data, donate it to science," May 11</li>
-            <li><span class="show">2010</span> <b>Rhizome.org</b>, Post on <i>Trying the Hand of God</i>, July 2</li>             
-            <li><span>2010</span> <b>Locally Toned</b>, Interview and post on <i>Pull My Ears</i>, June 18</li>                          
-            <li><span>2010</span> <b>The Huffington Post</b>, "How Art Museums Are Striving to Stay Relevant for a New Generation," March 28</li>
-            <li><span class="show">2009</span> <b>Information Aesthetics</b>, "Make History: Aggregating Experiences," September 15</li>
-            <li><span>2009</span> <b>Core77</b>, "Make History Gathers Stories Over Streetviews," September 11</li>
-            <li><span>2009</span> <b>NBC Los Angeles</b>, "MOCA Becomes a Mini Golf Course. Plus: Donuts," March 5</li> 
-            <li><span>2009</span> <b>Los Angeles Times</b>, "Art Meets Sport at MOCA," February 23</li> 
-            <li><span class="show">2006</span> <b>We-Make-Money-Not-Art</b>, Post on <i>5 'til 12</i>, January 16</li>            
-            <li><span class="show">2005</span> <b>We-Make-Money-Not-Art</b>, Post on <i>Placing Voices</i>, April 5</li>                      
+        <ul> 
+            {% for year in press['online'] %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} {{ item.issue }} </li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 
@@ -383,52 +133,13 @@
         INVITED TALKS + CRITIQUES
         <hr />
         <ul>
-            <li><span class="show">2016</span> <b>Washington University</b>, workshop and artist talk</li>
-            <li><span>2016</span> <b>Youngstown State University</b>, workshop and artist talk</li>
-            <li><span class="show">2015</span> <b>UnionDocs</b>, "Eavesdroppers, Ventriloquists and Ghosts," artist talk</li>
-            <li><span>2015</span> <b>AV Synth Workshop</b> (Dartmouth), artist talk with Lucia Monge: "Shake Hands like Leaves"</li>
-            <li><span>2015</span> <b>RISD</b>, tool() Symposium, panel</li>
-            <li><span>2015</span> <b>Oberlin College</b>, Playfest, artist talk</li>
-            <li><span>2015</span> <b>Brown University</b>, INTERRUPT 3 conference, artist talk</li>
-            <li><span>2015</span> <b>BRIC Arts</b>, artist talk: "Google Maps and artistic practice"</li>
-            <li><span class="show">2014</span> <b>Smith</b>, visiting critic</li>
-            <li><span>2014</span> <b>Leaders in Software Art</b>, NYU Poly, artist talk, 2014</li>
-            <li><span>2014</span> <b>UnionDocs</b>, "Brian House &amp; Nick Felton: Automatic Data, Personal Documentary," artist talk</li>
-            <li><span>2014</span> <b>Better World by Design</b>, Brown University/RISD, artist talk: "Making Design Weird"</li>
-            <li><span>2014</span> <b>Eyeo Festival</b>, Walker Museum of Art, artist talk: "Quotidian Rhythms and Political Frictions"</li>
-            <li><span class="show">2013</span> <b>PRISM Breakup Exhibition, Eyebeam</b>, talk: "OpenPaths: Location, encryption, and participatory sensing"<li>
-            <li><span>2013</span> <b>School for Poetic Computation</b>, artist talk<li>
-            <li><span>2013</span> <b>NYU ITP</b>, artist talk<li>
-            <li><span>2013</span> <b>SUNY Purchase</b>, artist talk: "Knifeandfork and Collective Practice"<li>
-            <li><span>2013</span> <b>Eyebeam</b>, "Poetics of Computer Language," panel<li>
-            <li><span class="show">2012</span> <b>Internet of Things Meetup</b>, "OpenPaths: A new approach to aggregating personal geographic data"</li>
-            <li><span>2012</span> <b>Harvard GSD</b>, guest critic
-            <li><span>2012</span> <b>Columbia GSAPP</b>, guest critic
-            <li><span class="show">2011</span> <b>Tribeca Cinemas</b>, Video Art and Experimental Film Festival, panel</li>
-            <li><span>2011</span> <b>Google</b>, talk: "OpenPaths: A new approach to aggregating personal geographic data"</li>
-            <li><span>2011</span> <b>Conflux Festival</b>, artist talk: "From Psychogeography to Rhythmanalysis"</li>
-            <li><span>2011</span> <b>OpenPlans</b>, lecture on behavior mining</li>
-            <li><span>2011</span> <b>Harvard GSD</b>, artist talk: "Poetic Urbanisms"</li> 
-            <li><span>2011</span> <b>Hunter College</b>, artist talk: "From Psychogeography to Rhythmanalysis"</li>            
-            <li><span class="show">2010</span> <b>UCSB</b>, round-table talk on digital humanities</li> 
-            <li><span>2010</span> <b>Parsons D+T</b>, guest critic</li>
-            <li><span class="show">2008</span> <b>RISD</b>, guest critic and lecture: "Subversive Mobile Storytelling"</li> 
-            <li><span>2008</span> <b>MIT</b>, participant: "Writing Cities" conference with Richard Sennett</li> 
-            <li><span>2008</span> <b>Dorkbot NYC</b>, presented <i>TXTML</i></li>             
-            <li><span>2008</span> <b>University of Westminster (UK)</b>, artist talk: "Subversive Mobile Storytelling"</li> 
-            <li><span>2008</span> <b>SUNY Buffalo</b>, artist talk: "Nonlinear Narrative in Urban Space"</li> 
-            <li><span class="show">2007</span> <b>University of Southern Denmark</b>, invited keynote: "The Mixed-Reality City: Narrative, Play &amp; Learning in Multimodal Environments"</li> 
-            <li><span>2007</span> <b>Arte.Mov (Brazil)</b>, artist talk: "Subversive Mobile Storytelling"</li>
-            <li><span>2007</span> <b>NYU ITP</b>, guest critic</li>
-            <li><span class="show">2006</span> <b>MICA</b>, artist talk: "Interactivity and Nonlinear Narrative"</li> 
-            <li><span>2006</span> <b>Yahoo!</b>, guest artist for Time Capsule project</li> 
-            <li><span>2006</span> <b>UC Irvine</b>, artist talk: "Interactivity and Nonlinear Narrative"</li> 
-            <li><span>2006</span> <b>UCLA Design | Media Arts</b>, guest lecture: "Mobile Social Software"</li> 
-            <li><span class="show">2005</span> <b>Harvard GSD</b>, artist talk: "Borders/Edges/Divides," 2005</li> 
-            <li><span>2005</span> <b>IT University of Copenhagen</b>, Living Lab Conference panelist, 2005</li> 
-            <li><span>2005</span> <b>Dorkbot NYC</b>, presented <i>Yellow Arrow</i></li>                
-            <li><span>2005</span> <b>NYU ITP</b>, guest critic</li>                
-            <li><span class="show">2004</span> <b>MIT Department of Urban Studies and Planning</b>, presented <i>Yellow Arrow</i></li> 
+            {% for year in talks %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}        
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.location }}</b>, {{ item.title }}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul> 
     </div> 
 
@@ -436,12 +147,13 @@
         PUBLISHED ARTICLES + CHAPTERS
         <hr />
         <ul> 
-            <li><span class="show">2014</span> Brian House, "Subversive Mobile Storytelling," in <b>Mobile Media Making in an Age of Smartphones</b>, ed. Marsha Berry and Max Schleser, Palgrave Pilot</li>
-            <li><span>2014</span> Brian House, "Mary Mattingly, WetLand," in <b>Title magazine</b>, ed. Jacob Feige</li>
-            <li><span class="show">2013</span> Brian House, "OpenPaths: empowering personal geographic data," <b>Proceedings of the 19th International Symposium of Electronic Art</b></li>            
-            <li><span class="show">2009</span> Brian House and Jesse Shapins, "Designers and Citizens as Critical Media Artists," <b>Urban Omnibus</b></li> 
-            <li><span class="show">2007</span> Brian House and Sue Huang, "Hundekopf," <b>Vague Terrain</b>, issue 6</b></li> 
-
+            {% for year in articles %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}   
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>, {% if item.editors %}eds. {{ item.editors }}, {% endif %}{% if item.editor %}ed. {{ item.editor }}, {% endif %}{% if item.volume %}{{ item.volume }}{% if item.publisher %}, {% endif %}{% endif %}{% if item.publisher %}{{ item.publisher }}{% endif %}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 
