@@ -458,7 +458,7 @@ critical:
   - 2010:
     - author: Mattia Casalegno
       article: "The Research of Knifeandfork: In Between Technology and Participation" 
-      book: "Digicult: Digimag"
+      book: Digimag Journal
       volume: issue 52
 
     - author: Rita Raley
@@ -500,6 +500,10 @@ press:
       - publication: The Denver Post
         title: Climate change art exhibit a real community service
         issue: March 16
+
+      - publication: Transmediale
+        title: Machine Research
+        issue: Ever Elusive
 
     - 2015:
       - publication: ARCADE
@@ -639,11 +643,6 @@ press:
 
   online:
 
-    - 2017:
-      - publication: Transmediale
-        title: Machine Research
-        issue: Ever Elusive
-
     - 2016:
       - publication: Continent.
         title: Acoustic Infrastructure
@@ -674,6 +673,10 @@ press:
       - publication: Motherboard
         title: That Lamp Over There? It's Spying On You
         issue: April 23 
+
+      - publication: The Verge
+        title: A lamp is spying on New Yorkers and tweeting their conversations
+        issue: April 23
 
       - publication: Slate
         title: This Light Bulb Is Listening
