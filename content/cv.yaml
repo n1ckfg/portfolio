@@ -351,7 +351,7 @@ awards:
       location: Brown University
 
     - kind: Residency
-      venue: Eyebeam, 
+      venue: Eyebeam
       location: New York
 
   - 2009:
@@ -360,12 +360,12 @@ awards:
       location: Los Angeles
 
   - 2007:
-    - kind: Commission, 
+    - kind: Commission
       venue: Rhizome at the New Museum
       location: New York
 
   - 2006:
-    - kind: Commission, 
+    - kind: Commission
       venue: Beall Center for Art and Technology
       location: Irvine
 
@@ -643,6 +643,15 @@ press:
 
   online:
 
+    - 2017:
+      - publication: The Verge
+        title: This art installation creates sounds based on real-time data from a polluted river
+        issue: April 25
+
+      - publication: Those Who Make Waves
+        title: Animas River Sound Sculpture
+        issue: May 4
+
     - 2016:
       - publication: Continent.
         title: Acoustic Infrastructure
@@ -662,6 +671,10 @@ press:
         issue: May 
 
     - 2014:
+      - publication: Gizmodo
+        title: The Beautiful Near-Silence of Botswana's Okavango Delta at Night
+        issue: September 24
+        
       - publication: Huffington Post UK
         title: Conversnitch Surveillance Art Project Is Spying On You Via Lamps
         issue: May 25         
@@ -816,6 +829,9 @@ press:
 
 talks:
   - 2017:
+    - location: NYU Shanghai
+      title: artist talk
+
     - location: Connecticut College
       title: artist talk
 
@@ -975,6 +991,12 @@ talks:
 articles:
 
   - 2017:
+    - author: Brian House
+      article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
+      book: "ARPJA: Machine Research"
+      editors: H. Pritchard, E. Snodgrass, & M. Tyźlik-Carver
+      volume: Vol. 06, Issue 1
+
     - author: Brian House
       article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
       book: Executing Practices

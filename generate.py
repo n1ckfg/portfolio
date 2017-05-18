@@ -12,11 +12,12 @@ def build(structure, root):
             path = os.path.join(root, page)
             if not os.path.isdir(path):
                 os.mkdir(path)
-            content = "content/%s.yaml" % page                
+            content = "content/%s.yaml" % page.split('-')[0]                
             if type(structure) is dict:
                 template = "templates/%s.html" % page
             else:
                 template = "templates/%s.html" % root.split("/")[-1][:-1]
+            print("PAGE: %s\tCONTENT: %s\tTEMPLATE: %s" % (page, content, template))
             data = {'page': page, 'path': path}
             if os.path.isfile(content):
                 with open(content) as f:

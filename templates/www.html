@@ -1,13 +1,13 @@
 <!doctype html> 
 <html prefix="og: http://ogp.me/ns#" lang="en"> 
 <head>
-    <title>Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}</title> 
+    {% block title %}<title>Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}</title>{% endblock title %}
     <meta charset="utf-8"/>
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Brian House" /> 
     <meta name="copyright" content="Brian House" /> 
-    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose performances, installations, and interventions address the rhythms of bodies (human or otherwise) in contact with computation.{% endif %}" />
+    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose performances, installations, and interventions address the rhythms of bodies in contact with technology.{% endif %}" />
     <meta name="google-site-verification" content="A4sQWaqqAP0xPQeB5rwLlUoHnVxHP2EEOZgO_LofGm8" />  
     <meta property="og:title" content="Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}" />
     <meta property="og:type" content="website" />
@@ -35,6 +35,7 @@
 <body>
 <div id="content">
 
+{% block menu %}
 <div id="header">
     <div id="name"><a href="{{ absolute }}/">Brian House</a></div>
     <div id="menu">
@@ -44,6 +45,7 @@
     </div>
 </div>
 <div class="clear"></div>
+{% endblock menu %}
 
 {% block content %}
 <a href="/works"><img src="www.jpg" alt="Brian House" /></a>
