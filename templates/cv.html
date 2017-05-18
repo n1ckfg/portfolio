@@ -1,13 +1,17 @@
 {% extends "templates/www.html" %}
 
+{% block title %}<title>Brian House | CV</title>{% endblock title %}
+
 {% block content %}
 
 <div> 
 
     <div> 
+        {% block cv %}
         <span class="title">
             Curriculum vitae<br />
         </span>        
+        {% endblock cv %}
     </div> 
 
     <div> 
@@ -150,7 +154,7 @@
             {% for year in articles %}
                 {% for year, items in year.items() %}
                     {% for item in items %}   
-                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>, {% if item.editors %}eds. {{ item.editors }}, {% endif %}{% if item.editor %}ed. {{ item.editor }}, {% endif %}{% if item.volume %}{{ item.volume }}{% if item.publisher %}, {% endif %}{% endif %}{% if item.publisher %}{{ item.publisher }}{% endif %}</li>
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>{% if item.editors %}, eds. {{ item.editors }}{% endif %}{% if item.editor %}, ed. {{ item.editor }}{% endif %}{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.publisher %}, {{ item.publisher }}{% endif %}</li>
                     {% endfor %}
                 {% endfor %}
             {% endfor %}

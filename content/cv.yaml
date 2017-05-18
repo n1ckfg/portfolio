@@ -995,14 +995,14 @@ articles:
       article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
       book: "ARPJA: Machine Research"
       editors: H. Pritchard, E. Snodgrass, & M. Tyźlik-Carver
-      volume: Vol. 06, Issue 1
+      volume: volume 6, issue 1
 
     - author: Brian House
       article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
-      book: Executing Practices
+      book: "DATA browser: Executing Practices"
       editors: H. Pritchard, E. Snodgrass, & M. Tyźlik-Carver
-      volume: DATA browser; No. 06
-      publisher: Autonomedia.
+      volume: number 6
+      publisher: Autonomedia
 
   - 2014:
     - author: Brian House
@@ -1035,3 +1035,5 @@ articles:
 
 
 # commas, eds
+
+# transmediale paper presentation
