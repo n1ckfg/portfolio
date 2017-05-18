@@ -62,7 +62,7 @@ group:
       venue: Vicki Myhren Gallery / University of Denver
       city: Denver
 
-    - title: re|ACT Arts & Environment Symposium
+    - title: re|ACT Arts &amp; Environment Symposium
       venue: Granoff Center
       city: Providence
 
@@ -994,13 +994,13 @@ articles:
     - author: Brian House
       article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
       book: "ARPJA: Machine Research"
-      editors: H. Pritchard, E. Snodgrass, & M. Tyźlik-Carver
+      editors: Christian Ulrik Andersen &amp; Geoff Cox
       volume: volume 6, issue 1
 
     - author: Brian House
       article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
       book: "DATA browser: Executing Practices"
-      editors: H. Pritchard, E. Snodgrass, & M. Tyźlik-Carver
+      editors: H. Pritchard, E. Snodgrass, &amp; M. Tyźlik-Carver
       volume: number 6
       publisher: Autonomedia
 
