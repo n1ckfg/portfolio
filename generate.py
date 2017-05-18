@@ -12,7 +12,7 @@ def build(structure, root):
             path = os.path.join(root, page)
             if not os.path.isdir(path):
                 os.mkdir(path)
-            content = "content/%s.yaml" % page.split('-')[0]                
+            content = "content/%s.yaml" % page.split('.')[0]                
             if type(structure) is dict:
                 template = "templates/%s.html" % page
             else:
