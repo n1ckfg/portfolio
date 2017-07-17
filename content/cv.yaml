@@ -12,7 +12,7 @@ education:
   
   - year: 2006
     degree: MSc, Art &amp; Technology
-    institution: Chalmers University of Technology
+    institution: Chalmers tekniska h&ouml;gskola<b></b>
     addendum: "advisor: Mats Nordahl"
   
   - year: 2002
@@ -988,7 +988,7 @@ talks:
       - location: MIT Department of Urban Studies and Planning
         title: presented <i>Yellow Arrow</i>
 
-articles:
+publications:
 
   - 2017:
     - author: Brian House

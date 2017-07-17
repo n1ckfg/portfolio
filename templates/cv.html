@@ -148,10 +148,10 @@
     </div> 
 
     <div>
-        PUBLISHED ARTICLES + CHAPTERS
+        PUBLICATIONS
         <hr />
         <ul> 
-            {% for year in articles %}
+            {% for year in publications %}
                 {% for year, items in year.items() %}
                     {% for item in items %}   
                     <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>{% if item.editors %}, eds. {{ item.editors }}{% endif %}{% if item.editor %}, ed. {{ item.editor }}{% endif %}{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.publisher %}, {{ item.publisher }}{% endif %}</li>
@@ -162,9 +162,10 @@
     </div>
 
     <div>
-        PAPER PRESENTATIONS
+        CONFERENCE PRESENTATIONS
         <hr />
         <ul>
+            <li><span class="show">2017</span> Brian House, "Machine Listening: WaveNet, media materialism, and rhythmanalysis," <b>Transmediale</b>, Berlin</li>
             <li><span class="show">2015</span> Brian House, "Synchronizing Uncertainty: Google's Spanner and the Foreclosure of Time," <b>PARSE Biennial Research Conference on Time</b>, Göteborg Universitet</li>
             <li><span>2015</span> Brian House, "Quotidian Record: the musical interpretation of personal geographic data," <b>Inertia Conference</b>, UCLA</li>
             <li><span class="show">2014</span> Thomas Kirchner, Hong Gao, Andrew Anesetti-Rothermel, Heather Carlos, Brian House, "Longitudinal Human Mobility and Real-time Access to a National Density Surface of Retail Outlets," <b>International Workshop on Urban Computing</b></li>
