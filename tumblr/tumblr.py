@@ -2,6 +2,6 @@
 
 from generate import render
 
-page = render("tumblr/tumblr.html", absolute="http://brianhouse.net")
+page = render("tumblr/tumblr.html", absolute="https://brianhouse.net")
 
 print(page)
