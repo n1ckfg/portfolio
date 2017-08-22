@@ -58,6 +58,18 @@ solo:
 
 group:
   - 2017:
+    - title: Feminist Climate Change
+      venue: Ars Electronica Festival
+      city: Linz
+
+    - title:
+      venue: Megapolis Audio Art Festival
+      city: Philadelphia
+
+    - title: Land Trust
+      venue: Redline Gallery
+      city: Denver
+
     - title: Storm Warning
       venue: Vicki Myhren Gallery / University of Denver
       city: Denver
@@ -73,7 +85,7 @@ group:
   - 2016:
     - title: The Spaces We're In
       venue: NEoN Digital Arts
-      city: Dundee, Scotland
+      city: Dundee, Scotland (w/ Sue Huang)
 
     - title: Reality Under Surveillance
       venue: Speculum Artium
@@ -147,7 +159,7 @@ group:
 
     - title: "Buildering: Misbehaving The City"
       venue: Contemporary Arts Center
-      city: Cincinnati
+      city: Cincinnati (w/ Sue Huang)
 
     - title: Biennial Symposium
       venue: Ammerman Center for Arts and Technology
@@ -229,13 +241,13 @@ group:
       city: Cambridge
 
   - 2010:
-    - title: <i>Relay Drawing</i> (w/ Sue Huang)
+    - title: Relay Drawing
       venue: Los Angeles Contemporary Exhibitions
-      city: Los Angeles
+      city: Los Angeles (w/ Sue Huang)
         
-    - title: <i>Live Footage</i> (w/ Topu Lyo and Mike Thies)
+    - title: Live Footage
       venue: Monkeytown
-      city: New York
+      city: New York (w/ Topu Lyo and Mike Thies)
 
     - title:   
       venue: Megapolis Audio Art Festival
