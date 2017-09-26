@@ -368,7 +368,7 @@ awards:
 
   - 2009:
     - kind: Residency and Commission
-      venue: MOCA, 
+      venue: MOCA
       location: Los Angeles
 
   - 2007:
@@ -505,6 +505,11 @@ press:
   print:
 
     - 2017:
+
+      - publication: Westword
+        title: The 48 Hour Summit Brings Socially Engaged Art to RedLine
+        issue: August 11
+
       - publication: Westword
         title: Myhren Gallery's Storm Warning Heats Up the Debate Over Climate Change
         issue: April 11
