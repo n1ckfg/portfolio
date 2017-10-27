@@ -3,60 +3,70 @@ education:
   - year: 2018
     degree: PhD, Computer Music and Multimedia
     institution: Brown University
-    addendum: "advisors: Wendy Chun and Todd Winkler"
+    addendum: "Dissertation committee: Wendy Chun (co-chair), Ed Osborn, Rebecca Schneider, Todd Winkler (co-chair)"
   
   - year: 2016
     degree: MA, Modern Culture and Media
     institution: Brown University
-    addendum: "advisor: Wendy Chun"
+    addendum: #"advisor: Wendy Chun"
   
   - year: 2006
     degree: MSc, Art &amp; Technology
     institution: Chalmers tekniska h&ouml;gskola<b></b>
-    addendum: "advisor: Mats Nordahl"
+    addendum: #"advisor: Mats Nordahl"
   
   - year: 2002
     degree: BA, Computer Science
     institution: Columbia University
-    addendum: "advisor: John Kender"
+    addendum: #"courses: John Kender, Jonathan Kramer, Brad Garton, Manuel DeLanda"
 
 
-solo:
+# solo:
 
-  - 2012:
-    - title: <i>Forty-eight to Sixteen</i>
-      venue: Eyebeam
-      city: New York
+#   - 2018:
+#     - title: <i>Fascists, Lovers, and Other Lonely Ghosts</i>
+#       venue: Granoff Center for the Creative Arts
+#       city: Providence
 
-    - title: <i>Quotidian Record / Stranger Visions</i> (w/ Heather Dewey-Hagborg)
-      venue: Eyebeam
-      city: New York
+#   - 2012:
+#     - title: <i>Forty-eight to Sixteen</i>
+#       venue: Eyebeam
+#       city: New York
 
-  - 2009:
-    - title: <i>MOCA Grand Prix</i> (w/ Sue Huang)
-      venue: MOCA
-      city: Los Angeles
+#     - title: <i>Quotidian Record / Stranger Visions</i> (w/ Heather Dewey-Hagborg)
+#       venue: Eyebeam
+#       city: New York
 
-    - title: <i>Trying the Hand of God</i> (w/ Sue Huang)
-      venue: MOCA
-      city: Los Angeles
+#   - 2009:
+#     - title: <i>MOCA Grand Prix</i> (w/ Sue Huang)
+#       venue: MOCA
+#       city: Los Angeles
 
-    - title: <i>Golf and Donuts</i> (w/ Sue Huang)
-      venue: MOCA
-      city: Los Angeles
+#     - title: <i>Trying the Hand of God</i> (w/ Sue Huang)
+#       venue: MOCA
+#       city: Los Angeles
 
-  - 2006:
-    - title: <i>5 'til 12</i> (w/ Sue Huang)
-      venue: Beall Center for Art and Technology
-      city: Irvine
+#     - title: <i>Golf and Donuts</i> (w/ Sue Huang)
+#       venue: MOCA
+#       city: Los Angeles
 
-  - 2004:
-    - title: <i>The Case at Kulturhuset</i> (w/ Sue Huang)
-      venue: Stockholms Kulturhuset
-      city: Stockholm
+#   - 2006:
+#     - title: <i>5 'til 12</i> (w/ Sue Huang)
+#       venue: Beall Center for Art and Technology
+#       city: Irvine
+
+#   - 2004:
+#      - title: <i>The Case at Kulturhuset</i> (w/ Sue Huang)
+#       venue: Stockholms Kulturhuset
+#       city: Stockholm
 
 
 group:
+  - 2018:
+    - title: Fascists, Lovers, and Other Lonely Ghosts
+      venue: Granoff Center for the Creative Arts
+      city: Providence
+
   - 2017:
     - title: Feminist Climate Change
       venue: Ars Electronica Festival
@@ -71,11 +81,11 @@ group:
       city: Denver
 
     - title: Storm Warning
-      venue: Vicki Myhren Gallery / University of Denver
+      venue: Vicki Myhren Gallery
       city: Denver
 
     - title: re|ACT Arts &amp; Environment Symposium
-      venue: Granoff Center
+      venue: Granoff Center for the Creative Arts
       city: Providence
 
     - title: Ever Elusive
@@ -96,7 +106,7 @@ group:
       city: New York
 
     - title: Atmospheres
-      venue: Granoff Center
+      venue: Granoff Center for the Creative Arts
       city: Providence
 
   - 2015:
@@ -125,7 +135,7 @@ group:
       city: Dublin
 
     - title: Ampersand
-      venue: WMBR / MIT List Visual Arts Center
+      venue: MIT List Visual Arts Center
       city: Cambridge
 
     - title: From Field Recording to Data Sonification in Late Capitalism
@@ -142,7 +152,7 @@ group:
       city: New York
 
     - title: Pale Firework
-      venue: Gelman Gallery, RISD Museum
+      venue: Gelman Gallery
       city: Providence
 
     - title:   
@@ -155,7 +165,7 @@ group:
 
     - title: Print Screen
       venue: Mediatheque
-      city: Holon, Israel
+      city: Holon (Israel)
 
     - title: "Buildering: Misbehaving The City"
       venue: Contemporary Arts Center
@@ -175,7 +185,7 @@ group:
       city: Stamford
 
     - title: Under the Influence
-      venue: Gelman Gallery, RISD Museum
+      venue: Gelman Gallery
       city: Providence
 
     - title: PRISM Breakup
@@ -203,7 +213,7 @@ group:
       city: New York
 
     - title: Binary
-      venue: Gallery Nosco / Largo Das Artes
+      venue: Largo Das Artes
       city: Rio de Janeiro
 
     - title: Habits of Living
@@ -215,6 +225,14 @@ group:
       city: New York
 
   - 2012:
+    - title: Forty-eight to Sixteen
+      venue: Eyebeam
+      city: New York
+
+    - title: Quotidian Record / Stranger Visions
+      venue: Eyebeam
+      city: New York
+
     - title: Infinitely Poignant Future Pastness
       venue: Brown University
       city: Providence
@@ -239,6 +257,19 @@ group:
     - title: Poetic Urbanisms
       venue: Arts @ 29 Garden
       city: Cambridge
+
+  - 2009:
+    - title: MOCA Grand Prix
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)
+
+    - title: Trying the Hand of God
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)
+
+    - title: Golf and Donuts
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)
 
   - 2010:
     - title: Relay Drawing
@@ -293,6 +324,10 @@ group:
       city: Brooklyn
 
   - 2005:
+    - title: 5 'til 12
+      venue: Beall Center for Art and Technology
+      city: Irvine (w/ Sue Huang)
+
     - title: Glowlab Open Lab
       venue: Art Interactive
       city: Cambridge
@@ -306,6 +341,10 @@ group:
       city: New York
  
   - 2004:
+    - title: The Case at Kulturhuset
+      venue: Stockholms Kulturhuset
+      city: Stockholm (w/ Sue Huang)
+
     - title: Conflux Festival
       venue: Participant Inc
       city: New York
@@ -330,7 +369,7 @@ awards:
       venue: MASS MoCA
       location: Western Massachusetts
     
-    - kind: Commission
+    - kind: Residency
       venue: Eyebeam
       location: New York
 
@@ -390,6 +429,123 @@ awards:
     - kind: Residency
       venue: Studio for Electro-Instrumental Music (STEIM)
       location: Amsterdam
+
+
+
+publications:
+
+  - 2018:
+    - author: Brian House
+      article: Against Listening
+      book: Contemporary Music Review
+      editors: Lenore Manderson &amp; Ed Osborn
+      volume: "36:6"
+
+  - 2017:
+    - author: Brian House
+      article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
+      book: "ARPJA: Machine Research"
+      editors: Christian Ulrik Andersen &amp; Geoff Cox
+      volume: "6:1"
+
+    - author: Brian House
+      article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
+      book: "DATA browser: Executing Practices"
+      editors: H. Pritchard, E. Snodgrass, &amp; M. Tyźlik-Carver
+      publisher: Autonomedia
+
+  - 2014:
+    - author: Brian House
+      article: Subversive Mobile Storytelling
+      book: Mobile Media Making in an Age of Smartphones
+      editors: Marsha Berry and Max Schleser
+      publisher: Palgrave Pilot
+
+    - author: Brian House
+      article: Mary Mattingly's <i>WetLand</i>
+      book: Title Magazine
+      editor: Jacob Feige
+
+  - 2013:
+    - author: Brian House
+      article: "OpenPaths: Empowering Personal Geographic Data"
+      book: Proceedings of the 19th International Symposium of Electronic Art
+  
+  - 2009:
+    - author: Brian House and Jesse Shapins
+      article: Designers and Citizens as Critical Media Artists
+      book: Urban Omnibus
+
+  # - 2007:
+  #   - author: Brian House and Sue Huang
+  #     article: Hundekopf
+  #     book: Vague Terrain
+  #     volume: issue 6 
+
+conferences:
+  - 2017:
+    - paper: "Animal Behavior: Rhythmanalysis and the More-than-Human"
+      conference: Society for Literature, Science, and the Arts
+      location: Tempe
+
+    - paper: On Wifi, Habits, and Rats
+      conference: Radical Networks
+      location: New York
+
+    - paper: "Machine Listening: WaveNet, Media Materialism, and Rhythmanalysis"
+      conference: Transmediale
+      location: Berlin
+
+  - 2015: 
+    - paper: "Synchronizing Uncertainty: Google's Spanner and the Foreclosure of Time"
+      conference: PARSE Biennial Research Conference on Time
+      location: G&ouml;teborg Universitet
+
+    - paper: "Quotidian Record: The Musical Interpretation of Personal Geographic Data"
+      conference: Inertia
+      location: UCLA
+
+    - paper: "Interruption as Rhythm"
+      conference: INTERRUPT
+      location: Brown University
+
+  - 2014:
+    - paper: "OpenPaths: A New Approach to Aggregating Personal Geographic Data"
+      conference: Subtle Technologies
+      location: Toronto
+
+  - 2013:
+    - paper: "OpenPaths: Location, encryption, and participatory sensing"
+      conference: PRISM Breakup
+      location: Eyebeam
+      
+    - paper: "Quotidian Record: The Musical Interpretation of Personal Geographic Data"
+      conference: Society of Electro-Acoustic Music in the United States
+      location: Wesleyan University
+
+    - paper: "OpenPaths: Empowering Personal Geographic Data"
+      conference: International Symposium of Electronic Art
+      location: Sydney      
+
+  - 2012:
+    - paper: "A New Approach to Aggregating Personal Geographic Data"
+      conference: American Association of Geographers
+      location: New York
+
+  - 2011:
+    - paper: "From Psychogeography to Rhythmanalysis"
+      conference: Conflux Festival
+      location: New York    
+
+  - 2007:
+    - paper: "The Mixed-Reality City"
+      conference: Narrative, Play &amp; Learning in Multimodal Environments
+      location: University of Southern Denmark
+
+    - paper: "Subversive Mobile Storytelling"
+      conference: Arte.Mov
+      location: Belo Horizonte, Brazil
+
 
 
 critical:
@@ -875,14 +1031,11 @@ talks:
     - location: Oberlin College
       title: Playfest, artist talk
 
-    - location: Brown University
-      title: INTERRUPT 3 conference, artist talk
-
     - location: BRIC Arts
       title: "&ldquo;Google Maps and artistic practice,&rdquo; artist talk"
 
   - 2014:
-    - location: Smith
+    - location: Smith College
       title: visiting critic
 
     - location: Leaders in Software Art
@@ -898,9 +1051,6 @@ talks:
       title: "&ldquo;Quotidian Rhythms and Political Frictions&rdquo;"
 
   - 2013:
-    - location: PRISM Breakup Exhibition, Eyebeam
-      title: "&ldquo;OpenPaths: Location, encryption, and participatory sensing&rdquo;"
-
     - location: School for Poetic Computation
       title: artist talk
 
@@ -915,7 +1065,7 @@ talks:
 
   - 2012:
     - location: Internet of Things Meetup
-      title: "&ldquo;OpenPaths: A new approach to aggregating personal geographic data&rdquo;"
+      title: artist talk
 
     - location: Harvard GSD
       title: guest critic
@@ -928,10 +1078,7 @@ talks:
       title: Video Art and Experimental Film Festival, panel
 
     - location: Google
-      title: "&ldquo;OpenPaths: A new approach to aggregating personal geographic data&rdquo;"
-
-    - location: Conflux Festival
-      title: "&ldquo;From Psychogeography to Rhythmanalysis,&rdquo; artist talk"
+      title: artist talk
 
     - location: OpenPlans
       title: lecture on behavior mining
@@ -954,10 +1101,10 @@ talks:
         title: "&ldquo;Subversive Mobile Storytelling,&rdquo; workshop"
 
       - location: MIT
-        title: "&ldquo;Writing Cities&rdquo; conference with Richard Sennett"
+        title: "&ldquo;Writing Cities&rdquo; symposium with Richard Sennett"
 
       - location: Dorkbot NYC
-        title: presented <i>TXTML</i>
+        title: artist talk
 
       - location: University of Westminster (UK)
         title: "&ldquo;Subversive Mobile Storytelling,&rdquo; artist talk"
@@ -966,12 +1113,6 @@ talks:
         title: "&ldquo;Nonlinear Narrative in Urban Space,&rdquo; artist talk"
 
   - 2007:
-      - location: University of Southern Denmark
-        title: "&ldquo;The Mixed-Reality City: Narrative, Play &amp; Learning in Multimodal Environments,&rdquo; keynote"
-
-      - location: Arte.Mov (Brazil)
-        title: "&ldquo;Subversive Mobile Storytelling,&rdquo; artist talk"
-
       - location: NYU ITP
         title: guest critic
 
@@ -990,67 +1131,114 @@ talks:
 
   - 2005:
       - location: Harvard GSD
-        title: "&ldquo;Borders/Edges/Divides,&rdquo; artist talk"
+        title: artist talk
 
       - location: IT University of Copenhagen
-        title: Living Lab Conference panelist
+        title: Living Lab panelist
 
       - location: Dorkbot NYC
-        title: presented <i>Yellow Arrow</i>
+        title: artist talk
 
       - location: NYU ITP
         title: guest critic
 
   - 2004:
       - location: MIT Department of Urban Studies and Planning
-        title: presented <i>Yellow Arrow</i>
+        title: artist talk
 
-publications:
 
+
+teaching:
   - 2017:
-    - author: Brian House
-      article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
-      book: "ARPJA: Machine Research"
-      editors: Christian Ulrik Andersen &amp; Geoff Cox
-      volume: volume 6, issue 1
-
-    - author: Brian House
-      article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
-      book: "DATA browser: Executing Practices"
-      editors: H. Pritchard, E. Snodgrass, &amp; M. Tyźlik-Carver
-      volume: number 6
-      publisher: Autonomedia
-
+    - semester: Fall
+      course: Rhythm Beyond Music
+      institution: Brown University
+      program: Computer Music and Multimedia / Modern Culture and Media
+      level: undergraduate
+  - 2016:
+    - semester: Spring
+      course: Computer Music Aesthetics
+      institution: Brown University
+      program: Computer Music and Multimedia
+      level: undergraduate
+  - 2015:
+    - semester: Fall
+      course: Electroacoustic Improvisation Ensemble
+      institution: Brown University
+      program: Computer Music and Multimedia
+      level: undergraduate
   - 2014:
-    - author: Brian House
-      article: Subversive Mobile Storytelling
-      book: Mobile Media Making in an Age of Smartphones
-      editors: Marsha Berry and Max Schleser
-      volume:
-      publisher: Palgrave Pilot
+    - semester: Spring
+      course: Ecocentric Design
+      institution: Rhode Island School of Design
+      program: Digital+Media
+      level: graduate
+  - 2013:
+    - semester: Spring
+      course: Experimental Geography
+      institution: Rhode Island School of Design
+      program: Digital+Media
+      level: graduate
+  - 2011:
+    - semester: Fall
+      course: Major Studio I
+      institution: Parsons
+      program: Design and Technology
+      level: graduate
+  - 2008:  
+    - semester: Summer
+      course: Critical Urban Media Arts
+      institution: Columbia University
+      program: School of Architecture, Preservation, and Planning
+      level: graduate
 
-    - author: Brian House
-      article: Mary Mattingly, WetLand
-      book: Title magazine
-      editors: Jacob Feige
+TA:
+  - 2014:
+    - semester: Fall
+      course: Performance in a Virtual World
+      institution: Brown University
+      program: Computer Music and Multimedia
+      level: Undergraduate
+      instructor: Todd Winkler
+
+    - semester: Spring
+      course: Studio as a Compositional Tool
+      institution: Brown University
+      program: Computer Music and Multimedia
+      level: Undergraduate
+      instructor: Jim Moses
+  - 2013:
+    - semester: Fall
+      course: Computers as a Compositional Tool
+      institution: Brown University
+      program: Computer Music and Multimedia
+      level: Undergraduate
+      instructor: Peter Bussigel
+
+
+service:
+  - 2016:
+    - role: Selection committee
+      institution: ISEA
+
+  - 2015:
+    - role: Advisor
+      institution: UnionDocs
 
   - 2013:
-    - author: Brian House
-      article: "OpenPaths: empowering personal geographic data"
-      book: Proceedings of the 19th International Symposium of Electronic Art
-  
-  - 2009:
-    - author: Brian House and Jesse Shapins
-      article: Designers and Citizens as Critical Media Artists
-      book: Urban Omnibus
+    - role: Selection committee
+      institution: Re-New Festival
 
-  - 2007:
-    - author: Brian House and Sue Huang
-      article: Hundekopf
-      book: Vague Terrain
-      volume: issue 6
+  - 2012:
+    - role: Selection committee
+      institution: Eyebeam
 
+    - role: Advisor
+      institution: StoryCorps
 
-# commas, eds
+  - 2008:
+    - role: Selection committee
+      institution: Conflux Festival
 
-# transmediale paper presentation
+    - role: Selection committee
+      institution: Mobile Music Workshop

@@ -9,7 +9,7 @@ def build(structure, root):
     if structure is not None:
         pages = structure.keys() if type(structure) is dict else structure
         for page in pages:
-            path = os.path.join(root, page)
+            path = os.path.abspath(os.path.join(root, page))
             if not os.path.isdir(path):
                 os.mkdir(path)
             content = "content/%s.yaml" % page.split('.')[0]                
@@ -27,9 +27,12 @@ def build(structure, root):
             work_images = []
             for image in images:
                 if page in image:
-                    source_path = os.path.join("images", image)
+                    source_path = os.path.abspath(os.path.join("images", image))
+                    destination_path = os.path.join(path, source_path.split("/")[-1])
                     width, height = Image.open(source_path).size
-                    shutil.copy(source_path, path)                    
+                    if not os.path.isfile(destination_path) or os.path.getmtime(source_path) > os.path.getmtime(destination_path):
+                        shutil.copy(source_path, path)                    
+                        print("\tCopying %s..." % image)
                     work_images.append((image, width, height))
             data.update({'images': work_images})
             if os.path.isfile(template):

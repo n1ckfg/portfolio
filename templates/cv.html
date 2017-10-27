@@ -27,12 +27,12 @@
         <hr />
         <ul> 
             {% for item in education %}
-            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.addendum }}</li>
+            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>{% if item.addendum %}<br />{{ item.addendum }}{% endif %}</li>
             {% endfor %}
         </ul>
     </div>
 
-    <div> 
+<!--     <div> 
         SOLO AND TWO-PERSON EXHIBITIONS
         <hr />
         <ul>
@@ -46,10 +46,10 @@
                 {% endfor %}
             {% endfor %}
         </ul>
-    </div>
+    </div> -->
     
     <div> 
-        GROUP EXHIBITIONS
+        EXHIBITIONS
         <hr />
         <ul>
             {% for year in group %}
@@ -63,9 +63,10 @@
             {% endfor %}
         </ul>
     </div> 
-    
+
     <div> 
-        RESIDENCIES, COMMISSIONS, + FELLOWSHIPS
+        <!-- RESIDENCIES, COMMISSIONS, AWARDS + FELLOWSHIPS -->
+        AWARDS
         <hr />
         <ul>
             {% for year in awards %}
@@ -79,6 +80,48 @@
             {% endfor %}        
         </ul> 
     </div>
+    
+    <div>
+        PUBLICATIONS
+        <hr />
+        <ul> 
+            {% for year in publications %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}   
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<b>{{ item.book }}</b>{% if item.volume %} ({{ item.volume }}){% endif %}{% if item.editors %}, eds. {{ item.editors }}{% endif %}{% if item.editor %}, ed. {{ item.editor }}{% endif %}{% if item.publisher %}, {{ item.publisher }}{% endif %}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        CONFERENCE PAPERS
+        <hr />
+        <ul> 
+            {% for year in conferences %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}   
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> &ldquo;{{ item.paper }},&rdquo; <b>{{ item.conference }}</b>, {{ item.location }}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul>        
+    </div>
+    
+    <div> 
+        INVITATIONS
+        <hr />
+        <ul>
+            {% for year in talks %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}        
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.location }}</b>, {{ item.title }}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul> 
+    </div> 
 
     <div>
         APPEARANCES IN CRITICAL WRITING
@@ -95,7 +138,7 @@
     </div>
 
     <div> 
-        SELECTED PRESS
+        PRESS
         <hr />
         <br />
 
@@ -133,77 +176,39 @@
         </ul>
     </div>
 
-    <div> 
-        INVITED TALKS + CRITIQUES
-        <hr />
-        <ul>
-            {% for year in talks %}
-                {% for year, items in year.items() %}
-                    {% for item in items %}        
-                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.location }}</b>, {{ item.title }}</li>
-                    {% endfor %}
-                {% endfor %}
-            {% endfor %}
-        </ul> 
-    </div> 
-
-    <div>
-        PUBLICATIONS
-        <hr />
-        <ul> 
-            {% for year in publications %}
-                {% for year, items in year.items() %}
-                    {% for item in items %}   
-                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<i><b>{{ item.book }}</b></i>{% if item.editors %}, eds. {{ item.editors }}{% endif %}{% if item.editor %}, ed. {{ item.editor }}{% endif %}{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.publisher %}, {{ item.publisher }}{% endif %}</li>
-                    {% endfor %}
-                {% endfor %}
-            {% endfor %}
-        </ul>
-    </div>
-
-    <div>
-        CONFERENCE PRESENTATIONS
-        <hr />
-        <ul>
-            <li><span class="show">2017</span> Brian House, "Machine Listening: WaveNet, media materialism, and rhythmanalysis," <b>Transmediale</b>, Berlin</li>
-            <li><span class="show">2015</span> Brian House, "Synchronizing Uncertainty: Google's Spanner and the Foreclosure of Time," <b>PARSE Biennial Research Conference on Time</b>, Göteborg Universitet</li>
-            <li><span>2015</span> Brian House, "Quotidian Record: the musical interpretation of personal geographic data," <b>Inertia Conference</b>, UCLA</li>
-            <li><span class="show">2014</span> Thomas Kirchner, Hong Gao, Andrew Anesetti-Rothermel, Heather Carlos, Brian House, "Longitudinal Human Mobility and Real-time Access to a National Density Surface of Retail Outlets," <b>International Workshop on Urban Computing</b></li>
-            <li><span>2014</span> <b>Subtle Technologies Festival</b>, paper: "OpenPaths: A new approach to aggregating personal geographic data"</li>
-            <li><span class="show">2013</span> Brian House, "Quotidian Record: the musical interpretation of personal geographic data," <b>Society of Electro-Acoustic Music in the United States</b></li>
-            <li><span>2013</span> Brian House, "OpenPaths: empowering personal geographic data," <b>International Symposium of Electronic Art</b></li>            
-            <li><span class="show">2012</span> Brian House, "OpenPaths: a new approach to aggregating personal geographic data," <b>AAG Annual Meeting</b></li>
-        </ul>
-    </div>
 
     <div> 
         COURSES TAUGHT
         <hr />
         <ul> 
-            <li><span class="show">2017</span> Fall, <i>Rhythm Beyond Music</i>, <b>Brown University</b>, Computer Music and Media Studies, Graduate and undergraduate</li>
-            <li><span class="show">2016</span> Spring, <i>Computer Music Aesthetics</i>, <b>Brown University</b>, Computer Music, Undergraduate</li>
-            <li><span class="show">2015</span> Fall, <i>Electroacoustic Improvisation Ensemble</i>, <b>Brown University</b>, Computer Music, Undergraduate</li>
-            <li><span class="show">2014</span> Spring, <i>Ecocentric Design</i>, <b>Rhode Island School of Design</b>, Digital+Media, MFA</li>
-            <li><span class="show">2013</span> Spring, <i>Experimental Geography</i>, <b>Rhode Island School of Design</b>, Digital+Media, MFA</li>
-            <li><span class="show">2011</span> Fall, <i>Major Studio I</i>, <b>Parsons the New School for Design</b>, Design+Technology, MFA</li>
-            <li><span class="show">2008</span> Summer, <i>Critical Urban Media Arts</i>, <b>Columbia University</b>, Graduate School of Architecture, Planning, and Preservation</li>
+            {% for year in teaching %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}   
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.semester }}, <i>{{ item.course }}</i>, <b>{{ item.institution }}</b>, {{ item.program }}, {{ item.level }}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>  
 
     <div> 
         COURSES TA'd
         <hr />
-        <ul style="margin-left: 0px;"> 
-            <li><span class="show">2014</span> Fall, <i>Performance in a Virtual World</i>, <b>Brown University</b>, Todd Winkler, Computer Music, Undergraduate</li>
-            <li><span class="show">2014</span> Spring, <i>Studio as a Compositional Tool</i>, <b>Brown University</b>, Jim Moses, Computer Music, Undergraduate</li>
-            <li><span class="show">2013</span> Fall, <i>Computers and Music</i>, <b>Brown University</b>, Peter Bussigel, Computer Music, Undergraduate</li>
+        <ul>
+            {% for year in TA %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}   
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.semester }}, <i>{{ item.course }}</i>, <b>{{ item.institution }}</b>, {{ item.program }}, {{ item.level }}</li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>  
 
     <div> 
         ADVISING
         <hr />
-        <ul style="margin-left: 0px;"> 
+        <ul> 
             <li><span class="show">2015</span> Edek Sher, <b>RISD</b>, MFA Digital+Media</li>
             <li><span>2015</span> Hyemi Song, <b>RISD</b>, MFA Digital+Media</li>
             <li><span class="show">2014</span> José Fernandez Liermann, <b>RISD</b>, MFA Digital+Media</li>
@@ -211,17 +216,17 @@
     </div>  
 
     <div> 
-        PEER REVIEW + SERVICE
+        SERVICE
         <hr />
-        <ul style="margin-left: 0px;"> 
-            <li><span class="show">2016</span> Reviewer, <b>ISEA</b></li>
-            <li><span class="show">2015</span> Advisory board, <b>Union Docs</b></li>
-            <li><span class="show">2013</span> Reviewer, <b>Re-New Festival</b></li> 
-            <li><span class="show">2012</span> Residency selection committee, <b>Eyebeam</b></li> 
-            <li><span>2012</span> Advisory committee, <b>StoryCorps</b></li>
-            <li><span class="show">2008</span> Curator, <b>Conflux Festival</b></li> 
-            <li><span>2008</span> Reviewer, <b>Mobile Music Workshop</b></li> 
-        </ul> 
+        <ul> 
+            {% for year in service %}
+                {% for year, items in year.items() %}
+                    {% for item in items %}   
+                    <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.role }}, <b>{{ item.institution }}</b></li>
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        </ul>            
     </div>  
 
     <div> 
@@ -232,7 +237,7 @@
             <li><span class="show">2008-2010</span> Director of Technology, <b>Local Projects</b>, New York</li>
             <li><span class="show">2006-2008</span> Software Architect, <b>Diversion Media Inc</b>, New York</li>
             <li><span class="show">2004-2006</span> Director of Research &amp; Development, <b>Counts Media Inc</b>, New York</li>
-            <li><span class="show">2000-2002</span> Publicity Director, <b>WKCR-FM</b>, New York</li>
+            <!-- <li><span class="show">2000-2002</span> Publicity Director, <b>WKCR-FM</b>, New York</li> -->
         </ul> 
     </div>     
     
