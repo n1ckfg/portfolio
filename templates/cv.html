@@ -27,7 +27,7 @@
         <hr />
         <ul> 
             {% for item in education %}
-            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>{% if item.addendum %}<br />{{ item.addendum }}{% endif %}</li>
+            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>{% if item.addendum %} (expected May 2018)<br />{{ item.addendum }}{% endif %}</li>
             {% endfor %}
         </ul>
     </div>
