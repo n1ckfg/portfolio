@@ -3,21 +3,25 @@ education:
   - year: 2018
     degree: PhD, Computer Music and Multimedia
     institution: Brown University
+    city: Providence
     addendum: "Dissertation committee: Wendy Chun (co-chair), Ed Osborn, Rebecca Schneider, Todd Winkler (co-chair)"
   
   - year: 2016
     degree: MA, Modern Culture and Media
     institution: Brown University
+    city: Providence
     addendum: #"advisor: Wendy Chun"
   
   - year: 2006
     degree: MSc, Art &amp; Technology
     institution: Chalmers tekniska h&ouml;gskola<b></b>
+    city: G&ouml;teborg
     addendum: #"advisor: Mats Nordahl"
   
   - year: 2002
     degree: BA, Computer Science
     institution: Columbia University
+    city: New York
     addendum: #"courses: John Kender, Jonathan Kramer, Brad Garton, Manuel DeLanda"
 
 
@@ -95,11 +99,11 @@ group:
   - 2016:
     - title: The Spaces We're In
       venue: NEoN Digital Arts
-      city: Dundee, Scotland (w/ Sue Huang)
+      city: Dundee (w/ Sue Huang)
 
     - title: Reality Under Surveillance
       venue: Speculum Artium
-      city: Trbovlje, Slovenia
+      city: Trbovlje
 
     - title: Acoustic Infrastructures
       venue: Eyebeam
@@ -165,7 +169,7 @@ group:
 
     - title: Print Screen
       venue: Mediatheque
-      city: Holon (Israel)
+      city: Holon
 
     - title: "Buildering: Misbehaving The City"
       venue: Contemporary Arts Center
@@ -359,15 +363,15 @@ awards:
   - 2016:
     - kind: Commission
       venue: NEoN Digital Arts
-      location: Dundee, Scotland
+      location: Dundee
 
     - kind: Residency
       venue: Rocky Mountain Biological Laboratory
-      location: Colorado
+      location: Gothic
 
     - kind: Residency
       venue: MASS MoCA
-      location: Western Massachusetts
+      location: North Adams
     
     - kind: Residency
       venue: Eyebeam
@@ -394,7 +398,7 @@ awards:
 
     - kind: Residency
       venue: Free103point9 Wave Farm
-      location: New York State
+      location: Catskill
 
   - 2012:
     - kind: Fellowship

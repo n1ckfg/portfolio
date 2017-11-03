@@ -27,7 +27,7 @@
         <hr />
         <ul> 
             {% for item in education %}
-            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>{% if item.addendum %} (expected May 2018)<br />{{ item.addendum }}{% endif %}</li>
+            <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.city }}{% if item.addendum %} (expected May 2018)<br />{{ item.addendum }}{% endif %}</li>
             {% endfor %}
         </ul>
     </div>
@@ -110,7 +110,7 @@
     </div>
     
     <div> 
-        INVITATIONS
+        INVITED TALKS
         <hr />
         <ul>
             {% for year in talks %}
@@ -124,8 +124,8 @@
     </div> 
 
     <div>
-        <!-- APPEARANCES IN CRITICAL WRITING -->
-        BIBLIOGRAPHY
+        APPEARANCES IN CRITICAL WRITING
+        <!-- BIBLIOGRAPHY -->
         <hr />
         <ul> 
             {% for year in critical %}
@@ -139,7 +139,7 @@
     </div>
 
     <div> 
-        PRESS
+        MEDIA COVERAGE
         <hr />
         <br />
 
@@ -181,6 +181,8 @@
     <div> 
         TEACHING EXPERIENCE
         <hr />
+        <br />
+        As Instructor
         <ul> 
             {% for year in teaching %}
                 {% for year, items in year.items() %}
@@ -190,11 +192,8 @@
                 {% endfor %}
             {% endfor %}
         </ul>
-    </div>  
-
-<!--     <div> 
-        COURSES TA'd
-        <hr />
+    
+        As TA
         <ul>
             {% for year in TA %}
                 {% for year, items in year.items() %}
@@ -205,7 +204,7 @@
             {% endfor %}
         </ul>
     </div>  
- -->
+
     <div> 
         ADVISING
         <hr />
@@ -217,7 +216,7 @@
     </div>  
 
     <div> 
-        SERVICE
+        PROFESSIONAL SERVICE
         <hr />
         <ul> 
             {% for year in service %}
@@ -231,13 +230,13 @@
     </div>  
 
     <div> 
-        SELECTED INDUSTRY EXPERIENCE
+        SELECTED NON-ACADEMIC POSITIONS
         <hr />
         <ul>
             <li><span class="show">2010-2012</span> Creative Technologist, <b>The New York Times Company, Research &amp; Development</b>, New York</li>
             <li><span class="show">2008-2010</span> Director of Technology, <b>Local Projects</b>, New York</li>
-            <li><span class="show">2006-2008</span> Software Architect, <b>Diversion Media Inc</b>, New York</li>
-            <li><span class="show">2004-2006</span> Director of Research &amp; Development, <b>Counts Media Inc</b>, New York</li>
+            <!-- <li><span class="show">2006-2008</span> Software Architect, <b>Diversion Media Inc</b>, New York</li> -->
+            <li><span class="show">2004-2006</span> Director of Research &amp; Development, <b>Counts Media</b>, New York</li>
             <!-- <li><span class="show">2000-2002</span> Publicity Director, <b>WKCR-FM</b>, New York</li> -->
         </ul> 
     </div>     
