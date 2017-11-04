@@ -9,8 +9,7 @@ Static site generator / personal portfolio site
 
 ...might want to do this first (it helps opengraph too):
 
-    cd images
-    for i in *.jpg; do echo "Processing $i"; exiftool -all= "$i"; done
+    exiftool -all= images/*; rm images/*_original
 
 ### Copyright/License
 

@@ -4,7 +4,7 @@ education:
     degree: PhD, Computer Music and Multimedia
     institution: Brown University
     city: Providence
-    addendum: "Dissertation committee: Wendy Chun (co-chair), Ed Osborn, Rebecca Schneider, Todd Winkler (co-chair)"
+    addendum: "Committee: Wendy Chun (co-advisor), Ed Osborn, Rebecca Schneider, Todd Winkler (co-advisor)"
   
   - year: 2016
     degree: MA, Modern Culture and Media
@@ -678,9 +678,9 @@ press:
         title: Climate change art exhibit a real community service
         issue: March 16
 
-      - publication: Transmediale
+      - publication: Transmediale Newspaper
         title: Machine Research
-        issue: Ever Elusive
+        issue: February
 
     - 2015:
       - publication: ARCADE
@@ -692,9 +692,9 @@ press:
         title: Quotidian Record
         issue: issue 46, Autumn
 
-      - publication: Chuan Art Studio
-        title: 
-        issue: Sense of Hearing
+      - publication: Chuan Art
+        title: Sense of Hearing
+        issue: Summer
 
     - 2011:
       - publication: TIME Magazine
