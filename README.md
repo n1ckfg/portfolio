@@ -7,9 +7,6 @@ Static site generator / personal portfolio site
     python3 -m http.server &
     open http://localhost:8000
 
-...might want to do this first (it helps opengraph too):
-
-    exiftool -all= images/*; rm images/*_original
 
 ### Copyright/License
 

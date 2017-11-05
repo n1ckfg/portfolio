@@ -1,9 +1,19 @@
 #!/usr/bin/env python3
 
-import os, sys, yaml, markdown, shutil, jinja2, re
+import os, sys, yaml, markdown, shutil, jinja2, re, subprocess, time, datetime
 from PIL import Image
 
+try:
+    subprocess.check_call("exiftool -all= images/*", shell=True)      # security / helps opengraph
+except Exception as e:
+    print(e)
+    exit()
+try:
+    subprocess.check_call("rm images/*_original &> /dev/null", shell=True)        
+except Exception:
+    pass
 images = [image for image in os.listdir("images") if image[-3:] == "png" or image[-3:] == "jpg"]
+
 
 def build(structure, root):
     if structure is not None:
@@ -12,12 +22,13 @@ def build(structure, root):
             path = os.path.abspath(os.path.join(root, page))
             if not os.path.isdir(path):
                 os.mkdir(path)
-            content = "content/%s.yaml" % page.split('.')[0]                
+            content = os.path.abspath("content/%s.yaml" % page.split('.')[0])
             if type(structure) is dict:
                 template = "templates/%s.html" % page
             else:
                 template = "templates/%s.html" % root.split("/")[-1][:-1]
-            print("PAGE: %s\tCONTENT: %s\tTEMPLATE: %s" % (page, content, template))
+            html_path = os.path.join(path, "index.html")      
+            print("PAGE: %s" % page)
             data = {'page': page, 'path': path}
             if os.path.isfile(content):
                 with open(content) as f:
@@ -32,13 +43,16 @@ def build(structure, root):
                     width, height = Image.open(source_path).size
                     if not os.path.isfile(destination_path) or os.path.getmtime(source_path) > os.path.getmtime(destination_path):
                         shutil.copy(source_path, path)                    
-                        print("\tCopying %s..." % image)
+                        print("\t--> copying %s..." % image)
                     work_images.append((image, width, height))
             data.update({'images': work_images})
-            if os.path.isfile(template):
+            if os.path.isfile(template) and os.path.isfile(content) and (not os.path.isfile(html_path) or (os.path.getmtime(template) > os.path.getmtime(html_path)) or (os.path.getmtime(content) > os.path.getmtime(html_path))):           
+                print("\t--> updating content: %s\twith template: %s" % (content, template))                
                 html = render(template, data, structure=(structure[page] if type(structure) is dict else None))
-                with open(os.path.join(path, "index.html"), 'w') as f:
+                with open(html_path, 'w') as f:
                     f.write(html)
+            else:      
+                pass
             if type(structure) is dict:           
                 build(structure[page], path)
 
