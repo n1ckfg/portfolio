@@ -262,19 +262,6 @@ group:
       venue: Arts @ 29 Garden
       city: Cambridge
 
-  - 2009:
-    - title: MOCA Grand Prix
-      venue: MOCA
-      city: Los Angeles (w/ Sue Huang)
-
-    - title: Trying the Hand of God
-      venue: MOCA
-      city: Los Angeles (w/ Sue Huang)
-
-    - title: Golf and Donuts
-      venue: MOCA
-      city: Los Angeles (w/ Sue Huang)
-
   - 2010:
     - title: Relay Drawing
       venue: Los Angeles Contemporary Exhibitions
@@ -287,6 +274,19 @@ group:
     - title:   
       venue: Megapolis Audio Art Festival
       city: Baltimore
+
+  - 2009:
+    - title: MOCA Grand Prix
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)
+
+    - title: Trying the Hand of God
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)
+
+    - title: Golf and Donuts
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)      
  
   - 2008:
     - title: Rhizome Commissions

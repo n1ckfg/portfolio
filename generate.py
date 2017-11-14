@@ -12,7 +12,7 @@ try:
     subprocess.check_call("rm images/*_original &> /dev/null", shell=True)        
 except Exception:
     pass
-images = [image for image in os.listdir("images") if image[-3:] == "png" or image[-3:] == "jpg"]
+images = [image for image in os.listdir("images") if (image[-3:] == "png" or image[-3:] == "jpg") and '@' not in image]
 
 
 def build(structure, root):
@@ -39,20 +39,32 @@ def build(structure, root):
             for image in images:
                 if page in image:
                     source_path = os.path.abspath(os.path.join("images", image))
-                    destination_path = os.path.join(path, source_path.split("/")[-1])
-                    width, height = Image.open(source_path).size
+                    destination_path = os.path.join(path, source_path.split("/")[-1])                    
                     if not os.path.isfile(destination_path) or os.path.getmtime(source_path) > os.path.getmtime(destination_path):
                         shutil.copy(source_path, path)                    
                         print("\t--> copying %s..." % image)
-                    work_images.append((image, width, height))
+                    hires = None
+                    hires_source_path = os.path.abspath(os.path.join("images", image)).replace(".", "@2x.")
+                    hires_destination_path = os.path.join(path, hires_source_path.split("/")[-1])                    
+                    if os.path.isfile(hires_source_path):
+                        hires = hires_source_path.split("/")[-1]
+                        if not os.path.isfile(hires_destination_path) or os.path.getmtime(hires_source_path) > os.path.getmtime(hires_destination_path):
+                            shutil.copy(hires_source_path, path)                    
+                            print("\t--> copying %s hires..." % image)                        
+                    width, height = Image.open(source_path).size                        
+                    work_images.append((image, width, height, hires))
             data.update({'images': work_images})
+            update = False
             if os.path.isfile(template) and os.path.isfile(content) and (not os.path.isfile(html_path) or (os.path.getmtime(template) > os.path.getmtime(html_path)) or (os.path.getmtime(content) > os.path.getmtime(html_path))):           
                 print("\t--> updating content: %s\twith template: %s" % (content, template))                
+                update = True
+            elif os.path.isfile(template) and (not os.path.isfile(html_path) or (os.path.getmtime(template) > os.path.getmtime(html_path))):           
+                print("\t--> updating template: %s" % template)
+                update = True
+            if update:
                 html = render(template, data, structure=(structure[page] if type(structure) is dict else None))
                 with open(html_path, 'w') as f:
                     f.write(html)
-            else:      
-                pass
             if type(structure) is dict:           
                 build(structure[page], path)
 

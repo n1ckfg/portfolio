@@ -5,7 +5,7 @@ www:
     about:
     cv:
     cv.print:
-    words:
+    # words:
     works:
         - urban_intonation
         - everything_that_happens_will_happen_today
