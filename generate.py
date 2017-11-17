@@ -1,19 +1,38 @@
 #!/usr/bin/env python3
 
-import os, sys, yaml, markdown, shutil, jinja2, re, subprocess, time, datetime
+import os, sys, yaml, markdown, shutil, jinja2, re, subprocess, time, datetime, json
 from PIL import Image
 
-try:
-    subprocess.check_call("exiftool -all= images/*", shell=True)      # security / helps opengraph
-except Exception as e:
-    print(e)
-    exit()
-try:
-    subprocess.check_call("rm images/*_original &> /dev/null", shell=True)        
-except Exception:
-    pass
-images = [image for image in os.listdir("images") if (image[-3:] == "png" or image[-3:] == "jpg") and '@' not in image]
-
+def process_images():
+    try:
+        subprocess.check_call("exiftool -all= images/*", shell=True)      # security / helps opengraph
+    except Exception as e:
+        print(e)
+        exit()
+    try:
+        subprocess.check_call("rm images/*_original &> /dev/null", shell=True)        
+    except Exception:
+        pass
+    images = {}
+    for filename in os.listdir("images"):
+        if ".jpg" not in filename:
+            continue
+        slug = filename.split(".")[0].replace("@2x", "")
+        tag = slug.split("_")[-1]
+        try:
+            int(tag)
+            slug = slug[:-(len(tag) + 1)]
+        except ValueError:
+            pass
+        if slug not in images:
+            images[slug] = []
+        if "@2x" in filename:
+            images[slug][-1][1] = filename
+        else:
+            images[slug].append([filename, None])
+    # print(json.dumps(images, indent=4))
+    return images
+images = process_images()
 
 def build(structure, root):
     if structure is not None:
@@ -35,26 +54,26 @@ def build(structure, root):
                     data.update(yaml.load(f))
                 if 'text' in data:
                     data['text'] = markdown.markdown(data['text'].strip())   
+            update = False
             work_images = []
-            for image in images:
-                if page in image:
-                    source_path = os.path.abspath(os.path.join("images", image))
-                    destination_path = os.path.join(path, source_path.split("/")[-1])                    
-                    if not os.path.isfile(destination_path) or os.path.getmtime(source_path) > os.path.getmtime(destination_path):
-                        shutil.copy(source_path, path)                    
+            if page in images:
+                for (image, hires) in images[page]:
+                    image_source_path = os.path.abspath(os.path.join("images", image))
+                    image_destination_path = os.path.join(path, image_source_path.split("/")[-1])                    
+                    if not os.path.isfile(image_destination_path) or os.path.getmtime(image_source_path) > os.path.getmtime(image_destination_path):
+                        shutil.copy(image_source_path, path)                    
                         print("\t--> copying %s..." % image)
-                    hires = None
-                    hires_source_path = os.path.abspath(os.path.join("images", image)).replace(".", "@2x.")
-                    hires_destination_path = os.path.join(path, hires_source_path.split("/")[-1])                    
-                    if os.path.isfile(hires_source_path):
-                        hires = hires_source_path.split("/")[-1]
+                        update = True
+                    if hires is not None:
+                        hires_source_path = os.path.abspath(os.path.join("images", hires))
+                        hires_destination_path = os.path.join(path, hires_source_path.split("/")[-1])                    
                         if not os.path.isfile(hires_destination_path) or os.path.getmtime(hires_source_path) > os.path.getmtime(hires_destination_path):
                             shutil.copy(hires_source_path, path)                    
-                            print("\t--> copying %s hires..." % image)                        
-                    width, height = Image.open(source_path).size                        
+                            print("\t--> copying %s hires..." % hires)                        
+                            update = True
+                    width, height = Image.open(image_source_path).size                        
                     work_images.append((image, width, height, hires))
-            data.update({'images': work_images})
-            update = False
+            data.update({'images': work_images, 'image_structure': images})
             if os.path.isfile(template) and os.path.isfile(content) and (not os.path.isfile(html_path) or (os.path.getmtime(template) > os.path.getmtime(html_path)) or (os.path.getmtime(content) > os.path.getmtime(html_path))):           
                 print("\t--> updating content: %s\twith template: %s" % (content, template))                
                 update = True
@@ -108,6 +127,8 @@ def copy_static():
     for filename in os.listdir("."):
         if filename[-3:] == "css":
             shutil.copy(filename, "www/")
+        elif filename == ".htaccess":
+            shutil.copy(filename, "www/")
     for filename in os.listdir("js"):
         if filename[-2:] == "js":
             shutil.copy(os.path.join("js", filename), "www/")
@@ -120,5 +141,5 @@ if __name__ == "__main__":
         structure = yaml.load(f)
     build(structure, ".")
     copy_static()
-    shutil.copy("www/works/index.html", "www/index.html")
+    shutil.copy("www/works/index.html", "www/index.html")       # this should be a rewrite rule
 
