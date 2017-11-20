@@ -440,22 +440,28 @@ publications:
 
   - 2018:
     - author: Brian House
+      article: Sounding Data and Material Temporality
+      book: Journal of Sonic Studies
+      editor: Caleb Kelly
+      volume: "18, in preparation"
+
+    - author: Brian House
       article: Against Listening
       book: Contemporary Music Review
-      editors: Lenore Manderson &amp; Ed Osborn
-      volume: "36:6"
+      editors: Lenore Manderson and Ed Osborn
+      volume: "36:6, in press"
 
   - 2017:
     - author: Brian House
       article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
       book: "ARPJA: Machine Research"
-      editors: Christian Ulrik Andersen &amp; Geoff Cox
+      editors: Christian Ulrik Andersen and Geoff Cox
       volume: "6:1"
 
     - author: Brian House
-      article: "Synchronizing Uncertainty: Google's Spanner and Cartographic Time"
+      article: "Synchronizing Uncertainty: Google’s Spanner and Cartographic Time"
       book: "DATA browser: Executing Practices"
-      editors: H. Pritchard, E. Snodgrass, &amp; M. Tyźlik-Carver
+      editors: H. Pritchard, E. Snodgrass, and M. Tyźlik-Carver
       publisher: Autonomedia
 
   - 2014:
@@ -466,7 +472,7 @@ publications:
       publisher: Palgrave Pilot
 
     - author: Brian House
-      article: Mary Mattingly's <i>WetLand</i>
+      article: Mary Mattingly’s <i>WetLand</i>
       book: Title Magazine
       editor: Jacob Feige
 
