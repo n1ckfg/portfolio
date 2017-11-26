@@ -141,5 +141,5 @@ if __name__ == "__main__":
         structure = yaml.load(f)
     build(structure, ".")
     copy_static()
-    shutil.copy("www/works/index.html", "www/index.html")       # this should be a rewrite rule
+    shutil.move("www/works/index.html", "www/index.html")       # this should be a rewrite rule
 

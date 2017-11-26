@@ -4,24 +4,28 @@ education:
     degree: PhD, Computer Music and Multimedia
     institution: Brown University
     city: Providence
+    state: RI
     addendum: "Committee: Wendy Chun (co-advisor), Ed Osborn, Rebecca Schneider, Todd Winkler (co-advisor)"
   
   - year: 2016
     degree: MA, Modern Culture and Media
     institution: Brown University
     city: Providence
+    state: RI
     addendum: #"advisor: Wendy Chun"
   
   - year: 2006
     degree: MSc, Art &amp; Technology
     institution: Chalmers tekniska h&ouml;gskola<b></b>
     city: G&ouml;teborg
+    state: Sweden
     addendum: #"advisor: Mats Nordahl"
   
   - year: 2002
     degree: BA, Computer Science
     institution: Columbia University
     city: New York
+    state: NY
     addendum: #"courses: John Kender, Jonathan Kramer, Brad Garton, Manuel DeLanda"
 
 
@@ -70,292 +74,361 @@ group:
     - title: Fascists, Lovers, and Other Lonely Ghosts
       venue: Granoff Center for the Creative Arts
       city: Providence
+      state: RI
 
   - 2017:
     - title: Feminist Climate Change
       venue: Ars Electronica Festival
       city: Linz
+      state: Austria
 
     - title:
       venue: Megapolis Audio Art Festival
       city: Philadelphia
+      state: PA
 
     - title: Land Trust
       venue: Redline Gallery
       city: Denver
+      state: CO
 
     - title: Storm Warning
       venue: Vicki Myhren Gallery
       city: Denver
+      state: CO
 
     - title: re|ACT Arts &amp; Environment Symposium
       venue: Granoff Center for the Creative Arts
       city: Providence
+      state: RI
 
     - title: Ever Elusive
       venue: Transmediale
       city: Berlin
+      state: Germany
 
   - 2016:
     - title: The Spaces We're In
       venue: NEoN Digital Arts
       city: Dundee (w/ Sue Huang)
+      state: Scotland
 
     - title: Reality Under Surveillance
       venue: Speculum Artium
       city: Trbovlje
+      state: Slovenia
 
     - title: Acoustic Infrastructures
       venue: Eyebeam
       city: New York
+      state: NY
 
     - title: Atmospheres
       venue: Granoff Center for the Creative Arts
       city: Providence
+      state: RI
 
   - 2015:
     - title: Take Karaoke / Fight Logic
       venue: Cohen Gallery
       city: Providence
+      state: RI
 
     - title: Infosphere
       venue: ZKM | Museum of Contemporary Art
       city: Karlsruhe
+      state: Germany
 
     - title: Eyebeam in Objects
       venue: Upfor Gallery
       city: Portland
+      state: OR
 
     - title: Captive Portal
       venue: Center for Contemporary Art
       city: Tel Aviv
+      state: Israel
 
     - title: New Aesthetic?
       venue: Queensland University of Technology
       city: Brisbane
+      state: Australia
 
     - title: Lifelogging
       venue: Science Gallery
       city: Dublin
+      state: Ireland
 
     - title: Ampersand
       venue: MIT List Visual Arts Center
       city: Cambridge
+      state: MA
 
     - title: From Field Recording to Data Sonification in Late Capitalism
       venue: Labor Neunzehn
       city: Berlin
+      state: Germany
 
     - title: Wetland
       venue: Schuylkill Center
       city: Philadelphia
+      state: PA
 
   - 2014:
     - title: Data &amp; Society
       venue: Rubin Museum
       city: New York
+      state: NY
 
     - title: Pale Firework
       venue: Gelman Gallery
       city: Providence
+      state: RI
 
     - title:   
       venue: NIME
       city: London
+      state: United Kingdom
 
     - title: Imprint of the City
       venue: Issue Project Room
       city: New York
+      state: NY
 
     - title: Print Screen
       venue: Mediatheque
       city: Holon
+      state: Israel
 
     - title: "Buildering: Misbehaving The City"
       venue: Contemporary Arts Center
       city: Cincinnati (w/ Sue Huang)
+      state: OH
 
     - title: Biennial Symposium
       venue: Ammerman Center for Arts and Technology
       city: New London
+      state: CT
         
   - 2013:
     - title: Total Recall
       venue: Ars Electronica Festival
       city: Linz
+      state: Austria
      
     - title: "Neuromast: Certain Uncertainty and Contemporary Art"
       venue: Franklin Street Works
       city: Stamford
+      state: CT
 
     - title: Under the Influence
       venue: Gelman Gallery
       city: Providence
+      state: RI
 
     - title: PRISM Breakup
       venue: Eyebeam
       city: New York
+      state: NY
 
     - title: Where are We Now?
       venue: The Collection Lincoln &amp; Usher Gallery
       city: Lincolnshire
+      state: United Kingdom
 
     - title: iNTERFACES
       venue: Black &amp; White Festival
       city: Porto
+      state: Portugal
 
     - title:   
       venue: Megapolis Audio Art Festival
       city: New York
+      state: NY
           
     - title: Quiet City Presents
       venue: Secret Theatre
       city: New York
+      state: NY
                 
     - title:
       venue: New York City Electroacoustic Music Festival
       city: New York
+      state: NY
 
     - title: Binary
       venue: Largo Das Artes
       city: Rio de Janeiro
+      state: Brazil
 
     - title: Habits of Living
       venue: Granoff Center for the Creative Arts
       city: Providence
+      state: RI
                 
     - title: Annual Showcase
       venue: Eyebeam
       city: New York
+      state: NY
 
   - 2012:
     - title: Forty-eight to Sixteen
       venue: Eyebeam
       city: New York
+      state: NY
 
     - title: Quotidian Record / Stranger Visions
       venue: Eyebeam
       city: New York
+      state: NY
 
     - title: Infinitely Poignant Future Pastness
       venue: Brown University
       city: Providence
+      state: RI
 
     - title:   
       venue: Conflux Festival
       city: New York
+      state: NY
 
     - title: "DataVis: Information as Art"
       venue: Beall Center for Art and Technology
       city: Irvine
+      state: CA
 
     - title:   
       venue: urbanoFILM
       city: Stuttgart
+      state: Germany
 
   - 2011:
     - title: Klein Kunst Party
       venue: Platoon Kunsthalle
       city: Seoul
+      state: South Korea
 
     - title: Poetic Urbanisms
       venue: Arts @ 29 Garden
       city: Cambridge
+      state: United Kingdom
 
   - 2010:
     - title: Relay Drawing
       venue: Los Angeles Contemporary Exhibitions
       city: Los Angeles (w/ Sue Huang)
+      state: CA
         
     - title: Live Footage
       venue: Monkeytown
       city: New York (w/ Topu Lyo and Mike Thies)
+      state: NY
 
     - title:   
       venue: Megapolis Audio Art Festival
       city: Baltimore
+      state: MD
 
   - 2009:
     - title: MOCA Grand Prix
       venue: MOCA
       city: Los Angeles (w/ Sue Huang)
+      state: CA
 
     - title: Trying the Hand of God
       venue: MOCA
       city: Los Angeles (w/ Sue Huang)
+      state: CA
 
     - title: Golf and Donuts
       venue: MOCA
-      city: Los Angeles (w/ Sue Huang)      
+      city: Los Angeles (w/ Sue Huang)
+      state: CA      
  
   - 2008:
     - title: Rhizome Commissions
       venue: New Museum of Contemporary Art
       city: New York
+      state: NY
  
     - title: Conflux Festival
       venue: Center for Architecture
       city: New York
+      state: NY
 
     - title: FILMOBILE
       venue: London Gallery West
       city: London
+      state: United Kingdom
      
     - title: Design and the Elastic Mind
       venue: MoMA
       city: New York
+      state: NY
  
   - 2007:
     - title: Arte.Mov
       venue: Pal&aacute;cio das Artes
       city: Belo Horizonte
+      state: Brazil
    
     - title: Conflux Festival
       venue: UnionDocs
       city: Brooklyn
+      state: NY
 
   - 2006:
     - title:   
       venue: S&oacute;nar
       city: Barcelona
+      state: Spain
 
     - title: Zero One Festival
       venue: ISEA
       city: San Jose
+      state: CA
 
     - title: Conflux Festival
       venue: McCaig-Welles Gallery
       city: Brooklyn
+      state: NY
 
   - 2005:
     - title: 5 'til 12
       venue: Beall Center for Art and Technology
       city: Irvine (w/ Sue Huang)
+      state: CA
 
     - title: Glowlab Open Lab
       venue: Art Interactive
       city: Cambridge
+      state: MA
      
     - title: Loving Berlin Festival
       venue: Deutsches Architektur Zentrum
       city: Berlin
+      state: Germany
 
     - title: Certain Movement
       venue: The Tank
       city: New York
+      state: NY
  
   - 2004:
     - title: The Case at Kulturhuset
       venue: Stockholms Kulturhuset
       city: Stockholm (w/ Sue Huang)
+      state: Sweden
 
     - title: Conflux Festival
       venue: Participant Inc
       city: New York
+      state: NY
  
     - title: Art and Technology
       venue: Stadsbiblioteket
       city: G&ouml;teborg
+      state: Sweden
  
 
 awards:
@@ -439,52 +512,46 @@ awards:
 publications:
 
   - 2018:
-    - author: Brian House
-      article: Sounding Data and Material Temporality
+    - article: "Animas: Sounding Data and Material Temporality"
       book: Journal of Sonic Studies
       editor: Caleb Kelly
       volume: "18, in preparation"
 
-    - author: Brian House
-      article: Against Listening
+    - article: Against Listening
       book: Contemporary Music Review
       editors: Lenore Manderson and Ed Osborn
-      volume: "36:6, in press"
+      volume: "36:6"
 
   - 2017:
-    - author: Brian House
-      article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
+    - article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
       book: "ARPJA: Machine Research"
       editors: Christian Ulrik Andersen and Geoff Cox
       volume: "6:1"
 
-    - author: Brian House
-      article: "Synchronizing Uncertainty: Google’s Spanner and Cartographic Time"
+    - article: "Synchronizing Uncertainty: Google’s Spanner and Cartographic Time"
       book: "DATA browser: Executing Practices"
       editors: H. Pritchard, E. Snodgrass, and M. Tyźlik-Carver
       publisher: Autonomedia
 
   - 2014:
-    - author: Brian House
-      article: Subversive Mobile Storytelling
+    - article: Subversive Mobile Storytelling
       book: Mobile Media Making in an Age of Smartphones
       editors: Marsha Berry and Max Schleser
       publisher: Palgrave Pilot
 
-    - author: Brian House
-      article: Mary Mattingly’s <i>WetLand</i>
+    - article: Mary Mattingly’s <i>WetLand</i>
       book: Title Magazine
       editor: Jacob Feige
 
   - 2013:
-    - author: Brian House
-      article: "OpenPaths: Empowering Personal Geographic Data"
+    - article: "OpenPaths: Empowering Personal Geographic Data"
       book: Proceedings of the 19th International Symposium of Electronic Art
   
   - 2009:
     - author: Brian House and Jesse Shapins
       article: Designers and Citizens as Critical Media Artists
       book: Urban Omnibus
+      editor: Cassim Shepard
 
   # - 2007:
   #   - author: Brian House and Sue Huang
@@ -496,7 +563,7 @@ conferences:
   - 2017:
     - paper: "Animal Behavior: Rhythmanalysis and the More-than-Human"
       conference: Society for Literature, Science, and the Arts
-      location: Tempe
+      location: Arizona State University
 
     - paper: On Wifi, Habits, and Rats
       conference: Radical Networks
@@ -505,6 +572,11 @@ conferences:
     - paper: "Machine Listening: WaveNet, Media Materialism, and Rhythmanalysis"
       conference: Transmediale
       location: Berlin
+
+    - author: Heidi Steltzer and Brian House
+      paper: "Seeing Orange, Feeling Blue: Sound Art as an Approach to Bridge the Gap Between Public Perception and Scientific Understanding of Risk"
+      conference: American Geophysical Union
+      location: New Orleans
 
   - 2015: 
     - paper: "Synchronizing Uncertainty: Google's Spanner and the Foreclosure of Time"
@@ -523,6 +595,11 @@ conferences:
     - paper: "OpenPaths: A New Approach to Aggregating Personal Geographic Data"
       conference: Subtle Technologies
       location: Toronto
+
+    - author: Thomas Kirchner, Hong Gao, Andrew Anesetti-Rothermel, Heather Carlos, Brian House
+      paper: "Longitudinal human mobility and real-time access to a national density surface of retail outlets"
+      conference: UrbComp
+      location: New York
 
   - 2013:
     - paper: "OpenPaths: Location, encryption, and participatory sensing"
@@ -548,7 +625,8 @@ conferences:
       location: New York    
 
   - 2007:
-    - paper: "The Mixed-Reality City"
+    - author: Brian House and Jesse Shapins
+      paper: "The Mixed-Reality City"
       conference: Narrative, Play &amp; Learning in Multimodal Environments
       location: University of Southern Denmark
 
