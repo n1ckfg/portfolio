@@ -4,7 +4,7 @@
 
 <div id="grid">
 {% for work in structure %}
-    <div class="work {% if loop.index % 2 == 0 %}right{% else %}left{% endif %}"> 
+    <div class="work {% if loop.index % 2 == 0 %}right{% else %}left{% endif %}">
         <a href="/works/{{ work }}/">
             {% if image_structure[work][hires] %}
                 <img src="/works/{{ work }}/{{ work }}.jpg" alt="Brian House - {{ work | unslugify }}" srcset="/works/{{ work }}/{{ work }}.jpg 1x, /works/{{ work }}/{{ work }}@2x.jpg 2x" />  
