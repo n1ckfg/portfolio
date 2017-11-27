@@ -14,7 +14,8 @@ education:
   
   - year: 2006
     degree: MSc, Art &amp; Technology
-    institution: Chalmers tekniska h&ouml;gskola<b></b>
+    # institution: Chalmers tekniska h&ouml;gskola<b></b>
+    institution: Chalmers University of Technology
     city: G&ouml;teborg
     country: Sweden
     addendum: #"advisor: Mats Nordahl"
@@ -102,8 +103,8 @@ group:
   - 2016:
     - title: The Spaces We're In
       venue: NEoN Digital Arts
-      city: Dundee (w/ Sue Huang)
-      country: Scotland
+      city: Dundee
+      country: Scotland (w/ Sue Huang)
 
     - title: Reality Under Surveillance
       venue: Speculum Artium
@@ -370,8 +371,8 @@ group:
   - 2004:
     - title: The Case at Kulturhuset
       venue: Stockholms Kulturhuset
-      city: Stockholm (w/ Sue Huang)
-      country: Sweden
+      city: Stockholm
+      country: Sweden (w/ Sue Huang)
 
     - title: Conflux Festival
       venue: Participant Inc
@@ -405,7 +406,7 @@ awards:
   - 2015:
     - kind: Fellowship
       venue: Tow Center for Digital Journalism
-      location: Columbia University
+      location: Columbia University, New York
 
   - 2014:
     - kind: Commission
@@ -415,11 +416,11 @@ awards:
   - 2013:
     - kind: Grant
       venue: Creative Arts Council
-      location: Brown University
+      location: Brown University, Providence
 
     - kind: Fellowship
       venue: Open Graduate Education
-      location: Brown University
+      location: Brown University, Providence
 
     - kind: Residency
       venue: Free103point9 Wave Farm
@@ -428,7 +429,7 @@ awards:
   - 2012:
     - kind: Fellowship
       venue: Howard and Jan Swearer Foundation
-      location: Brown University
+      location: Brown University, Providence
 
     - kind: Residency
       venue: Eyebeam
@@ -452,7 +453,7 @@ awards:
   - 2004:
     - kind: Commission
       venue: Stockholms Kulturhuset
-      location: Stockholm
+      location: Stockholm, Sweden
 
   - 2003:
     - kind: Residency
@@ -476,13 +477,13 @@ publications:
 
   - 2017:
     - article: "Machine Listening: WaveNet, media materialism, and rhythmanalysis"
-      book: "ARPJA: Machine Research"
+      book: "APRJA: Machine Research"
       editors: Christian Ulrik Andersen and Geoff Cox
       volume: "6:1"
 
     - article: "Synchronizing Uncertainty: Google’s Spanner and Cartographic Time"
       book: "DATA browser: Executing Practices"
-      editors: H. Pritchard, E. Snodgrass, and M. Tyźlik-Carver
+      editors: Helen Pritchard, Eric Snodgrass, and Magda Tyźlik-Carver
       publisher: Autonomedia
 
   - 2016:
@@ -522,7 +523,7 @@ conferences:
   - 2017:
     - paper: "Animal Behavior: Rhythmanalysis and the More-than-Human"
       conference: Society for Literature, Science, and the Arts
-      location: Arizona State University
+      location: Arizona State University, Tempe
 
     - paper: On Wifi, Habits, and Rats
       conference: Radical Networks
@@ -544,11 +545,11 @@ conferences:
 
     - paper: "Quotidian Record: The Musical Interpretation of Personal Geographic Data"
       conference: Inertia
-      location: UCLA
+      location: UCLA, Los Angeles
 
     - paper: "Interruption as Rhythm"
       conference: INTERRUPT
-      location: Brown University
+      location: Brown University, Providence
 
   - 2014:
     - paper: "OpenPaths: A New Approach to Aggregating Personal Geographic Data"
@@ -563,11 +564,11 @@ conferences:
   - 2013:
     - paper: "OpenPaths: Location, encryption, and participatory sensing"
       conference: PRISM Breakup
-      location: Eyebeam
+      location: Eyebeam, New York
       
     - paper: "Quotidian Record: The Musical Interpretation of Personal Geographic Data"
       conference: Society of Electro-Acoustic Music in the United States
-      location: Wesleyan University
+      location: Wesleyan University, Middletown
 
     - paper: "OpenPaths: Empowering Personal Geographic Data"
       conference: International Symposium of Electronic Art
@@ -608,19 +609,19 @@ critical:
     - author: Eve Kalyva
       article: Where are my keys? The now of critique in a plurality of voices
       book: Notebook for Art, Theory, and Related Zones
-      volume: volume 21
+      volume: "21"
       publisher:
 
     - author: Johanna Linsley
       article: Possible Public and Private Narratives
       book: Contemporary Theatre Review
-      volume: intervention for volume 26
+      volume: "26"
       publisher:
 
     - author: Dan Ehrenfeld
       article: The Cloud and the Mine
       book: "Kairos: A Journal of Rhetoric, Technology, and Pedagogy"
-      volume: volume 21
+      volume: "21"
       publisher:
 
   - 2015:
@@ -632,7 +633,7 @@ critical:
     - author: Nassim JafariNaimi
       article: MRx as a participatory platform
       book: Digital Creativity
-      volume: volume 26
+      volume: "26"
       publisher:
 
   - 2014:
@@ -674,7 +675,7 @@ critical:
     - author: Mattia Casalegno
       article: "The Research of Knifeandfork: In Between Technology and Participation" 
       book: Digimag Journal
-      volume: issue 52
+      volume: "52"
 
     - author: Rita Raley
       article: "Walk This Way: Mobile Narrative as Composed Experience" 
@@ -760,7 +761,7 @@ press:
 
     - 2006:        
       - publication: SPIN
-        title: Yellow Arrow &mdash; Capitol of Punk
+        title: Yellow Arrow&mdash;Capitol of Punk
         issue: May
 
       - publication: Taiwan Daily News
@@ -820,7 +821,7 @@ press:
         date: March 31
 
     - 2015:
-      - channel: SWR2 (DE)
+      - channel: SWR2 (Germany)
         project: What Does the Internet Sound Like?
         date: August 24
     
@@ -918,6 +919,10 @@ press:
       - publication: Slate
         title: This Light Bulb Is Listening
         issue: April 23 
+
+      - publication: Creator's Project
+        title: Terrifying Lamp Will Record Your Conversations Then Live-Tweet 'Em  
+        issue: April 23
 
       - publication: BuzzFeedNews
         title: This Is What Facebook Sees When It Scans Your Face

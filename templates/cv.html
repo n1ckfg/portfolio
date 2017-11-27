@@ -16,7 +16,7 @@
     PORTFOLIO
     <hr />
     <ul>
-        <li>http://brianhouse.net/works</li>
+        <li>https://brianhouse.net</li>
     </ul>
 </div>
 
@@ -25,7 +25,7 @@
     <hr />
     <ul> 
         {% for item in education %}
-        <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}{% if item.addendum %} (expected May 2018)<br />{{ item.addendum }}{% endif %}</li>
+        <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}{% if item.addendum %} (expected May 27)<br />{{ item.addendum }}{% endif %}</li>
         {% endfor %}
     </ul>
 </div>
@@ -127,7 +127,7 @@
         {% for year in critical %}
             {% for year, items in year.items() %}
                 {% for item in items %}
-                <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<b>{{ item.book }}</b>, {% if item.editors %}eds. {{ item.editors }}, {% endif %}{% if item.editor %}ed. {{ item.editor }}, {% endif %}{% if item.volume %}{{ item.volume }}{% if item.publisher %}, {% endif %}{% endif %}{% if item.publisher %}{{ item.publisher }}{% endif %}</li>
+                <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.author }}, {% if item.article %}&ldquo;{{ item.article }},&rdquo; in {% endif %}<b>{{ item.book }}</b>{% if item.volume %} ({{ item.volume }}){% endif %}{% if item.editors %}, eds. {{ item.editors }}{% endif %}{% if item.editor %}, ed. {{ item.editor }}{% endif %}{% if item.publisher %}, {{ item.publisher }}{% endif %}</li>
                 {% endfor %}
             {% endfor %}
         {% endfor %}                                    
