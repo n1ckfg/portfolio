@@ -25,7 +25,7 @@
     <hr />
     <ul> 
         {% for item in education %}
-        <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.city }}, {{ item.state }}{% if item.addendum %} (expected May 2018)<br />{{ item.addendum }}{% endif %}</li>
+        <li><span class="show">{{ item.year }}</span> {{ item.degree }}, <b>{{ item.institution }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}{% if item.addendum %} (expected May 2018)<br />{{ item.addendum }}{% endif %}</li>
         {% endfor %}
     </ul>
 </div>
@@ -38,7 +38,7 @@
             {% for year, items in year.items() %}
                 {% for item in items %}
                 <li>
-                    <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.title }}, <b>{{ item.venue }}</b>, {{ item.city }}, {{ item.state }}
+                    <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.title }}, <b>{{ item.venue }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}
                 </li>
                 {% endfor %}
             {% endfor %}
@@ -57,21 +57,7 @@
             {% endfor %}
         {% endfor %}
     </ul>
-</div>
-
-<div>
-    CONFERENCE PAPERS
-    <hr />
-    <ul> 
-        {% for year in conferences %}
-            {% for year, items in year.items() %}
-                {% for item in items %}   
-                <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.author %}{{ item.author }}, {% endif %}&ldquo;{{ item.paper }},&rdquo; <b>{{ item.conference }}</b>, {{ item.location }}</li>
-                {% endfor %}
-            {% endfor %}
-        {% endfor %}
-    </ul>        
-</div>    
+</div>   
 
 <div> 
     EXHIBITIONS
@@ -81,7 +67,7 @@
             {% for year, items in year.items() %}
                 {% for item in items %}
                 <li>
-                    <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.title %}{{ item.title }}, {% endif %}<b>{{ item.venue }}</b>, {{ item.city }}, {{ item.state }}
+                    <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.title %}{{ item.title }}, {% endif %}<b>{{ item.venue }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}
                 </li>
                 {% endfor %}
             {% endfor %}
@@ -106,6 +92,20 @@
     </ul> 
 </div>
 
+<div>
+    CONFERENCE PAPERS
+    <hr />
+    <ul> 
+        {% for year in conferences %}
+            {% for year, items in year.items() %}
+                {% for item in items %}   
+                <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.author %}{{ item.author }}, {% endif %}&ldquo;{{ item.paper }},&rdquo; <b>{{ item.conference }}</b>, {{ item.location }}</li>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </ul>        
+</div> 
+
 <div> 
     INVITED TALKS
     <hr />
@@ -121,8 +121,7 @@
 </div> 
 
 <div>
-    APPEARANCES IN CRITICAL WRITING
-    <!-- BIBLIOGRAPHY -->
+    BIBLIOGRAPHY
     <hr />
     <ul> 
         {% for year in critical %}
@@ -192,7 +191,7 @@
         {% endfor %}
     </ul>
     
-    As Instructor
+    As Graduate Instructor
     <ul> 
         {% for year in teaching %}
             {% for year, items in year.items() %}
@@ -245,6 +244,7 @@
     SELECTED NON-ACADEMIC POSITIONS
     <hr />
     <ul>
+        <li><span class="show">2013-2015</span> Data Architect, <b>Okavango Wilderness Project</b>, Okavango Delta, Botswana</li>
         <li><span class="show">2010-2012</span> Creative Technologist, <b>The New York Times Company, Research &amp; Development</b>, New York</li>
         <li><span class="show">2008-2010</span> Director of Technology, <b>Local Projects</b>, New York</li>
         <!-- <li><span class="show">2006-2008</span> Software Architect, <b>Diversion Media Inc</b>, New York</li> -->
