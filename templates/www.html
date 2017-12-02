@@ -8,7 +8,6 @@
     <meta name="author" content="Brian House" /> 
     <meta name="copyright" content="Brian House" /> 
     <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose performances, installations, and interventions address our intensive relationships with technology.{% endif %}" />
-    <meta name="google-site-verification" content="A4sQWaqqAP0xPQeB5rwLlUoHnVxHP2EEOZgO_LofGm8" />  
     <meta property="og:title" content="Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://brianhouse.net{% if title %}/works/{{ page }}/{{ page }}{% else %}/about/about{% endif %}.jpg" />
@@ -36,18 +35,18 @@
 
 {% block menu %}
 <div id="header">
-    <div id="name"><a href="{{ absolute }}/">Brian House</a></div>
+    <div id="name"><a href="{{ absolute }}/" alt="Works">Brian House</a></div>
     <div id="menu">
-        <a href="{{ absolute }}/">Works</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://blog.brianhouse.net/">News</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="{{ absolute }}/about/">About</a>
+        <a href="{{ absolute }}/" alt="Works">Works</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://blog.brianhouse.net/" alt="News">News</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{{ absolute }}/about/" alt="About">About</a>
     </div>
 </div>
 <div class="clear"></div>
 {% endblock menu %}
 
 {% block content %}
-<a href="/works"><img src="www.jpg" alt="Brian House" /></a>
+<a href="/works" alt="Works"><img src="www.jpg" alt="Brian House" /></a>
 {% endblock content %}
 
 </div>
