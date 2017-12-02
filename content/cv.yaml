@@ -1206,7 +1206,7 @@ teaching:
       course: Rhythm Beyond Music
       institution: Brown University
       program: Computer Music and Multimedia / Modern Culture and Media
-      level: undergraduate
+      level: graduate and undergraduate
   - 2016:
     - semester: Spring
       course: Computer Music Aesthetics
@@ -1224,13 +1224,13 @@ teaching:
       course: Ecocentric Design
       institution: Rhode Island School of Design
       program: Digital+Media
-      level: graduate
+      level: graduate and undergraduate
   - 2013:
     - semester: Spring
       course: Experimental Geography
       institution: Rhode Island School of Design
       program: Digital+Media
-      level: graduate
+      level: graduate and undergraduate
   - 2011:
     - semester: Fall
       course: Major Studio I
@@ -1250,21 +1250,21 @@ TA:
       course: Performance in a Virtual World
       institution: Brown University
       program: Computer Music and Multimedia
-      level: Undergraduate
+      level: undergraduate
       instructor: Todd Winkler
 
     - semester: Spring
       course: Studio as a Compositional Tool
       institution: Brown University
       program: Computer Music and Multimedia
-      level: Undergraduate
+      level: undergraduate
       instructor: Jim Moses
   - 2013:
     - semester: Fall
       course: Computers as a Compositional Tool
       institution: Brown University
       program: Computer Music and Multimedia
-      level: Undergraduate
+      level: undergraduate
       instructor: Peter Bussigel
 
 
