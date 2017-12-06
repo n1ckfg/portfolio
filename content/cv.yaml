@@ -4,7 +4,7 @@ education:
     degree: PhD, Computer Music and Multimedia
     institution: Brown University
     city: Providence
-    addendum: "Committee: Wendy Chun (co-advisor), Ed Osborn, Rebecca Schneider, Todd Winkler (co-advisor)<br />Dissertation: <i>Toward a Minor Data Science: Rhythms of the Earth, the Animal, and the Machine</i>"
+    addendum: "Committee: Wendy Chun (co-advisor), Ed Osborn, Rebecca Schneider, Todd Winkler (co-advisor)<br />Dissertation: <i>Toward a Minor Data Science: Rhythms with the Earth, the Animal, and the Machine</i>"
   
   - year: 2016
     degree: MA, Modern Culture and Media
@@ -27,51 +27,34 @@ education:
     addendum: #"courses: John Kender, Jonathan Kramer, Brad Garton, Manuel DeLanda"
 
 
-# solo:
+solo:
 
-#   - 2018:
-#     - title: <i>Fascists, Lovers, and Other Lonely Ghosts</i>
-#       venue: Granoff Center for the Creative Arts
-#       city: Providence
-
-#   - 2012:
-#     - title: <i>Forty-eight to Sixteen</i>
-#       venue: Eyebeam
-#       city: New York
-
-#     - title: <i>Quotidian Record / Stranger Visions</i> (w/ Heather Dewey-Hagborg)
-#       venue: Eyebeam
-#       city: New York
-
-#   - 2009:
-#     - title: <i>MOCA Grand Prix</i> (w/ Sue Huang)
-#       venue: MOCA
-#       city: Los Angeles
-
-#     - title: <i>Trying the Hand of God</i> (w/ Sue Huang)
-#       venue: MOCA
-#       city: Los Angeles
-
-#     - title: <i>Golf and Donuts</i> (w/ Sue Huang)
-#       venue: MOCA
-#       city: Los Angeles
-
-#   - 2006:
-#     - title: <i>5 'til 12</i> (w/ Sue Huang)
-#       venue: Beall Center for Art and Technology
-#       city: Irvine
-
-#   - 2004:
-#      - title: <i>The Case at Kulturhuset</i> (w/ Sue Huang)
-#       venue: Stockholms Kulturhuset
-#       city: Stockholm
-
-
-group:
   - 2018:
     - title: Fascists, Lovers, and Other Lonely Ghosts
       venue: Granoff Center for the Creative Arts
       city: Providence
+
+  - 2012:
+    - title: Quotidian Record
+      venue: Eyebeam
+      city: New York
+
+  - 2009:
+    - title: Trying the Hand of God / Grand Prix / Emptiness is Form
+      venue: MOCA
+      city: Los Angeles (w/ Sue Huang)
+
+  - 2006:
+    - title: 5 &lsquo;til 12
+      venue: Beall Center for Art and Technology
+      city: Irvine (w/ Sue Huang)
+
+
+group:
+  # - 2018:
+  #   - title: Fascists, Lovers, and Other Lonely Ghosts
+  #     venue: Granoff Center for the Creative Arts
+  #     city: Providence
 
   - 2017:
     - title: Feminist Climate Change
@@ -250,9 +233,9 @@ group:
       venue: Eyebeam
       city: New York
 
-    - title: Quotidian Record / Stranger Visions
-      venue: Eyebeam
-      city: New York
+    # - title: Quotidian Record / Stranger Visions
+    #   venue: Eyebeam
+    #   city: New York
 
     - title: Infinitely Poignant Future Pastness
       venue: Brown University
@@ -295,18 +278,18 @@ group:
       venue: Megapolis Audio Art Festival
       city: Baltimore
 
-  - 2009:
-    - title: MOCA Grand Prix
-      venue: MOCA
-      city: Los Angeles (w/ Sue Huang)
+  # - 2009:
+  #   - title: MOCA Grand Prix
+  #     venue: MOCA
+  #     city: Los Angeles (w/ Sue Huang)
 
-    - title: Trying the Hand of God
-      venue: MOCA
-      city: Los Angeles (w/ Sue Huang)
+  #   - title: Trying the Hand of God
+  #     venue: MOCA
+  #     city: Los Angeles (w/ Sue Huang)
 
-    - title: Golf and Donuts
-      venue: MOCA
-      city: Los Angeles (w/ Sue Huang)
+  #   - title: Golf and Donuts
+  #     venue: MOCA
+  #     city: Los Angeles (w/ Sue Huang)
  
   - 2008:
     - title: Rhizome Commissions
@@ -351,9 +334,9 @@ group:
       city: Brooklyn
 
   - 2005:
-    - title: 5 'til 12
-      venue: Beall Center for Art and Technology
-      city: Irvine (w/ Sue Huang)
+    # - title: 5 'til 12
+    #   venue: Beall Center for Art and Technology
+    #   city: Irvine (w/ Sue Huang)
 
     - title: Glowlab Open Lab
       venue: Art Interactive

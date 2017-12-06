@@ -30,21 +30,6 @@
     </ul>
 </div>
 
-<!--     <div> 
-    SOLO AND TWO-PERSON EXHIBITIONS
-    <hr />
-    <ul>
-        {% for year in solo %}
-            {% for year, items in year.items() %}
-                {% for item in items %}
-                <li>
-                    <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.title }}, <b>{{ item.venue }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}
-                </li>
-                {% endfor %}
-            {% endfor %}
-        {% endfor %}
-    </ul>
-</div> -->
 <div>
     PUBLICATIONS
     <hr />
@@ -60,7 +45,23 @@
 </div>   
 
 <div> 
-    EXHIBITIONS
+    SOLO AND DUO EXHIBITIONS
+    <hr />
+    <ul>
+        {% for year in solo %}
+            {% for year, items in year.items() %}
+                {% for item in items %}
+                <li>
+                    <span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.title %}{{ item.title }}, {% endif %}<b>{{ item.venue }}</b>, {{ item.city }}{% if item.country %}, {{ item.country }}{% endif %}
+                </li>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div> 
+    GROUP EXHIBITIONS
     <hr />
     <ul>
         {% for year in group %}
