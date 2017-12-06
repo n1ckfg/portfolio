@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Brian House" /> 
     <meta name="copyright" content="Brian House" /> 
-    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist and academic whose work explores the interdependent rhythms of the body, technology, and the environment.{% endif %}" />
+    <meta name="description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose work explores the interdependent rhythms of the body, technology, and the environment.{% endif %}" />
     <meta property="og:title" content="Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://brianhouse.net{% if title %}/works/{{ page }}/{{ page }}{% else %}/about/about{% endif %}.jpg" />
@@ -15,7 +15,7 @@
     <meta name="twitter:site" content="@h0use" />
     <meta name="twitter:creator" content="@h0use" />
     <meta name="twitter:title" content="Brian House{% if title %} | {{ title }}{% elif page and page != 'www' %} | {{ page | title }}{% endif %}" />
-    <meta name="twitter:description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist and academic whose work explores the interdependent rhythms of the body, technology, and the environment.{% endif %}" />
+    <meta name="twitter:description" content="{% if text %}{{ text | strip_html | strip_quotes | replace('\n', ' ') | strslice(157) }}...{% else %}Brian House is an artist whose work explores the interdependent rhythms of the body, technology, and the environment.{% endif %}" />
     <meta name="twitter:image" content="https://brianhouse.net{% if title %}/works/{{ page }}/{{ page }}{% else %}/about/about{% endif %}.jpg" />    
     <link rel="icon" href="{{ absolute }}/favicon.png" /> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CVollkorn:400,700" rel="stylesheet">
