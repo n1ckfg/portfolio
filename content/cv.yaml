@@ -5,7 +5,7 @@ education:
     institution: Brown University
     city: Providence
     addendum: |
-      <br />Dissertation: <i>Toward a Minor Data Science: Rhythms with the Earth, the Animal, and the Machine</i><br /><br />This dissertation addresses media ecologies of more-than-human agency through an artistic methodology derived from Henri Lefebvre's <i>Rhythmanalysis</i>. Each of three artworks addresses contentious relationships between a humans and a form of nonhuman: <i>Animas</i> with a river degraded by extractive industries, <i>Urban Intonation</i> with the ubiquitous brown rat with which we cohabitate in expanding urban environments, and <i>Everything That Happens Will Happen Today</i> with emerging artificial intelligence algorithms embedded in consumer systems. These pieces situate data not as knowledge, but as transductive media that bring different rhythmic bodies into affective contact, a "minor data science" that resists the ontologies of platform capitalism.<br /><br />Committee: Wendy Chun (co-advisor), Ed Osborn, Rebecca Schneider, Todd Winkler (co-advisor)<br /><br />
+      <br />Dissertation: <i>Toward a Minor Data Science: Rhythms with the Earth, the Animal, and the Machine</i><br /><br />This dissertation presents an artistic methodology derived from Henri Lefebvre’s <i>Rhythmanalysis</i> and its significance to media ecologies of more-than-human agency. Each of three artworks addresses a contentious relationship between humans and a form of nonhuman: <i>Animas</i> with a river degraded by extractive industries, <i>Urban Intonation</i> with the ubiquitous brown rat with which we cohabitate in expanding urban environments, and <i>Everything That Happens Will Happen Today</i> with emerging artificial intelligence algorithms embedded in consumer systems. These pieces situate data not as knowledge, but as transductive media that bring different rhythmic bodies into affective contact, and they suggest a “minor data science” that resists the ontologies of platform capitalism.<br /><br />Committee: Wendy Chun (co-advisor), Ed Osborn, Rebecca Schneider, Todd Winkler (co-advisor)<br /><br />
   
   - year: 2016
     degree: MA, Modern Culture and Media
@@ -59,7 +59,7 @@ group:
 
   - 2017:
     - title: Feminist Climate Change
-      venue: Ars Electronica Festival
+      venue: Ars Electronica
       city: Linz
       country: Austria
 
@@ -178,7 +178,7 @@ group:
         
   - 2013:
     - title: Total Recall
-      venue: Ars Electronica Festival
+      venue: Ars Electronica
       city: Linz
       country: Austria
      
