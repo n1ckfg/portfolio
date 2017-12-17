@@ -173,6 +173,7 @@
             {% for year, items in year.items() %}
                 {% for item in items %}
                 <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} {{ item.issue }} </li>
+                <!-- <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.author %}{{ item.author }}, {% endif %}{% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} <b>{{ item.publication }}</b></li>                 -->
                 {% endfor %}
             {% endfor %}
         {% endfor %}
@@ -195,6 +196,7 @@
             {% for year, items in year.items() %}
                 {% for item in items %}
                 <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> <b>{{ item.publication }}</b>, {% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} {{ item.issue }} </li>
+                <!-- <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {% if item.author %}{{ item.author }}, {% endif %}{% if item.title %}&ldquo;{{ item.title }},&rdquo;{% endif %} <b>{{ item.publication }}</b></li>                 -->
                 {% endfor %}
             {% endfor %}
         {% endfor %}
