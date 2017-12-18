@@ -7,7 +7,7 @@ aspect: 0.5625
 credits:
   - Thanks: [David Feineberg, Nadav Assor, Elisa Giardina-Papa, Caleb Churchill, Heather Dewey-Hagborg, Veronica Liu and Will Glass, John Cayley, Clement Valla, and Lucia Monge]
 text: |
-  Over a period of one year, I continuously tracked the GPS location of ~1000 anonymous volunteers in NYC, at all times, via a custom app they installed on their phones. I used these data to train an artificial intelligence algorithm similar to what is used for self-driving cars, realistic computer voices, predictive policing, and myriad other emerging applications (LSTM RNN). The algorithm was subsequently able to generate a new path around NYC that synthesized the daily behaviors of all of the volunteers. 
+  Over a period of one year, I tracked the GPS location of ~1000 anonymous volunteers in NYC, at all times, via a custom app they installed on their phones. I used these data to train an artificial intelligence algorithm similar to what is used for self-driving cars, realistic computer voices, predictive policing, and myriad other emerging applications (LSTM RNN). The algorithm was subsequently able to generate a new path around NYC that synthesized the daily behaviors of all of the volunteers. 
 
   In the spirit of Vito Acconci&rsquo;s _Following Piece_ or Sophie Calle&rsquo;s _Suite V&eacute;nitienne_, I then followed the AI through the city for one week, using an app to see the path unfold in realtime on my phone. I took photographs (with my phone) of the daily life I encountered and wrote in a journal.
 
