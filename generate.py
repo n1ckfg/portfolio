@@ -30,7 +30,7 @@ def process_images():
             images[slug][-1][1] = filename
         else:
             images[slug].append([filename, None])
-    # print(json.dumps(images, indent=4))
+    print(json.dumps(images, indent=4))
     return images
 images = process_images()
 
