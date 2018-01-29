@@ -14,7 +14,9 @@ def process_images():
     except Exception:
         pass
     images = {}
-    for filename in os.listdir("images"):
+    filenames = list(os.listdir("images"))
+    filenames.sort()
+    for filename in filenames:
         if ".jpg" not in filename:
             continue
         slug = filename.split(".")[0].replace("@2x", "")

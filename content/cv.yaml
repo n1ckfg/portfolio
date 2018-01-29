@@ -370,6 +370,15 @@ group:
 
 awards:
 
+  - 2018:
+    - kind: Residency
+      venue: MAAJAMM
+      location: Estonia
+
+    - kind: Residency
+      venue: Media Archeology Lab
+      location: University of Colorado, Boulder
+
   - 2017:
     - kind: Commission
       venue: University of Denver
@@ -1265,6 +1274,10 @@ TA:
 
 
 service:
+  - 2018:
+    - role: Selection committee
+      institution: NIME
+
   - 2016:
     - role: Selection committee
       institution: ISEA
