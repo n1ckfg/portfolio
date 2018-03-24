@@ -4,7 +4,6 @@
 
 - image cv doesnt load at size, so theres a snap
 - lost a question mark
-- fix little Cv
 
 ### features
 
