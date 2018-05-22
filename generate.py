@@ -59,7 +59,7 @@ def build(structure, root):
             update = False
             work_images = []
             if page in images:
-                for (image, hires) in images[page]:
+                for (image, hires) in images[slugify(page)]:
                     image_source_path = os.path.abspath(os.path.join("images", image))
                     image_destination_path = os.path.join(path, image_source_path.split("/")[-1])                    
                     if not os.path.isfile(image_destination_path) or os.path.getmtime(image_source_path) > os.path.getmtime(image_destination_path):
@@ -86,7 +86,8 @@ def build(structure, root):
                 html = render(template, data, structure=(structure[page] if type(structure) is dict else None))
                 with open(html_path, 'w') as f:
                     f.write(html)
-            if type(structure) is dict:           
+            if type(structure) is dict:        
+                print("recursion")   
                 build(structure[page], path)
 
 def render(template_name, template_values=None, **kwargs):
@@ -99,8 +100,10 @@ def render(template_name, template_values=None, **kwargs):
     output = renderer.get_template(template_name).render(template_values)
     return output
 
-def slugify(value):
-    value = re.sub(r'[^\w\s-]', '', value).strip().lower()
+def slugify(value, punctuation=False):
+    if not punctuation:
+        value = re.sub(r'[^\w\s-]', '', value)
+    value = value.strip().lower()
     return re.sub(r'[\s]+', '_', value)
 
 def unslugify(s):
