@@ -23,6 +23,14 @@ div {
     padding: 20px;
 }
 
+@media screen and (min-width: 1280px) {
+
+    #content {
+        max-width: 1220px;
+    }
+
+}
+
 #header {
     margin-top: 18px;
     text-transform: uppercase;
@@ -60,18 +68,34 @@ div {
         width: 380px;
     }
 
-    #grid .work.left {
+    #grid .work {
         float: left;
         margin-right: 40px;
-    }
-
-    #grid .work.right {
-        float: right;
     }
 
     #grid .work img {
         width: 380px;
         height: 214px;
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+
+    #grid .work.dright {
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    #grid .work.dright {
+        margin-right: 40px;
+    }
+
+    #grid .work.tright {
+        margin-right: 0px;
     }
 
 }

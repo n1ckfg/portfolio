@@ -7,10 +7,11 @@ www:
     cv.print:
     # words:
     works:
+        - fascists_lovers_and_other_lonely_ghosts
         - urban_intonation
         - everything_that_happens_will_happen_today
-        - oh_dear_me
         - animas
+        - oh_dear_me
         - a_question_of_style
         - quotidian_record
         - arrangement_for_building
@@ -27,9 +28,10 @@ www:
         - eternal_portraits
         - youll_just_have_to_take_my_word_for_it
         - change_ringing
+        - the_weather_or_your_memories
         - openpaths
         - yellow_arrow
-        # - the_weather_or_your_memories
+
 
 
         # - the_wrench
