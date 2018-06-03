@@ -40,7 +40,7 @@ def build(structure, root):
     if structure is not None:
         pages = structure.keys() if type(structure) is dict else structure
         for page in pages:
-            path = os.path.abspath(os.path.join(root, page))
+            path = os.path.abspath(os.path.join(root, slugify(page)))
             if not os.path.isdir(path):
                 os.mkdir(path)
             content = os.path.abspath("content/%s.yaml" % page.split('.')[0])
@@ -87,7 +87,6 @@ def build(structure, root):
                 with open(html_path, 'w') as f:
                     f.write(html)
             if type(structure) is dict:        
-                print("recursion")   
                 build(structure[page], path)
 
 def render(template_name, template_values=None, **kwargs):

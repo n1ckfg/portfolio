@@ -2,16 +2,16 @@
 
 ### bugs
 
-- image cv doesnt load at size, so theres a snap
-- lost a question mark
 
 ### features
 
 To be generalizeable beyond me, needs configuration for:
 - site title / name
 - social media sites
-- cv should be yamlized
+- cv should be fully yamlized
 - homepage
+
+- better detection on which templates need to be updated (probably keep a table)
 
 
 ### notes
