@@ -43,9 +43,9 @@ def build(structure, root):
             path = os.path.abspath(os.path.join(root, slugify(page)))
             if not os.path.isdir(path):
                 os.mkdir(path)
-            content = os.path.abspath("content/%s.yaml" % page.split('.')[0])
+            content = os.path.abspath("content/%s.yaml" % slugify(page).split('.')[0])
             if type(structure) is dict:
-                template = "templates/%s.html" % page
+                template = "templates/%s.html" % slugify(page)
             else:
                 template = "templates/%s.html" % root.split("/")[-1][:-1]
             html_path = os.path.join(path, "index.html")      
