@@ -205,36 +205,8 @@
 <div> 
     TEACHING EXPERIENCE
     <hr />
-    <br />
-    As Part-Time Faculty
     <ul> 
         {% for year in teaching %}
-            {% for year, items in year.items() %}
-                {% for item in items %}   
-                {% if 'Brown' not in item.institution %}
-                <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.semester }}, <i>{{ item.course }}</i>, <b>{{ item.institution }}</b>, {{ item.program }}, {{ item.level }}</li>
-                {% endif %}
-                {% endfor %}
-            {% endfor %}
-        {% endfor %}
-    </ul>
-    
-    As Graduate Instructor
-    <ul> 
-        {% for year in teaching %}
-            {% for year, items in year.items() %}
-                {% for item in items %}   
-                {% if 'Brown' in item.institution %}
-                <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.semester }}, <i>{{ item.course }}</i>, <b>{{ item.institution }}</b>, {{ item.program }}, {{ item.level }}</li>
-                {% endif %}
-                {% endfor %}
-            {% endfor %}
-        {% endfor %}
-    </ul>
-
-    As TA
-    <ul>
-        {% for year in TA %}
             {% for year, items in year.items() %}
                 {% for item in items %}   
                 <li><span {% if loop.first %}class="show"{% endif %}>{{ year }}</span> {{ item.semester }}, <i>{{ item.course }}</i>, <b>{{ item.institution }}</b>, {{ item.program }}, {{ item.level }}</li>
