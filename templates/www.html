@@ -46,7 +46,25 @@
 {% endblock menu %}
 
 {% block content %}
-<a href="/works" alt="Works"><img src="www.jpg" alt="Brian House" /></a>
+<!-- <a href="/works" alt="Works"><img src="www.jpg" alt="Brian House" /></a> -->
+
+<div id="grid">
+{% for work in structure['works'] %}
+    {% set title = work | unslugify %}
+    {% set work = work | slugify %}
+    <div class="work{% if loop.index % 2 == 0 %} dright{% endif %}{% if loop.index % 3 == 0 %} tright{% endif %}">        
+        <a href="/works/{{ work }}/" alt="{{ title }}">
+            {% if image_structure[work][0][1] %}
+                <img src="/works/{{ work }}/{{ work }}.jpg" alt="Brian House - {{ title }}" srcset="/works/{{ work }}/{{ work }}.jpg 1x, /works/{{ work }}/{{ work }}@2x.jpg 2x" />  
+            {% else %}
+                <img src="/works/{{ work }}/{{ work }}.jpg" alt="Brian House - {{ title }}" /> 
+            {% endif %}
+            <span class="grid_title">{{ title }}</span> 
+        </a>
+    </div>
+{% endfor %}
+
+</div>
 {% endblock content %}
 
 </div>

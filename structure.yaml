@@ -1,11 +1,11 @@
 # every page is an index in its folder; every page has a yaml content file
 # dict implies a singular template, list uses a common one (parent without an 's')
+# page with '.' uses yaml from prefix
 
 www:
     about:
     cv:
     cv.print:
-    # words:
     works:
         - fascists,_lovers,_and_other_lonely_ghosts
         - urban_intonation

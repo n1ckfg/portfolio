@@ -40,10 +40,10 @@ def build(structure, root):
     if structure is not None:
         pages = structure.keys() if type(structure) is dict else structure
         for page in pages:
-            path = os.path.abspath(os.path.join(root, slugify(page)))
+            path = os.path.abspath(os.path.join(root, slugify(page))) # . has to survive
             if not os.path.isdir(path):
                 os.mkdir(path)
-            content = os.path.abspath("content/%s.yaml" % slugify(page).split('.')[0])
+            content = os.path.abspath("content/%s.yaml" % slugify(page.split('.')[0]))
             if type(structure) is dict:
                 template = "templates/%s.html" % slugify(page)
             else:
@@ -101,7 +101,7 @@ def render(template_name, template_values=None, **kwargs):
 
 def slugify(value, punctuation=False):
     if not punctuation:
-        value = re.sub(r'[^\w\s-]', '', value)
+        value = re.sub(r'[^\w\s\.-]', '', value)
     value = value.strip().lower()
     return re.sub(r'[\s]+', '_', value)
 
@@ -145,5 +145,4 @@ if __name__ == "__main__":
         structure = yaml.load(f)
     build(structure, ".")
     copy_static()
-    shutil.move("www/works/index.html", "www/index.html")       # this should be a rewrite rule
 
